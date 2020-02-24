@@ -1,5 +1,32 @@
 # Chord Heavy - A keymap inspired by [Spacemacs](https://www.spacemacs.org/)
 
+- [Chord Heavy - A keymap inspired by Spacemacs](#chord-heavy---a-keymap-inspired-by-spacemacs)
+	- [Keymap](#keymap)
+		- [✨ Important Single-chords](#%e2%9c%a8-important-single-chords)
+		- [Preferences/Settings (prefix: `,`)](#preferencessettings-prefix)
+		- [Buffers (prefix: `b`)](#buffers-prefix-b)
+		- [Code (prefix: `c`)](#code-prefix-c)
+		- [Debug (prefix: `d`)](#debug-prefix-d)
+		- [Errors (prefix: `e`)](#errors-prefix-e)
+		- [Files (prefix: `f`)](#files-prefix-f)
+		- [Git (prefix: `g`)](#git-prefix-g)
+		- [Help (prefix: `h`)](#help-prefix-h)
+		- [Jump (prefix: `j`)](#jump-prefix-j)
+		- [Panel (prefix: `l`)](#panel-prefix-l)
+		- [Open... (prefix: `o`)](#open-prefix-o)
+		- [Project (prefix: `p`)](#project-prefix-p)
+		- [Quit/Close (prefix: `q`)](#quitclose-prefix-q)
+		- [Refactor (prefix: `r`)](#refactor-prefix-r)
+		- [Search (prefix: `s`)](#search-prefix-s)
+		- [Toggle (prefix: `t`)](#toggle-prefix-t)
+		- [Window (prefix: `w`)](#window-prefix-w)
+		- [Yank/Copy (prefix: `y`)](#yankcopy-prefix-y)
+		- [Misc. (one-off shortcuts, most not `chords)`](#misc-one-off-shortcuts-most-not-chords)
+	- [Inspiration](#inspiration)
+	- [Caveats](#caveats)
+	- [Issues to Vote For](#issues-to-vote-for)
+	- [Potential Future Improvements](#potential-future-improvements)
+
 After trying and failing to get a [Spacemacs](https://www.spacemacs.org/) installation to function properly, I came back to VSCode since it was significantly less finicky to set up (don't @ me, Spacemacs diehards). However, the one thing that I _really_ liked about Spacemacs was the [mnemonic](https://develop.spacemacs.org/doc/DOCUMENTATION.html#mnemonic), chord-focused shortcuts to execute actions and navigate.
 
 So a few weeks ago now I set out to create [a keymap](#keymap) [within the confines of VSCode's mechanisms](#caveats) that "made sense". A lot of the base keymap configurations were either taken straight from Spacemacs or from the [Intellimacs](https://github.com/MarcoIeni/intellimacs/blob/master/docs/KEYBINDINGS.org) keybindings. Some chords exist because they "made sense" to me, so please refer to the keymap if you need some guidance! Most things should "just work" if you replace common Spacemacs chords' `SPC` with `cmd` in your head (more information on "why `cmd`?" in the [Inspiration](#inspiration) section).
