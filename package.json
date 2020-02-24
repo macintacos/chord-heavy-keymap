@@ -3,6 +3,7 @@
   "displayName": "Chord Heavy",
   "description": "A keymap inspired by Spacemacs",
   "version": "1.0.0",
+  "publisher": "vscode-macintacos",
   "engines": {
     "vscode": "^1.42.0"
   },
