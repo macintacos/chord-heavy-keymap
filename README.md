@@ -2,8 +2,8 @@
 
 - [Chord Heavy - A keymap inspired by Spacemacs](#chord-heavy---a-keymap-inspired-by-spacemacs)
 	- [Keymap](#keymap)
-		- [✨ Important Single-chords](#%e2%9c%a8-important-single-chords)
-		- [Preferences/Settings (prefix: `,`)](#preferencessettings-prefix)
+		- [✨ Important Single-chords](#-important-single-chords)
+		- [Preferences/Settings (prefix: `,`)](#preferencessettings-prefix-)
 		- [Buffers (prefix: `b`)](#buffers-prefix-b)
 		- [Code (prefix: `c`)](#code-prefix-c)
 		- [Debug (prefix: `d`)](#debug-prefix-d)
