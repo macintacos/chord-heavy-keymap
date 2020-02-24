@@ -341,57 +341,57 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
  | `editor.action.clipboardCopyAction`         | `alt+c`                      |
  | `editor.action.webvieweditor.copy`          | `alt+c`                      |
  | `execCopy`                                  | `alt+c`                      |
- | `filesExplorer.copy`                        | `alt+c `                     |
- | `gitlens.views.compare.copy`                | `alt+c `                     |
- | `gitlens.views.fileHistory.copy`            | `alt+c `                     |
- | `gitlens.views.lineHistory.copy`            | `alt+c `                     |
- | `gitlens.views.repositories.copy`           | `alt+c `                     |
- | `gitlens.views.search.copy`                 | `alt+c `                     |
- | `keybindings.editor.copyKeybindingEntry`    | `alt+c `                     |
- | `problems.action.copy`                      | `alt+c `                     |
- | `remote.tunnel.copyAddressInline`           | `alt+c `                     |
- | `workbench.action.terminal.copySelection`   | `alt+c `                     |
- | `undo_expand_region`                        | `alt+down `                  |
- | `editor.action.peekDefinition`              | `alt+enter `                 |
- | `markdown-checkbox.markCheckbox`            | `alt+enter `                 |
- | `editor.action.addSelectionToNextFindMatch` | `alt+l `                     |
- | `editor.action.triggerSuggest`              | `alt+space `                 |
- | `toggleSuggestionDetails`                   | `alt+space `                 |
- | `expand_region`                             | `alt+up `                    |
- | `editor.action.fontZoomOut`                 | `cmd+- `                     |
- | `workbench.action.terminal.focus`           | `cmd+' `                     |
- | `workbench.action.navigateBack`             | `cmd+[ `                     |
- | `workbench.action.navigateForward`          | `cmd+] `                     |
- | `editor.action.fontZoomReset`               | `cmd+= `                     |
- | `deleteAllLeft`                             | `cmd+backspace `             |
- | `multiCommand.repeatLastCommand`            | `cmd+ctrl+r `                |
- | `editor.action.insertSnippet`               | `cmd+k `                     |
- | `editor.action.fontZoomIn`                  | `cmd+numpad_add `            |
+ | `filesExplorer.copy`                        | `alt+c`                      |
+ | `gitlens.views.compare.copy`                | `alt+c`                      |
+ | `gitlens.views.fileHistory.copy`            | `alt+c`                      |
+ | `gitlens.views.lineHistory.copy`            | `alt+c`                      |
+ | `gitlens.views.repositories.copy`           | `alt+c`                      |
+ | `gitlens.views.search.copy`                 | `alt+c`                      |
+ | `keybindings.editor.copyKeybindingEntry`    | `alt+c`                      |
+ | `problems.action.copy`                      | `alt+c`                      |
+ | `remote.tunnel.copyAddressInline`           | `alt+c`                      |
+ | `workbench.action.terminal.copySelection`   | `alt+c`                      |
+ | `undo_expand_region`                        | `alt+down`                   |
+ | `editor.action.peekDefinition`              | `alt+enter`                  |
+ | `markdown-checkbox.markCheckbox`            | `alt+enter`                  |
+ | `editor.action.addSelectionToNextFindMatch` | `alt+l`                      |
+ | `editor.action.triggerSuggest`              | `alt+space`                  |
+ | `toggleSuggestionDetails`                   | `alt+space`                  |
+ | `expand_region`                             | `alt+up`                     |
+ | `editor.action.fontZoomOut`                 | `cmd+-`                      |
+ | `workbench.action.terminal.focus`           | `cmd+'`                      |
+ | `workbench.action.navigateBack`             | `cmd+[`                      |
+ | `workbench.action.navigateForward`          | `cmd+]`                      |
+ | `editor.action.fontZoomReset`               | `cmd+=`                      |
+ | `deleteAllLeft`                             | `cmd+backspace`              |
+ | `multiCommand.repeatLastCommand`            | `cmd+ctrl+r`                 |
+ | `editor.action.insertSnippet`               | `cmd+k`                      |
+ | `editor.action.fontZoomIn`                  | `cmd+numpad_add`             |
  | `editor.action.commentLine`                 | `cmd+; ;`                    |
- | `deleteWordPartLeft`                        | `ctrl+alt+backspace `        |
- | `cursorWordPartStartLeft`                   | `ctrl+alt+left `             |
- | `cursorWordPartRight`                       | `ctrl+alt+right `            |
- | `cursorLeft`                                | `ctrl+h `                    |
- | `cursorDown`                                | `ctrl+j `                    |
- | `list.focusDown`                            | `ctrl+j `                    |
- | `selectNextSuggestion`                      | `ctrl+j `                    |
- | `workbench.action.quickOpenSelectNext`      | `ctrl+j `                    |
- | `cursorUp`                                  | `ctrl+k `                    |
- | `list.focusUp`                              | `ctrl+k `                    |
- | `selectPrevSuggestion`                      | `ctrl+k `                    |
- | `workbench.action.quickOpenSelectPrevious`  | `ctrl+k `                    |
- | `cursorRight`                               | `ctrl+l `                    |
- | `workbench.action.files.save`               | `ctrl+s `                    |
+ | `deleteWordPartLeft`                        | `ctrl+alt+backspace`         |
+ | `cursorWordPartStartLeft`                   | `ctrl+alt+left`              |
+ | `cursorWordPartRight`                       | `ctrl+alt+right`             |
+ | `cursorLeft`                                | `ctrl+h`                     |
+ | `cursorDown`                                | `ctrl+j`                     |
+ | `list.focusDown`                            | `ctrl+j`                     |
+ | `selectNextSuggestion`                      | `ctrl+j`                     |
+ | `workbench.action.quickOpenSelectNext`      | `ctrl+j`                     |
+ | `cursorUp`                                  | `ctrl+k`                     |
+ | `list.focusUp`                              | `ctrl+k`                     |
+ | `selectPrevSuggestion`                      | `ctrl+k`                     |
+ | `workbench.action.quickOpenSelectPrevious`  | `ctrl+k`                     |
+ | `cursorRight`                               | `ctrl+l`                     |
+ | `workbench.action.files.save`               | `ctrl+s`                     |
  | `deleteWordPartRight`                       | `ctrl+shift+alt+backspace |` |
- | `cursorWordPartStartLeftSelect`             | `ctrl+shift+alt+left `       |
- | `cursorWordPartRightSelect`                 | `ctrl+shift+alt+right `      |
- | `workbench.action.terminal.runSelectedText` | `ctrl+shift+alt+t `          |
- | `extension.jumpy-exit`                      | `Escape `                    |
- | `vscode-neovim.compositeEscape1`            | `j `                         |
- | `extension.toggleTheme`                     | `shift+alt+d `               |
- | `extension.jumpy-line`                      | `shift+alt+enter `           |
- | `editor.action.deleteLines`                 | `shift+cmd+backspace `       |
- | `cursorUp`                                  | `up `                        |
+ | `cursorWordPartStartLeftSelect`             | `ctrl+shift+alt+left`        |
+ | `cursorWordPartRightSelect`                 | `ctrl+shift+alt+right`       |
+ | `workbench.action.terminal.runSelectedText` | `ctrl+shift+alt+t`           |
+ | `extension.jumpy-exit`                      | `Escape`                     |
+ | `vscode-neovim.compositeEscape1`            | `j`                          |
+ | `extension.toggleTheme`                     | `shift+alt+d`                |
+ | `extension.jumpy-line`                      | `shift+alt+enter`            |
+ | `editor.action.deleteLines`                 | `shift+cmd+backspace`        |
+ | `cursorUp`                                  | `up`                         |
 
 ## Inspiration
 
