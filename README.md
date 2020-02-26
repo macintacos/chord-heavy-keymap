@@ -2,8 +2,8 @@
 
 - [Chord Heavy - A keymap inspired by Spacemacs](#chord-heavy---a-keymap-inspired-by-spacemacs)
 	- [Keymap](#keymap)
-		- [✨ Important Single-chords](#-important-single-chords)
-		- [Preferences/Settings (prefix: `,`)](#preferencessettings-prefix-)
+		- [✨ Important Single-chords](#%e2%9c%a8-important-single-chords)
+		- [Preferences/Settings (prefix: `,`)](#preferencessettings-prefix)
 		- [Buffers (prefix: `b`)](#buffers-prefix-b)
 		- [Code (prefix: `c`)](#code-prefix-c)
 		- [Debug (prefix: `d`)](#debug-prefix-d)
@@ -408,7 +408,6 @@ There are some caveats to keep in mind if you'd like to use this keymap, which w
 - **This keymap removes A LOT of default shortcuts.** If you're not comfortable with looking up the commands or using the command search, stay away from this keymap!
 - **There are some chords/shortcuts that are dependent on snippets or extensions that I have personally installed on my machine.** VSCode might complain about this, but you should be fine.
 - In VSCode, when you've defined a chord for a specific character, it "clobbers" shortcuts that are only one `modifier+key` combination. Thus, because `cmd+c r` is a chord, things like `cmd+c` in a text editor (copy) won't work (VSCode sits there waiting for a chord to be executed). Despite not needing it in order to get this keymap working, I _am_ a VSCodeVim user, so anything to do with text manipulation is handled by that extension anyway so that's generally not an issue for me. However, if you rely on those kinds of "common" shortcuts, keep in mind that they have changed (more often than not to `alt+key`; for the example above, `alt+c` is the shortcut for copying).
-- There seems to be an issue with key chords being executed in the integrated terminal ([microsoft/vscode/issues/91238](https://github.com/microsoft/vscode/issues/91238)); until that's fixed, I'm just going to use an external terminal application instead, but hopefully that can be resolved soon-ish.
 - Right now this keymap only supports the Mac; sorry! I'll add more in the future if literally _anyone_ uses this.
 
 If the above caveats are "fine" for you, I really think that this keymap can work well. It doesn't cover 100% of the capabilities that Spacemacs can, but it gets a lot of the way there!
@@ -427,7 +426,6 @@ VSCode was developed with a completely different user-base in mind, but that doe
 ## Potential Future Improvements
 
 - Add support for Linux/Windows
-- Once [microsoft/vscode/issues/91238](https://github.com/microsoft/vscode/issues/91238) is taken care of, I'll be able to implement all of the same terminal window splits that I can do in normal editor windows
 - Create shortcuts that are based on specific file types, so that there is a "major mode" of sorts for them. Can start with HTML and go through other languages as I see fit; use the [Spacemacs layer keybindings](https://www.spacemacs.org/layers/LAYERS.html) for inspiration.
 	> NOTE: maybe the `ctrl` key can be first character for "major" mode?
 	- [HTML](https://www.spacemacs.org/layers/+lang/html/README.html)
