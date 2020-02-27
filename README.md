@@ -185,24 +185,26 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 
 ### Open... (prefix: `o`)
 
-| Action                                          | Keybinding/Chord |
-| ----------------------------------------------- | ---------------- |
-| `extension.openWithDefault`                     | `cmd+o b`        |
-| `extension.dash.emptySyntax`                    | `cmd+o d`        |
-| `workbench.action.files.openFileFolder`         | `cmd+o f`        |
-| `workbench.view.extension.github-pull-requests` | `cmd+o p`        |
-| `workbench.view.extension.project-manager`      | `cmd+o shift+p`  |
-| `workbench.view.extension.todo-tree-container`  | `cmd+o t`        |
-| `confluence.showPreview`                        | `cmd+o v`        |
-| `confluence.showPreviewToSide`                  | `cmd+o v`        |
-| `csv.preview`                                   | `cmd+o v`        |
-| `csv.preview`                                   | `cmd+o v`        |
-| `csv.preview`                                   | `cmd+o v`        |
-| `csv.preview`                                   | `cmd+o v`        |
-| `excel.preview`                                 | `cmd+o v`        |
-| `markdown.showPreview`                          | `cmd+o v`        |
-| `markdown.showPreviewToSide`                    | `cmd+o v`        |
-| `workbench.view.extensions`                     | `cmd+o x`        |
+| Action                                              | Keybinding/Chord |
+| --------------------------------------------------- | ---------------- |
+| `extension.openWithDefault`                         | `cmd+o b`        |
+| `extension.dash.emptySyntax`                        | `cmd+o d`        |
+| `workbench.action.showAllEditors`                   | `cmd+o e`        |
+| `workbench.action.showAllEditorsByMostRecentlyUsed` | `cmd+o shift+e`  |
+| `workbench.action.files.openFileFolder`             | `cmd+o f`        |
+| `workbench.view.extension.github-pull-requests`     | `cmd+o p`        |
+| `workbench.view.extension.project-manager`          | `cmd+o shift+p`  |
+| `workbench.view.extension.todo-tree-container`      | `cmd+o t`        |
+| `confluence.showPreview`                            | `cmd+o v`        |
+| `confluence.showPreviewToSide`                      | `cmd+o v`        |
+| `csv.preview`                                       | `cmd+o v`        |
+| `csv.preview`                                       | `cmd+o v`        |
+| `csv.preview`                                       | `cmd+o v`        |
+| `csv.preview`                                       | `cmd+o v`        |
+| `excel.preview`                                     | `cmd+o v`        |
+| `markdown.showPreview`                              | `cmd+o v`        |
+| `markdown.showPreviewToSide`                        | `cmd+o v`        |
+| `workbench.view.extensions`                         | `cmd+o x`        |
 
 ### Project (prefix: `p`)
 
@@ -310,6 +312,8 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.action.reopenClosedEditor`              | `cmd+w shift+t`         |
 | `workbench.action.moveActiveEditorGroupUp`         | `cmd+w shift+up`        |
 | `workbench.action.files.newUntitledFile`           | `cmd+w t`               |
+| `workbench.action.focusNextGroup`                  | `cmd+w tab`             |
+| `workbench.action.focusPreviousGroup`              | `cmd+w tab`             |
 | `workbench.action.focusAboveGroup`                 | `cmd+w up`              |
 | `workbench.action.splitEditor`                     | `cmd+w v`               |
 | `workbench.action.terminal.split`                  | `cmd+w v`               |

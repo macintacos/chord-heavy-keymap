@@ -2773,6 +2773,48 @@
       {
         "command": "workbench.view.scm",
         "key": "cmd+g s"
+      },
+      {
+        "key": "ctrl+tab",
+        "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+      },
+      {
+        "key": "ctrl+shift+tab",
+        "command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup"
+      },
+      {
+        "key": "ctrl+tab",
+        "command": "workbench.files.action.focusOpenEditorsView"
+      },
+      {
+        "key": "ctrl+tab",
+        "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+      },
+      {
+        "key": "ctrl+shift+tab",
+        "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+      },
+      {
+        "key": "cmd+o e",
+        "command": "workbench.action.showAllEditors"
+      },
+      {
+        "key": "alt+cmd+tab",
+        "command": "-workbench.action.showAllEditors"
+      },
+      {
+        "key": "cmd+o shift+e",
+        "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
+      },
+      {
+        "key": "cmd+w tab",
+        "command": "workbench.action.focusNextGroup"
+      },
+      {
+        "key": "cmd+w shift+tab",
+        "command": "workbench.action.focusPreviousGroup"
       }
     ]
   }
