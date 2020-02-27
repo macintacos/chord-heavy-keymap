@@ -2195,7 +2195,7 @@
         "key": "cmd+b d"
       },
       {
-        "key": "cmd+q shift+a",
+        "key": "cmd+q a",
         "command": "workbench.action.closeAllEditors"
       },
       {
@@ -2203,7 +2203,7 @@
         "command": "workbench.action.closeAllGroups"
       },
       {
-        "key": "cmd+q a",
+        "key": "cmd+q shift+a",
         "command": "workbench.action.closeEditorInAllGroups"
       },
       {

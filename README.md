@@ -220,14 +220,14 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 
 | Action                                       | Keybinding/Chord |
 | -------------------------------------------- | ---------------- |
-| `workbench.action.closeEditorInAllGroups`    | `cmd+q a`        |
+| `workbench.action.closeAllEditors`           | `cmd+q a`        |
 | `code-runner.stop`                           | `cmd+q c`        |
 | `workbench.action.debug.stop`                | `cmd+q d`        |
 | `workbench.action.closeEditorsToTheLeft`     | `cmd+q left`     |
 | `workbench.action.closeOtherEditors`         | `cmd+q o`        |
 | `workbench.action.quit`                      | `cmd+q q`        |
 | `workbench.action.closeEditorsToTheRight`    | `cmd+q right`    |
-| `workbench.action.closeAllEditors`           | `cmd+q shift+a`  |
+| `workbench.action.closeEditorInAllGroups`    | `cmd+q shift+a`  |
 | `workbench.action.closeEditorsInOtherGroups` | `cmd+q shift+o`  |
 | `workbench.action.closeFolder`               | `cmd+q w`        |
 
