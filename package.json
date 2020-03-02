@@ -1389,10 +1389,6 @@
         "key": "cmd+k cmd+\\"
       },
       {
-        "command": "-workbench.action.switchWindow",
-        "key": "ctrl+w"
-      },
-      {
         "command": "-workbench.action.tasks.build",
         "key": "cmd+f9"
       },
@@ -2560,6 +2556,11 @@
         "when": "inQuickOpen"
       },
       {
+        "command": "workbench.action.quickOpenSelectNext",
+        "key": "ctrl+tab",
+        "when": "inQuickOpen"
+      },
+      {
         "command": "workbench.action.quickOpenSelectPrevious",
         "key": "ctrl+k",
         "when": "inQuickOpen"
@@ -2627,10 +2628,6 @@
       {
         "command": "workbench.action.splitEditorDown",
         "key": "cmd+w s"
-      },
-      {
-        "command": "workbench.action.switchWindow",
-        "key": "cmd+w w"
       },
       {
         "key": "alt+c",
@@ -2750,6 +2747,10 @@
         "when": "sideBarVisible && !explorerViewletVisible"
       },
       {
+        "command": "workbench.view.explorer",
+        "key": "cmd+o e"
+      },
+      {
         "command": "workbench.action.toggleSidebarVisibility",
         "key": "cmd+f t",
         "when": "sideBarVisible && explorerViewletVisible"
@@ -2784,10 +2785,6 @@
       },
       {
         "key": "ctrl+tab",
-        "command": "workbench.files.action.focusOpenEditorsView"
-      },
-      {
-        "key": "ctrl+tab",
         "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
         "when": "inEditorsPicker && inQuickOpen"
       },
@@ -2797,16 +2794,8 @@
         "when": "inEditorsPicker && inQuickOpen"
       },
       {
-        "key": "cmd+o e",
-        "command": "workbench.action.showAllEditors"
-      },
-      {
         "key": "alt+cmd+tab",
         "command": "-workbench.action.showAllEditors"
-      },
-      {
-        "key": "cmd+o shift+e",
-        "command": "workbench.action.showAllEditorsByMostRecentlyUsed"
       },
       {
         "key": "cmd+w tab",
@@ -2815,6 +2804,44 @@
       {
         "key": "cmd+w shift+tab",
         "command": "workbench.action.focusPreviousGroup"
+      },
+      {
+        "key": "shift+alt+up",
+        "command": "editor.action.moveLinesUpAction"
+      },
+      {
+        "key": "shift+alt+down",
+        "command": "editor.action.moveLinesDownAction"
+      },
+      {
+        "key": "cmd+g o",
+        "command": "extension.openInGitHub"
+      },
+      {
+        "key": "ctrl+l g",
+        "command": "-extension.openInGitHub"
+      },
+      {
+        "key": "cmd+g shift+o",
+        "command": "extension.openPrGitProvider"
+      },
+      {
+        "key": "ctrl+l p",
+        "command": "-extension.openPrGitProvider"
+      },
+      {
+        "key": "ctrl+tab",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+      },
+      {
+        "key": "tab",
+        "command": "-markdown.extension.onTabKey",
+        "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus && !hasOtherSuggestions && !hasSnippetCompletions && !inSnippetMode && !suggestWidgetVisible && editorLangId == 'markdown'"
+      },
+      {
+        "key": "shift+tab",
+        "command": "-markdown.extension.onShiftTabKey",
+        "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus && !hasOtherSuggestions && !hasSnippetCompletions && !inSnippetMode && !suggestWidgetVisible && editorLangId == 'markdown'"
       }
     ]
   }

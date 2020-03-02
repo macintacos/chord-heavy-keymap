@@ -2,7 +2,7 @@
 
 - [Chord Heavy - A keymap inspired by Spacemacs](#chord-heavy---a-keymap-inspired-by-spacemacs)
 	- [Keymap](#keymap)
-		- [✨ Important Single-chords](#%e2%9c%a8-important-single-chords)
+		- [Important Single-chords](#important-single-chords)
 		- [Preferences/Settings (prefix: `,`)](#preferencessettings-prefix)
 		- [Buffers (prefix: `b`)](#buffers-prefix-b)
 		- [Code (prefix: `c`)](#code-prefix-c)
@@ -29,13 +29,13 @@
 
 After trying and failing to get a [Spacemacs](https://www.spacemacs.org/) installation to function properly, I came back to VSCode since it was significantly less finicky to set up (don't @ me, Spacemacs diehards). However, the one thing that I _really_ liked about Spacemacs was the [mnemonic](https://develop.spacemacs.org/doc/DOCUMENTATION.html#mnemonic), chord-focused shortcuts to execute actions and navigate.
 
-So a few weeks ago now I set out to create [a keymap](#keymap) [within the confines of VSCode's mechanisms](#caveats) that "made sense". A lot of the base keymap configurations were either taken straight from Spacemacs or from the [Intellimacs](https://github.com/MarcoIeni/intellimacs/blob/master/docs/KEYBINDINGS.org) keybindings. Some chords exist because they "made sense" to me, so please refer to the keymap if you need some guidance! Most things should "just work" if you replace common Spacemacs chords' `SPC` with `cmd` in your head (more information on "why `cmd`?" in the [Inspiration](#inspiration) section).
+So I set out to create [a keymap](#keymap) [within the confines of VSCode's mechanisms](#caveats) that "made sense". A lot of the base keymap configurations were either taken straight from Spacemacs or from the [Intellimacs](https://github.com/MarcoIeni/intellimacs/blob/master/docs/KEYBINDINGS.org) keybindings. Some chords exist because they "made sense" to me, so please refer to the keymap if you need some guidance! Most things should "just work" if you replace common Spacemacs chords' `SPC` with `cmd` in your head (more information on "why `cmd`?" in the [Inspiration](#inspiration) section).
 
 Also, before you get mad at me, I really encourage you to read the [Caveats](#caveats) section for this keymap.
 
 ## Keymap
 
-### ✨ Important Single-chords
+### Important Single-chords
 
 | Action                                     | Keybinding/Chord |
 | ------------------------------------------ | ---------------- |
@@ -140,17 +140,19 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 
 ### Git (prefix: `g`)
 
-| Action                | Keybinding/Chord |
-| --------------------- | ---------------- |
-| `git.stageAllTracked` | `cmd+g a`        |
-| `git.checkout`        | `cmd+g b`        |
-| `git-graph.view`      | `cmd+g g`        |
-| `git.init`            | `cmd+g i`        |
-| `git.pull`            | `cmd+g l`        |
-| `git.pushTo`          | `cmd+g p`        |
-| `workbench.view.scm`  | `cmd+g s`        |
-| `git.stageAll`        | `cmd+g shift+a`  |
-| `git.branch`          | `cmd+g shift+b`  |
+| Action                        | Keybinding/Chord |
+| ----------------------------- | ---------------- |
+| `git.stageAllTracked`         | `cmd+g a`        |
+| `git.checkout`                | `cmd+g b`        |
+| `git-graph.view`              | `cmd+g g`        |
+| `git.init`                    | `cmd+g i`        |
+| `git.pull`                    | `cmd+g l`        |
+| `extension.openInGitHub`      | `cmd+g o`        |
+| `git.pushTo`                  | `cmd+g p`        |
+| `workbench.view.scm`          | `cmd+g s`        |
+| `git.stageAll`                | `cmd+g shift+a`  |
+| `git.branch`                  | `cmd+g shift+b`  |
+| `extension.openPrGitPRovider` | `cmd+g shift+o`  |
 
 ### Help (prefix: `h`)
 
@@ -189,7 +191,7 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | --------------------------------------------------- | ---------------- |
 | `extension.openWithDefault`                         | `cmd+o b`        |
 | `extension.dash.emptySyntax`                        | `cmd+o d`        |
-| `workbench.action.showAllEditors`                   | `cmd+o e`        |
+| `workbench.view.explorer`                           | `cmd+o e`        |
 | `workbench.action.showAllEditorsByMostRecentlyUsed` | `cmd+o shift+e`  |
 | `workbench.action.files.openFileFolder`             | `cmd+o f`        |
 | `workbench.view.extension.github-pull-requests`     | `cmd+o p`        |
@@ -317,7 +319,6 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.action.focusAboveGroup`                 | `cmd+w up`              |
 | `workbench.action.splitEditor`                     | `cmd+w v`               |
 | `workbench.action.terminal.split`                  | `cmd+w v`               |
-| `workbench.action.switchWindow`                    | `cmd+w w`               |
 | `workbench.action.closeEditorsInGroup`             | `cmd+w x`               |
 
 ### Yank/Copy (prefix: `y`)
@@ -336,66 +337,69 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 
 ### Misc. (one-off shortcuts, most not `chords)`
 
- | Action                                      | Keybinding/Chord             |
- | ------------------------------------------- | ---------------------------- |
- | `editor.action.selectAll`                   | `alt+a`                      |
- | `editor.action.webvieweditor.selectAll`     | `alt+a`                      |
- | `list.selectAll`                            | `alt+a`                      |
- | `workbench.action.terminal.selectAll`       | `alt+a`                      |
- | `editor.action.clipboardCopyAction`         | `alt+c`                      |
- | `editor.action.webvieweditor.copy`          | `alt+c`                      |
- | `execCopy`                                  | `alt+c`                      |
- | `filesExplorer.copy`                        | `alt+c`                      |
- | `gitlens.views.compare.copy`                | `alt+c`                      |
- | `gitlens.views.fileHistory.copy`            | `alt+c`                      |
- | `gitlens.views.lineHistory.copy`            | `alt+c`                      |
- | `gitlens.views.repositories.copy`           | `alt+c`                      |
- | `gitlens.views.search.copy`                 | `alt+c`                      |
- | `keybindings.editor.copyKeybindingEntry`    | `alt+c`                      |
- | `problems.action.copy`                      | `alt+c`                      |
- | `remote.tunnel.copyAddressInline`           | `alt+c`                      |
- | `workbench.action.terminal.copySelection`   | `alt+c`                      |
- | `undo_expand_region`                        | `alt+down`                   |
- | `editor.action.peekDefinition`              | `alt+enter`                  |
- | `markdown-checkbox.markCheckbox`            | `alt+enter`                  |
- | `editor.action.addSelectionToNextFindMatch` | `alt+l`                      |
- | `editor.action.triggerSuggest`              | `alt+space`                  |
- | `toggleSuggestionDetails`                   | `alt+space`                  |
- | `expand_region`                             | `alt+up`                     |
- | `editor.action.fontZoomOut`                 | `cmd+-`                      |
- | `workbench.action.terminal.focus`           | `cmd+'`                      |
- | `workbench.action.navigateBack`             | `cmd+[`                      |
- | `workbench.action.navigateForward`          | `cmd+]`                      |
- | `editor.action.fontZoomReset`               | `cmd+=`                      |
- | `deleteAllLeft`                             | `cmd+backspace`              |
- | `multiCommand.repeatLastCommand`            | `cmd+ctrl+r`                 |
- | `editor.action.insertSnippet`               | `cmd+k`                      |
- | `editor.action.fontZoomIn`                  | `cmd+numpad_add`             |
- | `editor.action.commentLine`                 | `cmd+; ;`                    |
- | `deleteWordPartLeft`                        | `ctrl+alt+backspace`         |
- | `cursorWordPartStartLeft`                   | `ctrl+alt+left`              |
- | `cursorWordPartRight`                       | `ctrl+alt+right`             |
- | `cursorLeft`                                | `ctrl+h`                     |
- | `cursorDown`                                | `ctrl+j`                     |
- | `list.focusDown`                            | `ctrl+j`                     |
- | `selectNextSuggestion`                      | `ctrl+j`                     |
- | `workbench.action.quickOpenSelectNext`      | `ctrl+j`                     |
- | `cursorUp`                                  | `ctrl+k`                     |
- | `list.focusUp`                              | `ctrl+k`                     |
- | `selectPrevSuggestion`                      | `ctrl+k`                     |
- | `workbench.action.quickOpenSelectPrevious`  | `ctrl+k`                     |
- | `cursorRight`                               | `ctrl+l`                     |
- | `workbench.action.files.save`               | `ctrl+s`                     |
- | `deleteWordPartRight`                       | `ctrl+shift+alt+backspace |` |
- | `cursorWordPartStartLeftSelect`             | `ctrl+shift+alt+left`        |
- | `cursorWordPartRightSelect`                 | `ctrl+shift+alt+right`       |
- | `workbench.action.terminal.runSelectedText` | `ctrl+shift+alt+t`           |
- | `extension.jumpy-exit`                      | `Escape`                     |
- | `vscode-neovim.compositeEscape1`            | `j`                          |
- | `extension.toggleTheme`                     | `shift+alt+d`                |
- | `extension.jumpy-line`                      | `shift+alt+enter`            |
- | `editor.action.deleteLines`                 | `shift+cmd+backspace`        |
- | `cursorUp`                                  | `up`                         |
+ | Action                                                        | Keybinding/Chord             |
+ | ------------------------------------------------------------- | ---------------------------- |
+ | `editor.action.selectAll`                                     | `alt+a`                      |
+ | `editor.action.webvieweditor.selectAll`                       | `alt+a`                      |
+ | `list.selectAll`                                              | `alt+a`                      |
+ | `workbench.action.terminal.selectAll`                         | `alt+a`                      |
+ | `editor.action.clipboardCopyAction`                           | `alt+c`                      |
+ | `editor.action.webvieweditor.copy`                            | `alt+c`                      |
+ | `execCopy`                                                    | `alt+c`                      |
+ | `filesExplorer.copy`                                          | `alt+c`                      |
+ | `gitlens.views.compare.copy`                                  | `alt+c`                      |
+ | `gitlens.views.fileHistory.copy`                              | `alt+c`                      |
+ | `gitlens.views.lineHistory.copy`                              | `alt+c`                      |
+ | `gitlens.views.repositories.copy`                             | `alt+c`                      |
+ | `gitlens.views.search.copy`                                   | `alt+c`                      |
+ | `keybindings.editor.copyKeybindingEntry`                      | `alt+c`                      |
+ | `problems.action.copy`                                        | `alt+c`                      |
+ | `remote.tunnel.copyAddressInline`                             | `alt+c`                      |
+ | `workbench.action.terminal.copySelection`                     | `alt+c`                      |
+ | `undo_expand_region`                                          | `alt+down`                   |
+ | `editor.action.peekDefinition`                                | `alt+enter`                  |
+ | `markdown-checkbox.markCheckbox`                              | `alt+enter`                  |
+ | `editor.action.addSelectionToNextFindMatch`                   | `alt+l`                      |
+ | `editor.action.triggerSuggest`                                | `alt+space`                  |
+ | `toggleSuggestionDetails`                                     | `alt+space`                  |
+ | `expand_region`                                               | `alt+up`                     |
+ | `editor.action.fontZoomOut`                                   | `cmd+-`                      |
+ | `workbench.action.terminal.focus`                             | `cmd+'`                      |
+ | `workbench.action.navigateBack`                               | `cmd+[`                      |
+ | `workbench.action.navigateForward`                            | `cmd+]`                      |
+ | `editor.action.fontZoomReset`                                 | `cmd+=`                      |
+ | `deleteAllLeft`                                               | `cmd+backspace`              |
+ | `multiCommand.repeatLastCommand`                              | `cmd+ctrl+r`                 |
+ | `editor.action.insertSnippet`                                 | `cmd+k`                      |
+ | `editor.action.fontZoomIn`                                    | `cmd+numpad_add`             |
+ | `editor.action.commentLine`                                   | `cmd+; ;`                    |
+ | `deleteWordPartLeft`                                          | `ctrl+alt+backspace`         |
+ | `cursorWordPartStartLeft`                                     | `ctrl+alt+left`              |
+ | `cursorWordPartRight`                                         | `ctrl+alt+right`             |
+ | `cursorLeft`                                                  | `ctrl+h`                     |
+ | `cursorDown`                                                  | `ctrl+j`                     |
+ | `list.focusDown`                                              | `ctrl+j`                     |
+ | `selectNextSuggestion`                                        | `ctrl+j`                     |
+ | `workbench.action.quickOpenSelectNext`                        | `ctrl+j`                     |
+ | `cursorUp`                                                    | `ctrl+k`                     |
+ | `list.focusUp`                                                | `ctrl+k`                     |
+ | `selectPrevSuggestion`                                        | `ctrl+k`                     |
+ | `workbench.action.quickOpenSelectPrevious`                    | `ctrl+k`                     |
+ | `cursorRight`                                                 | `ctrl+l`                     |
+ | `workbench.action.files.save`                                 | `ctrl+s`                     |
+ | `deleteWordPartRight`                                         | `ctrl+shift+alt+backspace |` |
+ | `cursorWordPartStartLeftSelect`                               | `ctrl+shift+alt+left`        |
+ | `cursorWordPartRightSelect`                                   | `ctrl+shift+alt+right`       |
+ | `workbench.action.terminal.runSelectedText`                   | `ctrl+shift+alt+t`           |
+ | `workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup` | `ctrl+tab`                   |
+ | `extension.jumpy-exit`                                        | `Escape`                     |
+ | `vscode-neovim.compositeEscape1`                              | `j`                          |
+ | `extension.toggleTheme`                                       | `shift+alt+d`                |
+ | `extension.jumpy-line`                                        | `shift+alt+enter`            |
+ | `editor.action.moveLinesUpAction`                             | `shift+alt+up`               |
+ | `editor.action.moveLinesDownAction`                           | `shift+alt+down`             |
+ | `editor.action.deleteLines`                                   | `shift+cmd+backspace`        |
+ | `cursorUp`                                                    | `up`                         |
 
 ## Inspiration
 
