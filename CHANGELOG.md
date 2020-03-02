@@ -12,7 +12,8 @@ All notable changes to the "chord-heavy-keymap" extension will be documented in 
   - `extension.openInGitHub` - `cmd+g o`
   - `extension.openPrGitProvider` - `cmd+g shift+o`
   - `workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup` - `ctrl+tab`
-- Removed some shortcuts that interfered with workflows, and cut down on some cruft that was accumulating (too many ways to do the same thing)
+- Removed some shortcuts that interfered with workflows, and cut down on some cruft that was accumulating (too many ways to do the same thing).
+- Changed the behavior of `ctrl+tab` (holding "ctrl" and hitting "tab" multiple times will go down the list, hitting "shift+tab" will bring you back up the list).
 
 ## [1.1.0] - 2020-02-26
 

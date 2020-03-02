@@ -2515,7 +2515,7 @@
         "key": "cmd+, n"
       },
       {
-        "command": "workbench.action.openWorkspaceSettings",
+        "command": "workbench.action.paceSettings",
         "key": "cmd+, w"
       },
       {
@@ -2549,16 +2549,6 @@
       {
         "command": "workbench.action.quickOpen",
         "key": "cmd+p f"
-      },
-      {
-        "command": "workbench.action.quickOpenSelectNext",
-        "key": "ctrl+j",
-        "when": "inQuickOpen"
-      },
-      {
-        "command": "workbench.action.quickOpenSelectNext",
-        "key": "ctrl+tab",
-        "when": "inQuickOpen"
       },
       {
         "command": "workbench.action.quickOpenSelectPrevious",
@@ -2842,6 +2832,16 @@
         "key": "shift+tab",
         "command": "-markdown.extension.onShiftTabKey",
         "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus && !hasOtherSuggestions && !hasSnippetCompletions && !inSnippetMode && !suggestWidgetVisible && editorLangId == 'markdown'"
+      },
+      {
+        "command": "list.focusDown",
+        "key": "ctrl+tab",
+        "when": "listFocus && !inputFocus"
+      },
+      {
+        "command": "list.focusUp",
+        "key": "ctrl+shift+tab",
+        "when": "listFocus && !inputFocus"
       }
     ]
   }
