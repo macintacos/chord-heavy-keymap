@@ -2,6 +2,26 @@
 
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
+## [1.2.0] - March 17, 2020
+
+- Added:
+  - `tab`/`shift+tab` now behaves the way you'd mostly expect!
+    - If you're in a sidebar, hitting `tab` should bring you to the next open editor.
+    - See the new "[VSCodeVim Keybindings](README.md#vscodevim-keybindings)" section of the README to see how I get `tab`/`shift+tab` to behave when you're in an editor (focuse the next/previous editor group)
+  - `cmd+o l` now invokes `workbench.action.togglePanel`
+  - `shift+cmd+,` now invokes `workbench.action.decreaseViewSize`
+  - `shift+cmd+.` now invokes `workbench.action.increaseViewSize`
+  - `cmd+w r` now invokes `workbench.action.evenEditorWidths`
+  - `ctrl+n/p` now move you to the next change when you're in a given file or if you're in the diff editor
+- Changed:
+  - `cmd+o d` now invokes `workbench.view.extension.dockerView` instead of `worbench.view.debug` (you can use `cmd+d o` for that)
+  - `cmd+f r` now invokes `editor.action.startFindReplaceAction`. Because of this:
+    - `fileutils.renameFile` was changed from `cmd+f r` to `cmd+f cmd+r`
+    - `toggleSearchRegex` was changed from `cmd+f cmd+r` to `cmd+f r`
+    - `workbench.action.terminal.toggleFindRegex` was changed from `cmd+f r` to `cmd+f r`
+    - `revealFileInOS` was unmapped (not used often enough, can be invoked from the command pallette)
+- Cleaned up some `ctrl+j/k` interactions with lists
+
 ## [1.1.1] - March 1, 2020
 
 - Added:

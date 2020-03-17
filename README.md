@@ -24,6 +24,7 @@
 		- [Misc. (one-off shortcuts, most not `chords)`](#misc-one-off-shortcuts-most-not-chords)
 	- [Inspiration](#inspiration)
 	- [Caveats](#caveats)
+	- [VSCodeVim Keybindings](#vscodevim-keybindings)
 	- [Issues to Vote For](#issues-to-vote-for)
 	- [Potential Future Improvements](#potential-future-improvements)
 
@@ -117,18 +118,18 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `editor.action.formatDocument`                    | `cmd+f =`        |
 | `editor.action.formatSelection`                   | `cmd+f =`        |
 | `workbench.files.action.compareWithClipboard`     | `cmd+f c`        |
-| `revealFileInOS`                                  | `cmd+f cmd+r`    |
-| `toggleFindRegex`                                 | `cmd+f cmd+r`    |
-| `toggleSearchRegex`                               | `cmd+f cmd+r`    |
-| `workbench.action.terminal.toggleFindRegex`       | `cmd+f cmd+r`    |
-| `workbench.action.terminal.toggleFindRegex`       | `cmd+f cmd+r`    |
+| `toggleFindRegex`                                 | `cmd+f r`        |
+| `toggleSearchRegex`                               | `cmd+f r`        |
+| `workbench.action.terminal.toggleFindRegex`       | `cmd+f r`        |
+| `workbench.action.terminal.toggleFindRegex`       | `cmd+f r`        |
 | `workbench.action.openRecent`                     | `cmd+f e`        |
 | `workbench.action.quickOpen`                      | `cmd+f f`        |
 | `workbench.action.findInFiles`                    | `cmd+f g`        |
 | `workbench.action.editor.changeLanguageMode`      | `cmd+f l`        |
 | `extension.advancedNewFile`                       | `cmd+f n`        |
 | `outline.focus`                                   | `cmd+f o`        |
-| `fileutils.renameFile`                            | `cmd+f r`        |
+| `fileutils.renameFile`                            | `cmd+f cmd+r`    |
+| `editor.action.startFindReplaceAction`            | `cmd+f r`        | when: `editorTextFocus` |
 | `workbench.action.files.saveWithoutFormatting`    | `cmd+f s`        |
 | `fileutils.newFolderAtRoot`                       | `cmd+f shift+n`  |
 | `workbench.files.action.showActiveFileInExplorer` | `cmd+f shift+s`  |
@@ -190,10 +191,10 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | Action                                              | Keybinding/Chord |
 | --------------------------------------------------- | ---------------- |
 | `extension.openWithDefault`                         | `cmd+o b`        |
-| `extension.dash.emptySyntax`                        | `cmd+o d`        |
 | `workbench.view.explorer`                           | `cmd+o e`        |
 | `workbench.action.showAllEditorsByMostRecentlyUsed` | `cmd+o shift+e`  |
 | `workbench.action.files.openFileFolder`             | `cmd+o f`        |
+| `workbench.action.togglePanel`                      | `cmd+o l`        |
 | `workbench.view.extension.github-pull-requests`     | `cmd+o p`        |
 | `workbench.view.extension.project-manager`          | `cmd+o shift+p`  |
 | `workbench.view.extension.todo-tree-container`      | `cmd+o t`        |
@@ -337,69 +338,73 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 
 ### Misc. (one-off shortcuts, most not `chords)`
 
- | Action                                                        | Keybinding/Chord             |
- | ------------------------------------------------------------- | ---------------------------- |
- | `editor.action.selectAll`                                     | `alt+a`                      |
- | `editor.action.webvieweditor.selectAll`                       | `alt+a`                      |
- | `list.selectAll`                                              | `alt+a`                      |
- | `workbench.action.terminal.selectAll`                         | `alt+a`                      |
- | `editor.action.clipboardCopyAction`                           | `alt+c`                      |
- | `editor.action.webvieweditor.copy`                            | `alt+c`                      |
- | `execCopy`                                                    | `alt+c`                      |
- | `filesExplorer.copy`                                          | `alt+c`                      |
- | `gitlens.views.compare.copy`                                  | `alt+c`                      |
- | `gitlens.views.fileHistory.copy`                              | `alt+c`                      |
- | `gitlens.views.lineHistory.copy`                              | `alt+c`                      |
- | `gitlens.views.repositories.copy`                             | `alt+c`                      |
- | `gitlens.views.search.copy`                                   | `alt+c`                      |
- | `keybindings.editor.copyKeybindingEntry`                      | `alt+c`                      |
- | `problems.action.copy`                                        | `alt+c`                      |
- | `remote.tunnel.copyAddressInline`                             | `alt+c`                      |
- | `workbench.action.terminal.copySelection`                     | `alt+c`                      |
- | `undo_expand_region`                                          | `alt+down`                   |
- | `editor.action.peekDefinition`                                | `alt+enter`                  |
- | `markdown-checkbox.markCheckbox`                              | `alt+enter`                  |
- | `editor.action.addSelectionToNextFindMatch`                   | `alt+l`                      |
- | `editor.action.triggerSuggest`                                | `alt+space`                  |
- | `toggleSuggestionDetails`                                     | `alt+space`                  |
- | `expand_region`                                               | `alt+up`                     |
- | `editor.action.fontZoomOut`                                   | `cmd+-`                      |
- | `workbench.action.terminal.focus`                             | `cmd+'`                      |
- | `workbench.action.navigateBack`                               | `cmd+[`                      |
- | `workbench.action.navigateForward`                            | `cmd+]`                      |
- | `editor.action.fontZoomReset`                                 | `cmd+=`                      |
- | `deleteAllLeft`                                               | `cmd+backspace`              |
- | `multiCommand.repeatLastCommand`                              | `cmd+ctrl+r`                 |
- | `editor.action.insertSnippet`                                 | `cmd+k`                      |
- | `editor.action.fontZoomIn`                                    | `cmd+numpad_add`             |
- | `editor.action.commentLine`                                   | `cmd+; ;`                    |
- | `deleteWordPartLeft`                                          | `ctrl+alt+backspace`         |
- | `cursorWordPartStartLeft`                                     | `ctrl+alt+left`              |
- | `cursorWordPartRight`                                         | `ctrl+alt+right`             |
- | `cursorLeft`                                                  | `ctrl+h`                     |
- | `cursorDown`                                                  | `ctrl+j`                     |
- | `list.focusDown`                                              | `ctrl+j`                     |
- | `selectNextSuggestion`                                        | `ctrl+j`                     |
- | `workbench.action.quickOpenSelectNext`                        | `ctrl+j`                     |
- | `cursorUp`                                                    | `ctrl+k`                     |
- | `list.focusUp`                                                | `ctrl+k`                     |
- | `selectPrevSuggestion`                                        | `ctrl+k`                     |
- | `workbench.action.quickOpenSelectPrevious`                    | `ctrl+k`                     |
- | `cursorRight`                                                 | `ctrl+l`                     |
- | `workbench.action.files.save`                                 | `ctrl+s`                     |
- | `deleteWordPartRight`                                         | `ctrl+shift+alt+backspace |` |
- | `cursorWordPartStartLeftSelect`                               | `ctrl+shift+alt+left`        |
- | `cursorWordPartRightSelect`                                   | `ctrl+shift+alt+right`       |
- | `workbench.action.terminal.runSelectedText`                   | `ctrl+shift+alt+t`           |
- | `workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup` | `ctrl+tab`                   |
- | `extension.jumpy-exit`                                        | `Escape`                     |
- | `vscode-neovim.compositeEscape1`                              | `j`                          |
- | `extension.toggleTheme`                                       | `shift+alt+d`                |
- | `extension.jumpy-line`                                        | `shift+alt+enter`            |
- | `editor.action.moveLinesUpAction`                             | `shift+alt+up`               |
- | `editor.action.moveLinesDownAction`                           | `shift+alt+down`             |
- | `editor.action.deleteLines`                                   | `shift+cmd+backspace`        |
- | `cursorUp`                                                    | `up`                         |
+| Action                                                        | Keybinding/Chord             |
+| ------------------------------------------------------------- | ---------------------------- |
+| `editor.action.selectAll`                                     | `alt+a`                      |
+| `editor.action.webvieweditor.selectAll`                       | `alt+a`                      |
+| `list.selectAll`                                              | `alt+a`                      |
+| `workbench.action.terminal.selectAll`                         | `alt+a`                      |
+| `editor.action.clipboardCopyAction`                           | `alt+c`                      |
+| `editor.action.webvieweditor.copy`                            | `alt+c`                      |
+| `execCopy`                                                    | `alt+c`                      |
+| `filesExplorer.copy`                                          | `alt+c`                      |
+| `gitlens.views.compare.copy`                                  | `alt+c`                      |
+| `gitlens.views.fileHistory.copy`                              | `alt+c`                      |
+| `gitlens.views.lineHistory.copy`                              | `alt+c`                      |
+| `gitlens.views.repositories.copy`                             | `alt+c`                      |
+| `gitlens.views.search.copy`                                   | `alt+c`                      |
+| `keybindings.editor.copyKeybindingEntry`                      | `alt+c`                      |
+| `problems.action.copy`                                        | `alt+c`                      |
+| `remote.tunnel.copyAddressInline`                             | `alt+c`                      |
+| `workbench.action.terminal.copySelection`                     | `alt+c`                      |
+| `undo_expand_region`                                          | `alt+down`                   |
+| `editor.action.peekDefinition`                                | `alt+enter`                  |
+| `markdown-checkbox.markCheckbox`                              | `alt+enter`                  |
+| `editor.action.addSelectionToNextFindMatch`                   | `alt+l`                      |
+| `editor.action.triggerSuggest`                                | `alt+space`                  |
+| `toggleSuggestionDetails`                                     | `alt+space`                  |
+| `expand_region`                                               | `alt+up`                     |
+| `editor.action.fontZoomOut`                                   | `cmd+-`                      |
+| `workbench.action.terminal.focus`                             | `cmd+'`                      |
+| `workbench.action.navigateBack`                               | `cmd+[`                      |
+| `workbench.action.navigateForward`                            | `cmd+]`                      |
+| `editor.action.fontZoomReset`                                 | `cmd+=`                      |
+| `deleteAllLeft`                                               | `cmd+backspace`              |
+| `multiCommand.repeatLastCommand`                              | `cmd+ctrl+r`                 |
+| `editor.action.insertSnippet`                                 | `cmd+k`                      |
+| `editor.action.fontZoomIn`                                    | `cmd+numpad_add`             |
+| `editor.action.commentLine`                                   | `cmd+; ;`                    |
+| `deleteWordPartLeft`                                          | `ctrl+alt+backspace`         |
+| `cursorWordPartStartLeft`                                     | `ctrl+alt+left`              |
+| `cursorWordPartRight`                                         | `ctrl+alt+right`             |
+| `cursorLeft`                                                  | `ctrl+h`                     |
+| `cursorDown`                                                  | `ctrl+j`                     |
+| `list.focusDown`                                              | `ctrl+j`                     |
+| `selectNextSuggestion`                                        | `ctrl+j`                     |
+| `workbench.action.quickOpenSelectNext`                        | `ctrl+j`                     |
+| `cursorUp`                                                    | `ctrl+k`                     |
+| `list.focusUp`                                                | `ctrl+k`                     |
+| `selectPrevSuggestion`                                        | `ctrl+k`                     |
+| `workbench.action.quickOpenSelectPrevious`                    | `ctrl+k`                     |
+| `cursorRight`                                                 | `ctrl+l`                     |
+| `workbench.action.files.save`                                 | `ctrl+s`                     |
+| `search.action.focusNextSearchResult`                         | `ctrl+shift+j`               | when: `hasSearchResult && searchViewletVisible` |
+| `search.action.focusPreviousSearchResult`                     | `ctrl+shift+k`               | when: `hasSearchResult && searchViewletVisible` |
+| `deleteWordPartRight`                                         | `ctrl+shift+alt+backspace |` |
+| `cursorWordPartStartLeftSelect`                               | `ctrl+shift+alt+left`        |
+| `cursorWordPartRightSelect`                                   | `ctrl+shift+alt+right`       |
+| `workbench.action.terminal.runSelectedText`                   | `ctrl+shift+alt+t`           |
+| `workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup` | `ctrl+tab`                   |
+| `extension.jumpy-exit`                                        | `Escape`                     |
+| `vscode-neovim.compositeEscape1`                              | `j`                          |
+| `extension.toggleTheme`                                       | `shift+alt+d`                |
+| `extension.jumpy-line`                                        | `shift+alt+enter`            |
+| `editor.action.moveLinesUpAction`                             | `shift+alt+up`               |
+| `editor.action.moveLinesDownAction`                           | `shift+alt+down`             |
+| `editor.action.deleteLines`                                   | `shift+cmd+backspace`        |
+| `workbench.action.decreaseViewSize`                           |                              |
+| `workbench.action.focusFirstEditorGroup`                      | `tab`                        | when: `sideBarFocus && activeViewlet == 'workbench.view.explorer'` |
+| `cursorUp`                                                    | `up`                         |
 
 ## Inspiration
 
@@ -420,6 +425,168 @@ There are some caveats to keep in mind if you'd like to use this keymap, which w
 
 If the above caveats are "fine" for you, I really think that this keymap can work well. It doesn't cover 100% of the capabilities that Spacemacs can, but it gets a lot of the way there!
 
+## VSCodeVim Keybindings
+
+As said previously, I use VSCodeVim, and for keybindings that made "more sense" to be set at that extension's level, I've set them there. Below are the keybindings that I have set up so that they function the way I "expect" with this keymap (these are meant to go in your `settings.json` file):
+
+```
+"vim.insertModeKeyBindings": [
+	{
+		"before": ["cmd+a"],
+		"after": ["cmd+z"]
+	},
+	{
+		"after": [
+			"<Esc>"
+		],
+		"before": [
+			"j",
+			"j"
+		]
+	},
+	{
+		"after": [
+			"<Esc>"
+		],
+		"before": [
+			"k",
+			"k"
+		]
+	},
+	{
+		"after": [
+			"<Esc>"
+		],
+		"before": [
+			"j",
+			"k"
+		]
+	},
+	{
+		"after": [
+			"<Esc>"
+		],
+		"before": [
+			"k",
+			"j"
+		]
+	}
+],
+"vim.normalModeKeyBindingsNonRecursive": [
+	{
+		"before": ["g", "H"],
+		"after": [],
+		"commands": [
+			{
+				"command": "editor.action.triggerParameterHints"
+			}
+		]
+	},
+	{
+		"before": ["shift+tab"],
+		"after": [],
+		"commands":[
+			{
+				"command": "workbench.action.focusPreviousGroup"
+			}
+		]
+	},
+	{
+		"before": ["tab"],
+		"after": [],
+		"commands":[
+			{
+				"command": "workbench.action.focusNextGroup"
+			}
+		]
+	},
+	{
+		"after": [],
+		"before": [
+			"u"
+		],
+		"commands": [
+			{
+				"command": "undo"
+			}
+		]
+	},
+	{
+		"after": [],
+		"before": [
+			"<C-r>"
+		],
+		"commands": [
+			{
+				"command": "redo"
+			}
+		]
+	},
+	{
+		"after": [
+			"v"
+		],
+		"before": [
+			"v"
+		]
+	},
+	{
+		"after": [
+			"g",
+			"k"
+		],
+		"before": [
+			"<up>"
+		]
+	},
+	{
+		"after": [
+			"g",
+			"j"
+		],
+		"before": [
+			"<down>"
+		]
+	},
+	{
+		"after": [
+			"y",
+			"$"
+		],
+		"before": [
+			"Y"
+		]
+	}
+],
+"vim.visualModeKeyBindingsNonRecursive": [
+	{
+		"before": [
+			">"
+		],
+		"commands": [
+			"editor.action.indentLines"
+		]
+	},
+	{
+		"before": [
+			"<"
+		],
+		"commands": [
+			"editor.action.outdentLines"
+		]
+	},
+	{
+		"after": [
+			"a",
+			"f"
+		],
+		"before": [
+			"v"
+		]
+	}
+]
+```
+
 ## Issues to Vote For
 
 VSCode was developed with a completely different user-base in mind, but that doesn't mean that VSCode can't be improved in the future to facilitate Spacemacs-like navigational workflows. While it'd take a significant amount of effort to actually get this to be a Spacemacs replacement, there are some low-hanging fruit issues that, if they were resolved, would improve a keymap like this significantly:
@@ -429,19 +596,9 @@ VSCode was developed with a completely different user-base in mind, but that doe
 - Reserve shortcut prefix for user [\#87565](https://github.com/microsoft/vscode/issues/87565)
 - When using record keys search for individual keys [\#88122](https://github.com/microsoft/vscode/issues/88122)
 
-----
+---
 
 ## Potential Future Improvements
 
 - Add support for Linux/Windows
-- Create shortcuts that are based on specific file types, so that there is a "major mode" of sorts for them. Can start with HTML and go through other languages as I see fit; use the [Spacemacs layer keybindings](https://www.spacemacs.org/layers/LAYERS.html) for inspiration.
-	> NOTE: maybe the `ctrl` key can be first character for "major" mode?
-	- [HTML](https://www.spacemacs.org/layers/+lang/html/README.html)
-	- [javascript](https://www.spacemacs.org/layers/+lang/javascript/README.html)
-	- [markdown](https://www.spacemacs.org/layers/+lang/markdown/README.html)
-	- [python](https://www.spacemacs.org/layers/+lang/python/README.html)
-	- [go](https://www.spacemacs.org/layers/+lang/go/README.html)
-	- [rust](https://www.spacemacs.org/layers/+lang/rust/README.html)
-	- [java](https://www.spacemacs.org/layers/+lang/java/README.html)
-	- [typescript](https://www.spacemacs.org/layers/+lang/typescript/README.html)
-	- [shell-scripts](https://www.spacemacs.org/layers/+lang/shell-scripts/README.html)
+- Create shortcuts that are based on specific file types, so that there is a "major mode" of sorts for them. Can start with HTML and go through other languages as I see fit; use the [Spacemacs layer keybindings](https://www.spacemacs.org/layers/LAYERS.html) for inspiration. > NOTE: maybe the `ctrl` key can be first character for "major" mode? - [HTML](https://www.spacemacs.org/layers/+lang/html/README.html) - [javascript](https://www.spacemacs.org/layers/+lang/javascript/README.html) - [markdown](https://www.spacemacs.org/layers/+lang/markdown/README.html) - [python](https://www.spacemacs.org/layers/+lang/python/README.html) - [go](https://www.spacemacs.org/layers/+lang/go/README.html) - [rust](https://www.spacemacs.org/layers/+lang/rust/README.html) - [java](https://www.spacemacs.org/layers/+lang/java/README.html) - [typescript](https://www.spacemacs.org/layers/+lang/typescript/README.html) - [shell-scripts](https://www.spacemacs.org/layers/+lang/shell-scripts/README.html)

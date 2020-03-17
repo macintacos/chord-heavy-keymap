@@ -17,6 +17,11 @@
   "contributes": {
     "keybindings": [
       {
+        "key": "tab",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.explorer'"
+      },
+      {
         "command": "--editor.action.rename",
         "key": "f2",
         "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
@@ -1674,6 +1679,16 @@
         "when": "editorLangId == 'csv (pipe)'"
       },
       {
+        "key": "ctrl+shift+k",
+        "command": "search.action.focusPreviousSearchResult",
+        "when": "hasSearchResult && searchViewletVisible"
+      },
+      {
+        "key": "ctrl+shift+j",
+        "command": "search.action.focusNextSearchResult",
+        "when": "hasSearchResult && searchViewletVisible"
+      },
+      {
         "command": "cursorDown",
         "key": "ctrl+j",
         "when": "textInputFocus"
@@ -1865,11 +1880,13 @@
       },
       {
         "command": "editor.action.startFindReplaceAction",
-        "key": "cmd+r s"
+        "key": "cmd+s r",
+        "when": "editorTextFocus"
       },
       {
         "command": "editor.action.startFindReplaceAction",
-        "key": "cmd+s r"
+        "key": "cmd+f r",
+        "when": "editorTextFocus"
       },
       {
         "command": "editor.action.toggleWordWrap",
@@ -1921,11 +1938,6 @@
         "key": "cmd+f n"
       },
       {
-        "key": "cmd+o d",
-        "command": "extension.dash.emptySyntax",
-        "when": "editorTextFocus"
-      },
-      {
         "command": "extension.jumpy-exit",
         "key": "Escape",
         "when": "editorTextFocus && jumpy.isJumpyMode"
@@ -1960,7 +1972,7 @@
       },
       {
         "command": "fileutils.renameFile",
-        "key": "cmd+f r"
+        "key": "cmd+f cmd+r"
       },
       {
         "command": "git-graph.view",
@@ -2133,11 +2145,6 @@
         "when": "tunnelViewFocus && tunnelType == 'Detected' || tunnelViewFocus && tunnelType == 'Forwarded'"
       },
       {
-        "command": "revealFileInOS",
-        "key": "cmd+f cmd+r",
-        "when": "!editorFocus"
-      },
-      {
         "command": "selectNextSuggestion",
         "key": "ctrl+j",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
@@ -2157,13 +2164,8 @@
         "key": "cmd+t l"
       },
       {
-        "command": "toggleFindRegex",
-        "key": "cmd+f cmd+r",
-        "when": "editorFocus"
-      },
-      {
         "command": "toggleSearchRegex",
-        "key": "cmd+f cmd+r",
+        "key": "cmd+f r",
         "when": "searchViewletFocus && searchViewletVisible"
       },
       {
@@ -2659,12 +2661,12 @@
       },
       {
         "command": "workbench.action.terminal.toggleFindRegex",
-        "key": "cmd+f cmd+r",
+        "key": "cmd+f r",
         "when": "terminalFindWidgetFocused"
       },
       {
         "command": "workbench.action.terminal.toggleFindRegex",
-        "key": "cmd+f cmd+r",
+        "key": "cmd+f r",
         "when": "terminalFocus"
       },
       {
@@ -2682,6 +2684,10 @@
       {
         "command": "workbench.action.togglePanel",
         "key": "cmd+l t"
+      },
+      {
+        "command": "workbench.action.togglePanel",
+        "key": "cmd+o l"
       },
       {
         "command": "workbench.action.toggleSidebarVisibility",
@@ -2842,6 +2848,105 @@
         "command": "list.focusUp",
         "key": "ctrl+shift+tab",
         "when": "listFocus && !inputFocus"
+      },
+      {
+        "key": "shift+alt+a",
+        "command": "-editor.action.blockComment",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "shift+alt+a",
+        "command": "extension.switchDay"
+      },
+      {
+        "key": "shift+alt+d",
+        "command": "extension.switchNight"
+      },
+      {
+        "key": "tab",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+      },
+      {
+        "key": "tab",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.debug'"
+      },
+      {
+        "key": "tab",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extensions'"
+      },
+      {
+        "key": "cmd+o d",
+        "command": "workbench.view.extension.dockerView"
+      },
+      {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+      },
+      {
+        "key": "ctrl+shift+j",
+        "command": "-rust-analyzer.joinLines",
+        "when": "editorTextFocus && editorLangId == 'rust'"
+      },
+      {
+        "key": "shift+cmd+.",
+        "command": "workbench.action.increaseViewSize"
+      },
+      {
+        "key": "shift+cmd+,",
+        "command": "workbench.action.decreaseViewSize"
+      },
+      {
+        "key": "shift+cmd+,",
+        "command": "-editor.action.inPlaceReplace.up",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "shift+cmd+.",
+        "command": "-breadcrumbs.focusAndSelect",
+        "when": "breadcrumbsPossible"
+      },
+      {
+        "key": "shift+cmd+.",
+        "command": "-editor.action.inPlaceReplace.down",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "shift+cmd+.",
+        "command": "-breadcrumbs.toggleToOn",
+        "when": "!config.breadcrumbs.enabled"
+      },
+      {
+        "key": "cmd+w r",
+        "command": "workbench.action.evenEditorWidths"
+      },
+      {
+        "key": "f4",
+        "command": "-search.action.focusNextSearchResult",
+        "when": "hasSearchResult || inSearchEditor"
+      },
+      {
+        "key": "ctrl+n",
+        "command": "workbench.action.editor.nextChange",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+p",
+        "command": "workbench.action.editor.previousChange",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+n",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "isInDiffEditor"
+      },
+      {
+        "key": "ctrl+p",
+        "command": "workbench.action.compareEditor.previousChange",
+        "when": "isInDiffEditor"
       }
     ]
   }
