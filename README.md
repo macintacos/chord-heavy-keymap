@@ -107,9 +107,9 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `editor.action.marker.next`            | `cmd+e n`        |
 | `editor.action.marker.nextInFiles`     | `cmd+e n`        |
 | `workbench.action.output.toggleOutput` | `cmd+e o`        |
-| `editor.action.marker.prev`            | `cmd+e shift+n`  |
-| `editor.action.marker.prev`            | `cmd+e shift+n`  |
-| `editor.action.marker.prevInFiles`     | `cmd+e shift+n`  |
+| `editor.action.marker.prev`            | `cmd+e p`        |
+| `editor.action.marker.prev`            | `cmd+e p`        |
+| `editor.action.marker.prevInFiles`     | `cmd+e p`        |
 
 ### Files (prefix: `f`)
 

@@ -2,6 +2,10 @@
 
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
+## [1.2.1] - March 17, 2020
+
+- Changed `cmd+e shift+n` chords to `cmd+e p`
+
 ## [1.2.0] - March 17, 2020
 
 - Added:

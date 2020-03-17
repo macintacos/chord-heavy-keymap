@@ -1855,17 +1855,17 @@
       },
       {
         "command": "editor.action.marker.prev",
-        "key": "cmd+e shift+n",
+        "key": "cmd+e p",
         "when": "editorTextFocus && !editorReadonly"
       },
       {
         "command": "editor.action.marker.prev",
-        "key": "cmd+e shift+n",
+        "key": "cmd+e p",
         "when": "editorFocus && !editorReadonly"
       },
       {
         "command": "editor.action.marker.prevInFiles",
-        "key": "cmd+e shift+n",
+        "key": "cmd+e p",
         "when": "editorFocus && !editorReadonly"
       },
       {
