@@ -3483,7 +3483,7 @@
         "linux": "ctrl+m c",
         "key": "cmd+m c",
         "command": "markdown.extension.checkTaskList",
-        "when": "editorTextFocus && editorLangId == 'markdown'"
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
       },
       {
         "key": "alt+c",
@@ -3528,17 +3528,20 @@
       {
         "linux": "ctrl+m shift+`",
         "key": "cmd+m shift+`",
-        "command": "markdown.extension.editing.toggleCodeBlock"
+        "command": "markdown.extension.editing.toggleCodeBlock",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
       },
       {
         "linux": "ctrl+m `",
         "key": "cmd+m `",
-        "command": "markdown.extension.editing.toggleCodeSpan"
+        "command": "markdown.extension.editing.toggleCodeSpan",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
       },
       {
         "linux": "ctrl+m l",
         "key": "cmd+m l",
-        "command": "markdown.extension.editing.toggleList"
+        "command": "markdown.extension.editing.toggleList",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
       }
     ]
   }

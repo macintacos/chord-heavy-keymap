@@ -2,6 +2,12 @@
 
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
+## [1.3.0] - March 23, 2020
+
+- Added:
+  - [BETA] Linux support (if you have any problems, please [open an issue](https://github.com/macintacos/chord-heavy-keymap/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc))
+  - New [Markdown All-in-one chords](README.md#markdown-all-in-one-prefix-m) (these only work when you're editing a markdown document)
+
 ## [1.2.1] - March 17, 2020
 
 - Changed `cmd+e shift+n` chords to `cmd+e p`

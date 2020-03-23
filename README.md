@@ -1,6 +1,6 @@
 # Chord Heavy - A keymap inspired by [Spacemacs](https://www.spacemacs.org/)
 
-Linux support is only available in BETA right now. If you run into any odd keybindings with Linux, please create an issue!
+**Linux support is only available in BETA right now.** If you run into any odd keybindings with Linux, please create an issue!
 
 - [Chord Heavy - A keymap inspired by Spacemacs](#chord-heavy---a-keymap-inspired-by-spacemacs)
 	- [Keymap](#keymap)
@@ -14,6 +14,7 @@ Linux support is only available in BETA right now. If you run into any odd keybi
 		- [Git (prefix: `g`)](#git-prefix-g)
 		- [Help (prefix: `h`)](#help-prefix-h)
 		- [Jump (prefix: `j`)](#jump-prefix-j)
+		- [Markdown All-in-One (prefix: `m`)](#markdown-all-in-one-prefix-m)
 		- [Panel (prefix: `l`)](#panel-prefix-l)
 		- [Open... (prefix: `o`)](#open-prefix-o)
 		- [Project (prefix: `p`)](#project-prefix-p)
@@ -175,6 +176,19 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.action.gotoMethod`     | `cmd+j m`        |
 | `workbench.action.showAllSymbols` | `cmd+j s`        |
 
+### [Markdown All-in-One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) (prefix: `m`)
+
+| Action                                           | Keybinding/Chord |
+| ------------------------------------------------ | ---------------- |
+| `markdown.extension.editing.toggleMath`          | `cmd+m m`        |
+| `markdown.extension.checkTaskList`               | `cmd+m c`        |
+| `markdown.extension.editing.toggleBold`          | `cmd+m b`        |
+| `markdown.extension.editing.toggleItalic`        | `cmd+m i`        |
+| `markdown.extension.editing.toggleStrikethrough` | `cmd+m s`        |
+| `markdown.extension.editing.toggleCodeSpan`      | `cmd+m \``       |
+| `markdown.extension.editing.toggleCodeBlock`     | `cmd+m shift+\`` |
+| `markdown.extension.editing.toggleList`          | `cmd+m l`        |
+
 ### Panel (prefix: `l`)
 
 | Action                                     | Keybinding/Chord  |
@@ -322,6 +336,7 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.action.focusAboveGroup`                 | `cmd+w up`              |
 | `workbench.action.splitEditor`                     | `cmd+w v`               |
 | `workbench.action.terminal.split`                  | `cmd+w v`               |
+| `workbench.action.closeWindow`                     | `cmd+w`                 |
 | `workbench.action.closeEditorsInGroup`             | `cmd+w x`               |
 
 ### Yank/Copy (prefix: `y`)
