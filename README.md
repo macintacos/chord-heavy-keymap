@@ -295,49 +295,51 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 
 ### Window (prefix: `w`)
 
-| Action                                             | Keybinding/Chord        |
-| -------------------------------------------------- | ----------------------- |
-| `workbench.action.splitEditorDown`                 | `cmd+w -`               |
-| `workbench.action.splitEditor`                     | `cmd+w /`               |
-| `workbench.action.terminal.split`                  | `cmd+w /`               |
-| `workbench.action.firstEditorInGroup`              | `cmd+w 1`               |
-| `workbench.action.lastEditorInGroup`               | `cmd+w 9`               |
-| `workbench.action.previousEditorInGroup`           | `cmd+w alt+cmd+left`    |
-| `workbench.action.nextEditorInGroup`               | `cmd+w alt+cmd+right`   |
-| `workbench.action.closeEditorsInGroup`             | `cmd+w d`               |
-| `workbench.action.closeGroup`                      | `cmd+w d`               |
-| `workbench.action.focusBelowGroup`                 | `cmd+w down`            |
-| `workbench.action.focusPreviousGroup`              | `cmd+w h`               |
-| `workbench.action.focusBelowGroup`                 | `cmd+w j`               |
-| `workbench.action.focusAboveGroup`                 | `cmd+w k`               |
-| `workbench.action.focusNextGroup`                  | `cmd+w l`               |
-| `workbench.action.focusPreviousGroup`              | `cmd+w left`            |
-| `multiCommand.closePanelAndSidebarAndOtherEditors` | `cmd+w m`               |
-| `workbench.action.newWindow`                       | `cmd+w n`               |
-| `workbench.action.quickSwitchWindow`               | `cmd+w o`               |
-| `workbench.action.focusNextGroup`                  | `cmd+w right`           |
-| `workbench.action.splitEditorDown`                 | `cmd+w s`               |
-| `workbench.action.toggleSidebarVisibility`         | `cmd+w s`               |
-| `workbench.action.moveEditorLeftInGroup`           | `cmd+w shift+cmd+left`  |
-| `workbench.action.moveEditorRightInGroup`          | `cmd+w shift+cmd+right` |
-| `workbench.action.closeAllGroups`                  | `cmd+w shift+d`         |
-| `workbench.action.moveActiveEditorGroupDown`       | `cmd+w shift+down`      |
-| `workbench.action.focusFirstEditorGroup`           | `cmd+w shift+h`         |
-| `workbench.action.focusLastEditorGroup`            | `cmd+w shift+j`         |
-| `workbench.action.focusFirstEditorGroup`           | `cmd+w shift+k`         |
-| `workbench.action.focusLastEditorGroup`            | `cmd+w shift+l`         |
-| `workbench.action.moveActiveEditorGroupLeft`       | `cmd+w shift+left`      |
-| `workbench.action.moveActiveEditorGroupRight`      | `cmd+w shift+right`     |
-| `workbench.action.reopenClosedEditor`              | `cmd+w shift+t`         |
-| `workbench.action.moveActiveEditorGroupUp`         | `cmd+w shift+up`        |
-| `workbench.action.files.newUntitledFile`           | `cmd+w t`               |
-| `workbench.action.focusNextGroup`                  | `cmd+w tab`             |
-| `workbench.action.focusPreviousGroup`              | `cmd+w tab`             |
-| `workbench.action.focusAboveGroup`                 | `cmd+w up`              |
-| `workbench.action.splitEditor`                     | `cmd+w v`               |
-| `workbench.action.terminal.split`                  | `cmd+w v`               |
-| `workbench.action.closeWindow`                     | `cmd+w`                 |
-| `workbench.action.closeEditorsInGroup`             | `cmd+w x`               |
+| Action                                                | Keybinding/Chord        |
+| ----------------------------------------------------- | ----------------------- |
+| `workbench.action.splitEditorDown`                    | `cmd+w -`               |
+| `workbench.action.splitEditor`                        | `cmd+w /`               |
+| `workbench.action.terminal.split`                     | `cmd+w /`               |
+| `workbench.action.firstEditorInGroup`                 | `cmd+w 1`               |
+| `workbench.action.lastEditorInGroup`                  | `cmd+w 9`               |
+| `workbench.action.previousEditorInGroup`              | `cmd+w alt+cmd+left`    |
+| `workbench.action.nextEditorInGroup`                  | `cmd+w alt+cmd+right`   |
+| `workbench.action.closeEditorsInGroup`                | `cmd+w d`               |
+| `workbench.action.closeGroup`                         | `cmd+w d`               |
+| `workbench.action.focusBelowGroup`                    | `cmd+w down`            |
+| `workbench.action.focusPreviousGroup`                 | `cmd+w h`               |
+| `workbench.action.focusBelowGroup`                    | `cmd+w j`               |
+| `workbench.action.focusAboveGroup`                    | `cmd+w k`               |
+| `workbench.action.focusNextGroup`                     | `cmd+w l`               |
+| `workbench.action.focusPreviousGroup`                 | `cmd+w left`            |
+| `multiCommand.closePanelAndSidebarAndOtherEditors`    | `cmd+w m`               |
+| `workbench.action.newWindow`                          | `cmd+w n`               |
+| `workbench.action.quickSwitchWindow`                  | `cmd+w o`               |
+| `workbench.action.focusNextGroup`                     | `cmd+w right`           |
+| `workbench.action.reloadWindow`                       | `cmd+w cmd+r`           |
+| `workbench.action.reloadWindowWithExtensionsDisabled` | `cmd+w shift+cmd+r`     |
+| `workbench.action.splitEditorDown`                    | `cmd+w s`               |
+| `workbench.action.toggleSidebarVisibility`            | `cmd+w s`               |
+| `workbench.action.moveEditorLeftInGroup`              | `cmd+w shift+cmd+left`  |
+| `workbench.action.moveEditorRightInGroup`             | `cmd+w shift+cmd+right` |
+| `workbench.action.closeAllGroups`                     | `cmd+w shift+d`         |
+| `workbench.action.moveActiveEditorGroupDown`          | `cmd+w shift+down`      |
+| `workbench.action.focusFirstEditorGroup`              | `cmd+w shift+h`         |
+| `workbench.action.focusLastEditorGroup`               | `cmd+w shift+j`         |
+| `workbench.action.focusFirstEditorGroup`              | `cmd+w shift+k`         |
+| `workbench.action.focusLastEditorGroup`               | `cmd+w shift+l`         |
+| `workbench.action.moveActiveEditorGroupLeft`          | `cmd+w shift+left`      |
+| `workbench.action.moveActiveEditorGroupRight`         | `cmd+w shift+right`     |
+| `workbench.action.reopenClosedEditor`                 | `cmd+w shift+t`         |
+| `workbench.action.moveActiveEditorGroupUp`            | `cmd+w shift+up`        |
+| `workbench.action.files.newUntitledFile`              | `cmd+w t`               |
+| `workbench.action.focusNextGroup`                     | `cmd+w tab`             |
+| `workbench.action.focusPreviousGroup`                 | `cmd+w tab`             |
+| `workbench.action.focusAboveGroup`                    | `cmd+w up`              |
+| `workbench.action.splitEditor`                        | `cmd+w v`               |
+| `workbench.action.terminal.split`                     | `cmd+w v`               |
+| `workbench.action.closeWindow`                        | `cmd+w`                 |
+| `workbench.action.closeEditorsInGroup`                | `cmd+w x`               |
 
 ### Yank/Copy (prefix: `y`)
 

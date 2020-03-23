@@ -6,7 +6,11 @@ All notable changes to the "chord-heavy-keymap" extension will be documented in 
 
 - Added:
   - [BETA] Linux support (if you have any problems, please [open an issue](https://github.com/macintacos/chord-heavy-keymap/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc))
+    - This _shouldn't_ affect Mac keybindings, but please let me know if it does.
   - New [Markdown All-in-one chords](README.md#markdown-all-in-one-prefix-m) (these only work when you're editing a markdown document)
+- Changed:
+  - `workbench.action.reloadWindow` is now set to `cmd+w cmd+r`
+  - `workbench.action.reloadWindowWithExtensionsDisabled` is now set to `cmd+w shift+cmd+r`
 
 ## [1.2.1] - March 17, 2020
 

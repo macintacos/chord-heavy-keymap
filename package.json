@@ -3542,6 +3542,22 @@
         "key": "cmd+m l",
         "command": "markdown.extension.editing.toggleList",
         "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+      },
+      {
+        "linux": "ctrl+w ctrl+r",
+        "key": "cmd+w cmd+r",
+        "command": "workbench.action.reloadWindow"
+      },
+      {
+        "mac": "cmd+r",
+        "key": "ctrl+r",
+        "command": "-workbench.action.reloadWindow",
+        "when": "isDevelopment"
+      },
+      {
+        "linux": "ctrl+w shift+ctrl+r",
+        "key": "cmd+w shift+cmd+r",
+        "command": "workbench.action.reloadWindowWithExtensionsDisabled"
       }
     ]
   }
