@@ -2041,7 +2041,7 @@
       },
       {
         "command": "editor.action.deleteLines",
-        "linux": "shift+cmd+backspace",
+        "linux": "shift+ctrl+backspace",
         "key": "shift+cmd+backspace",
         "when": "editorFocus"
       },
@@ -2256,7 +2256,7 @@
       },
       {
         "command": "fileutils.renameFile",
-        "linux": "ctrl+f cmd+r",
+        "linux": "ctrl+f ctrl+r",
         "key": "cmd+f cmd+r"
       },
       {
@@ -2846,12 +2846,12 @@
         "command": "workbench.action.moveActiveEditorGroupUp"
       },
       {
-        "linux": "ctrl+w shift+cmd+left",
+        "linux": "ctrl+w shift+ctrl+left",
         "key": "cmd+w shift+cmd+left",
         "command": "workbench.action.moveEditorLeftInGroup"
       },
       {
-        "linux": "ctrl+w shift+cmd+right",
+        "linux": "ctrl+w shift+ctrl+right",
         "key": "cmd+w shift+cmd+right",
         "command": "workbench.action.moveEditorRightInGroup"
       },
@@ -2876,7 +2876,7 @@
         "key": "cmd+b n"
       },
       {
-        "linux": "ctrl+w alt+cmd+right",
+        "linux": "ctrl+w alt+ctrl+right",
         "key": "cmd+w alt+cmd+right",
         "command": "workbench.action.nextEditorInGroup"
       },
@@ -2941,7 +2941,7 @@
         "key": "cmd+b p"
       },
       {
-        "linux": "ctrl+w alt+cmd+left",
+        "linux": "ctrl+w alt+ctrl+left",
         "key": "cmd+w alt+cmd+left",
         "command": "workbench.action.previousEditorInGroup"
       },
@@ -3264,7 +3264,7 @@
         "when": "inEditorsPicker && inQuickOpen"
       },
       {
-        "linux": "alt+cmd+tab",
+        "linux": "alt+ctrl+tab",
         "key": "alt+cmd+tab",
         "command": "-workbench.action.showAllEditors"
       },
@@ -3389,35 +3389,35 @@
         "when": "editorTextFocus && editorLangId == 'rust'"
       },
       {
-        "linux": "shift+cmd+.",
+        "linux": "shift+ctrl+.",
         "key": "shift+cmd+.",
         "command": "workbench.action.increaseViewSize"
       },
       {
-        "linux": "shift+cmd+,",
+        "linux": "shift+ctrl+,",
         "key": "shift+cmd+,",
         "command": "workbench.action.decreaseViewSize"
       },
       {
-        "linux": "shift+cmd+,",
+        "linux": "shift+ctrl+,",
         "key": "shift+cmd+,",
         "command": "-editor.action.inPlaceReplace.up",
         "when": "editorTextFocus && !editorReadonly"
       },
       {
-        "linux": "shift+cmd+.",
+        "linux": "shift+ctrl+.",
         "key": "shift+cmd+.",
         "command": "-breadcrumbs.focusAndSelect",
         "when": "breadcrumbsPossible"
       },
       {
-        "linux": "shift+cmd+.",
+        "linux": "shift+ctrl+.",
         "key": "shift+cmd+.",
         "command": "-editor.action.inPlaceReplace.down",
         "when": "editorTextFocus && !editorReadonly"
       },
       {
-        "linux": "shift+cmd+.",
+        "linux": "shift+ctrl+.",
         "key": "shift+cmd+.",
         "command": "-breadcrumbs.toggleToOn",
         "when": "!config.breadcrumbs.enabled"
@@ -3456,6 +3456,76 @@
         "key": "ctrl+p",
         "command": "workbench.action.compareEditor.previousChange",
         "when": "isInDiffEditor"
+      },
+      {
+        "key": "cmd+w w",
+        "command": "workbench.action.closeWindow"
+      },
+      {
+        "key": "shift+cmd+w",
+        "command": "-workbench.action.closeWindow"
+      },
+      {
+        "key": "cmd+m m",
+        "command": "markdown.extension.editing.toggleMath",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+      },
+      {
+        "key": "cmd+m",
+        "command": "-markdown.extension.editing.toggleMath",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+      },
+      {
+        "key": "cmd+m c",
+        "command": "markdown.extension.checkTaskList",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+      },
+      {
+        "key": "alt+c",
+        "command": "-markdown.extension.checkTaskList",
+        "when": "editorTextFocus && editorLangId == 'markdown'"
+      },
+      {
+        "key": "cmd+m b",
+        "command": "markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+      },
+      {
+        "key": "cmd+b",
+        "command": "-markdown.extension.editing.toggleBold",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+      },
+      {
+        "key": "cmd+m i",
+        "command": "markdown.extension.editing.toggleItalic",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+      },
+      {
+        "key": "cmd+i",
+        "command": "-markdown.extension.editing.toggleItalic",
+        "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+      },
+      {
+        "key": "cmd+m s",
+        "command": "markdown.extension.editing.toggleStrikethrough",
+        "when": "editorTextFocus && !editorReadonly && !isMac && editorLangId == 'markdown'"
+      },
+      {
+        "key": "alt+s",
+        "command": "-markdown.extension.editing.toggleStrikethrough",
+        "when": "editorTextFocus && !editorReadonly && !isMac && editorLangId == 'markdown'"
+      },
+      {
+        "key": "cmd+m shift+`",
+        "command": "markdown.extension.editing.toggleCodeBlock"
+      },
+      {
+        "key": "cmd+m `",
+        "command": "markdown.extension.editing.toggleCodeSpan"
+      },
+      {
+        "key": "cmd+m l",
+        "command": "markdown.extension.editing.toggleList"
       }
     ]
   }

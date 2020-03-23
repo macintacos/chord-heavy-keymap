@@ -1,5 +1,7 @@
 # Chord Heavy - A keymap inspired by [Spacemacs](https://www.spacemacs.org/)
 
+Linux support is only available in BETA right now. If you run into any odd keybindings with Linux, please create an issue!
+
 - [Chord Heavy - A keymap inspired by Spacemacs](#chord-heavy---a-keymap-inspired-by-spacemacs)
 	- [Keymap](#keymap)
 		- [Important Single-chords](#important-single-chords)
