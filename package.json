@@ -3458,24 +3458,29 @@
         "when": "isInDiffEditor"
       },
       {
+        "linux": "ctrl+w w",
         "key": "cmd+w w",
         "command": "workbench.action.closeWindow"
       },
       {
-        "key": "shift+cmd+w",
+        "key": "shift+ctrl+w",
+        "mac": "shift+cmd+w",
         "command": "-workbench.action.closeWindow"
       },
       {
+        "linux": "ctrl+m m",
         "key": "cmd+m m",
         "command": "markdown.extension.editing.toggleMath",
         "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
       },
       {
-        "key": "cmd+m",
+        "key": "ctrl+m",
+        "mac": "cmd+m",
         "command": "-markdown.extension.editing.toggleMath",
         "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
       },
       {
+        "linux": "ctrl+m c",
         "key": "cmd+m c",
         "command": "markdown.extension.checkTaskList",
         "when": "editorTextFocus && editorLangId == 'markdown'"
@@ -3486,26 +3491,31 @@
         "when": "editorTextFocus && editorLangId == 'markdown'"
       },
       {
+        "linux": "ctrl+m b",
         "key": "cmd+m b",
         "command": "markdown.extension.editing.toggleBold",
         "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
       },
       {
-        "key": "cmd+b",
+        "ket": "ctrl+b",
+        "mac": "cmd+b",
         "command": "-markdown.extension.editing.toggleBold",
         "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
       },
       {
+        "linux": "ctrl+m i",
         "key": "cmd+m i",
         "command": "markdown.extension.editing.toggleItalic",
         "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
       },
       {
-        "key": "cmd+i",
+        "key": "ctrl+i",
+        "mac": "cmd+i",
         "command": "-markdown.extension.editing.toggleItalic",
         "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
       },
       {
+        "linux": "ctrl+m s",
         "key": "cmd+m s",
         "command": "markdown.extension.editing.toggleStrikethrough",
         "when": "editorTextFocus && !editorReadonly && !isMac && editorLangId == 'markdown'"
@@ -3516,14 +3526,17 @@
         "when": "editorTextFocus && !editorReadonly && !isMac && editorLangId == 'markdown'"
       },
       {
+        "linux": "ctrl+m shift+`",
         "key": "cmd+m shift+`",
         "command": "markdown.extension.editing.toggleCodeBlock"
       },
       {
+        "linux": "ctrl+m `",
         "key": "cmd+m `",
         "command": "markdown.extension.editing.toggleCodeSpan"
       },
       {
+        "linux": "ctrl+m l",
         "key": "cmd+m l",
         "command": "markdown.extension.editing.toggleList"
       }
