@@ -2,7 +2,7 @@
 
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
-## [1.4.0]
+## [1.4.0] - March 28, 2020
 
 I'd like to call this the "Clobber Cleanup" release. It's been bothering me that I had to put in weird "hacks" to do something that "just works" in pretty much any other application, like copy or find commands that are pretty universal in all Mac applications. I didn't want to sacrifice the "Mac"-ness of the OS.
 
