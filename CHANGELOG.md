@@ -2,6 +2,16 @@
 
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
+## [1.4.1] - March 28, 2020
+
+- Changed:
+  - All references of `linux` have been switched to `key` in the keymap, while setting `mac` as a "special" keymap. This SHOULDN'T break anything, but please let me know if it does! (For those that care; this should now mean that both Linux AND Windows are supported, albeit in a pretty naive way since I don't have either OS to test with; yay!)
+  - Added a shortcut for syncing settings with the Settings Sync extension - `cmd+, u` (not sure if this will be needed in the next version of VSCode, but whatever)
+  - Added the following to the "Clobbered Commands" section:
+    - `workbench.action.closeWindow`
+    - `workbench.action.quit`
+  - Minor edits to README.
+
 ## [1.4.0] - March 28, 2020
 
 I'd like to call this the "Clobber Cleanup" release. It's been bothering me that I had to put in weird "hacks" to do something that "just works" in pretty much any other application, like copy or find commands that are pretty universal in all Mac applications. I didn't want to sacrifice the "Mac"-ness of the OS.

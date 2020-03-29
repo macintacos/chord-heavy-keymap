@@ -1,6 +1,6 @@
 # Chord Heavy - A keymap inspired by [Spacemacs](https://www.spacemacs.org/)
 
-**Linux support is only available in BETA right now.** If you run into any odd keybindings with Linux, please create an issue!
+**Linux/Windows support is only available in BETA right now.** If you run into any odd keybindings with Linux/Windows, please create an issue!
 
 - [Chord Heavy - A keymap inspired by Spacemacs](#chord-heavy---a-keymap-inspired-by-spacemacs)
 	- [Keymap](#keymap)
@@ -61,6 +61,7 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.action.openSettingsJson`                           | `cmd+, s`        |
 | `workbench.action.openGlobalKeybindingsFile`                  | `cmd+, shift+k`  |
 | `workbench.action.selectTheme`                                | `cmd+, t`        |
+| `extension.updateSettings`																		| `cmd+, u`        |
 | `workbench.action.openWorkspaceSettings`                      | `cmd+, w`        |
 
 ### Buffers (prefix: `b`)
@@ -339,7 +340,6 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.action.focusAboveGroup`                    | `cmd+w up`              |
 | `workbench.action.splitEditor`                        | `cmd+w v`               |
 | `workbench.action.terminal.split`                     | `cmd+w v`               |
-| `workbench.action.closeWindow`                        | `cmd+w`                 |
 | `workbench.action.closeEditorsInGroup`                | `cmd+w x`               |
 
 ### Yank/Copy (prefix: `y`)
@@ -389,9 +389,11 @@ These are commands that have been "clobbered" and are thus needed to be remapped
 | `workbench.action.togglePanel`              | `cmd+j cmd+j`    |
 | `workbench.action.gotoLine`                 | `cmd+l cmd+l`    |
 | `expandLineSelection`                       | `cmd+l cmd+l`    |
+| `workbench.action.quit` 										| `cmd+q cmd+q`    |
 | `workbench.action.reloadWindow`             | `cmd+r cmd+r`    |
 | `editor.action.startFindReplaceAction`      | `cmd+r cmd+r`    |
 | `workbench.action.files.save`               | `cmd+s cmd+s`    |
+| `workbench.action.closeWindow`              | `cmd+w cmd+w`    |
 
 ### Misc. (one-off shortcuts, most not `chords)`
 
@@ -465,7 +467,7 @@ There are some caveats to keep in mind if you'd like to use this keymap, which w
 - **This keymap removes A LOT of default shortcuts.** If you're not comfortable with looking up the commands or using the command search, stay away from this keymap!
 - **There are some chords/shortcuts that are dependent on snippets or extensions that I have personally installed on my machine.** VSCode might complain about this, but you should be fine.
 - In VSCode, when you've defined a chord for a specific character, it "clobbers" shortcuts that are only one `modifier+key` combination. Thus, because `cmd+c r` is a chord, things like `cmd+c` in a text editor (copy) won't work (VSCode sits there waiting for a chord to be executed). For most of the "common sense" shortcuts, I've tried to mitigate this by just making the user hit the shortcut twice; so now, "copy" is `cmd+c cmd+c` instead of just `cmd+c`. That's what made the most sense in my head, so that's what I went with! For all of these changes, please see the "[Clobbered Commands](#clobbered-commands)" section of the README.
-- Right now this keymap only _properly_ supports the Mac, and **Linux support is considered in "beta"**.
+- Right now this keymap only _properly_ supports the Mac, and **Linux/Windows support is considered in "beta"**.
 - I use VSCodeVim and most of the time, if I don't use a native shortcut for something, it's because I just use Vim motions to get the job done. See the [VSCodeVim Keybindings](#vscodevim-keybindings) section below for what I use there!
 
 If the above caveats are "fine" for you, I really think that this keymap can work well. It doesn't cover 100% of the capabilities that Spacemacs can, but it gets a lot of the way there!
@@ -688,7 +690,7 @@ VSCode was developed with a completely different user-base in mind, but that doe
 
 ## Potential Future Improvements
 
-- Add proper support for Linux/Windows (Linux support is beta!)
+- Add proper support for Linux/Windows (Linux/Windows support is considered to be in beta, mostly because I don't have either OS so can't verify that they work properly! If there are problems, please open an issue!)
 - Create shortcuts that are based on specific file types, so that there is a "major mode" of sorts for them. Can start with HTML and go through other languages as I see fit; use the [Spacemacs layer keybindings](https://www.spacemacs.org/layers/LAYERS.html) for inspiration. Maybe the `ctrl` key can be first character for "major" mode? Inspiration:
 	- [HTML](https://www.spacemacs.org/layers/+lang/html/README.html)
 	- [javascript](https://www.spacemacs.org/layers/+lang/javascript/README.html)
