@@ -347,7 +347,6 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | Action                                        | Keybinding/Chord |
 | --------------------------------------------- | ---------------- |
 | `editor.action.copyLinesDownAction`           | `cmd+y j`        |
-| `editor.action.copyLinesDownAction`           | `cmd+y j`        |
 | `markdown.extension.onCopyLineDown`           | `cmd+y j`        |
 | `editor.action.copyLinesUpAction`             | `cmd+y k`        |
 | `markdown.extension.onCopyLineUp`             | `cmd+y k`        |
