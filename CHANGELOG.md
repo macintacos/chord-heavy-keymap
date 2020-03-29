@@ -2,6 +2,25 @@
 
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
+## [1.4.0]
+
+I'd like to call this the "Clobber Cleanup" release. It's been bothering me that I had to put in weird "hacks" to do something that "just works" in pretty much any other application, like copy or find commands that are pretty universal in all Mac applications. I didn't want to sacrifice the "Mac"-ness of the OS.
+
+To work around this, I basically just made it so that you had to hit that shortcut twice to get the expected behavior that was clobbered. That means that all single-chord shortcuts that are now clobbered by a "prefix" specified in the README should work if you just hit that key combination again. Some examples of what that means are:
+
+  - "copy" operations are now `cmd+c cmd+c`
+  - "find" operations are now `cmd+f cmd+f`
+  - etc. etc.
+  - **Note:** the chords that were defined before this are still the same.
+
+All of these are outlined in [the new "Clobbered Commands" section in the README](README.md#clobbered-commands).
+
+Other updates:
+
+- Cleaned up some Linux interactions (will need to continue working on this over the long term).
+- Cleaned up some wording in the README.
+- Added minor changes for my VSCodeVim keybindings.
+
 ## [1.3.0] - March 23, 2020
 
 - Added:

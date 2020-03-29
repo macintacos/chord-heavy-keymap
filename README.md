@@ -24,6 +24,7 @@
 		- [Toggle (prefix: `t`)](#toggle-prefix-t)
 		- [Window (prefix: `w`)](#window-prefix-w)
 		- [Yank/Copy (prefix: `y`)](#yankcopy-prefix-y)
+		- [Clobbered Commands](#clobbered-commands)
 		- [Misc. (one-off shortcuts, most not `chords)`](#misc-one-off-shortcuts-most-not-chords)
 	- [Inspiration](#inspiration)
 	- [Caveats](#caveats)
@@ -355,6 +356,44 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.action.files.copyPathOfActiveFile` | `cmd+y p`        |
 | `copyRelativeFilePath`                        | `cmd+y shift+p`  |
 
+### Clobbered Commands
+
+These are commands that have been "clobbered" and are thus needed to be remapped. Anything that would be a "normal" mapping before (`cmd+c` for "copy", for example) need to be changed in order for them to work the way that you expect. Trust me, this makes more sense when you actually start using chords in VSCode.
+
+| Action                                      | Keybinding/Chord |
+| ------------------------------------------- | ---------------- |
+| `workbench.action.toggleSidebarVisibility`  | `cmd+b cmd+b`    |
+| `editor.action.clipboardCopyAction`         | `cmd+c cmd+c`    |
+| `editor.action.webvieweditor.copy`          | `cmd+c cmd+c`    |
+| `execCopy`                                  | `cmd+c cmd+c`    |
+| `filesExplorer.copy`                        | `cmd+c cmd+c`    |
+| `gitlens.views.compare.copy`                | `cmd+c cmd+c`    |
+| `gitlens.views.fileHistory.copy`            | `cmd+c cmd+c`    |
+| `gitlens.views.lineHistory.copy`            | `cmd+c cmd+c`    |
+| `gitlens.views.repositories.copy`           | `cmd+c cmd+c`    |
+| `gitlens.views.search.copy`                 | `cmd+c cmd+c`    |
+| `keybindings.editor.copyKeybindingEntry`    | `cmd+c cmd+c`    |
+| `problems.action.copy`                      | `cmd+c cmd+c`    |
+| `remote.tunnel.copyAddressInline`           | `cmd+c cmd+c`    |
+| `workbench.action.terminal.copySelection`   | `cmd+c cmd+c`    |
+| `editor.action.copyLinesDownAction`         | `cmd+d cmd+d`    |
+| `editor.action.addSelectionToNextFindMatch` | `cmd+d cmd+d`    |
+| `workbench.action.openRecent`               | `cmd+e cmd+e`    |
+| `actions.find`                              | `cmd+f cmd+f`    |
+| `editor.action.extensioneditor.showfind`    | `cmd+f cmd+f`    |
+| `editor.action.webvieweditor.showFind`      | `cmd+f cmd+f`    |
+| `keybindings.editor.searchKeybindings`      | `cmd+f cmd+f`    |
+| `problems.action.focusFilter`               | `cmd+f cmd+f`    |
+| `settings.action.search`                    | `cmd+f cmd+f`    |
+| `workbench.action.terminal.focusFindWidget` | `cmd+f cmd+f`    |
+| `workbench.action.terminal.focusFindWidget` | `cmd+f cmd+f`    |
+| `workbench.action.togglePanel`              | `cmd+j cmd+j`    |
+| `workbench.action.gotoLine`                 | `cmd+l cmd+l`    |
+| `expandLineSelection`                       | `cmd+l cmd+l`    |
+| `workbench.action.reloadWindow`             | `cmd+r cmd+r`    |
+| `editor.action.startFindReplaceAction`      | `cmd+r cmd+r`    |
+| `workbench.action.files.save`               | `cmd+s cmd+s`    |
+
 ### Misc. (one-off shortcuts, most not `chords)`
 
 | Action                                                        | Keybinding/Chord             |
@@ -363,19 +402,6 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `editor.action.webvieweditor.selectAll`                       | `alt+a`                      |
 | `list.selectAll`                                              | `alt+a`                      |
 | `workbench.action.terminal.selectAll`                         | `alt+a`                      |
-| `editor.action.clipboardCopyAction`                           | `alt+c`                      |
-| `editor.action.webvieweditor.copy`                            | `alt+c`                      |
-| `execCopy`                                                    | `alt+c`                      |
-| `filesExplorer.copy`                                          | `alt+c`                      |
-| `gitlens.views.compare.copy`                                  | `alt+c`                      |
-| `gitlens.views.fileHistory.copy`                              | `alt+c`                      |
-| `gitlens.views.lineHistory.copy`                              | `alt+c`                      |
-| `gitlens.views.repositories.copy`                             | `alt+c`                      |
-| `gitlens.views.search.copy`                                   | `alt+c`                      |
-| `keybindings.editor.copyKeybindingEntry`                      | `alt+c`                      |
-| `problems.action.copy`                                        | `alt+c`                      |
-| `remote.tunnel.copyAddressInline`                             | `alt+c`                      |
-| `workbench.action.terminal.copySelection`                     | `alt+c`                      |
 | `undo_expand_region`                                          | `alt+down`                   |
 | `editor.action.peekDefinition`                                | `alt+enter`                  |
 | `markdown-checkbox.markCheckbox`                              | `alt+enter`                  |
@@ -427,11 +453,11 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 
 ## Inspiration
 
-Despite Spacemacs' influence, this keymap uses the "Command (⌘, `cmd`)" key in place of `SPC` in Spacemacs chords. Extensions like [VSpaceCode](https://github.com/VSpaceCode/VSpaceCode) rely on you _needing_ [VSCodeVim](https://github.com/VSCodeVim/Vim) installed, and to be in the editor (the chords in VSpaceCode don't work when your focus is in something like the sidebar). I didn't like that limitation (it didn't feel very Spacemacs-y). Re-orienting myself around such that the `cmd` key was my `leader` key allowed me to remove this restriction and thus be able to use these chords anywhere.
+Despite Spacemacs' influence, this keymap uses the "Command (⌘, `cmd`)" key in place of `SPC` in Spacemacs chords. Extensions like [VSpaceCode](https://github.com/VSpaceCode/VSpaceCode) rely on you _needing_ [VSCodeVim](https://github.com/VSCodeVim/Vim) installed, and to be in the editor (the chords in VSpaceCode don't work when your focus is in something like the sidebar). I didn't like that limitation (it didn't feel very Spacemacs-y to suddenly need to use a completely different set of shortcuts if you were "elsewhere" from the editor). Re-orienting myself around the `cmd` key as my `leader` key allowed me to remove this restriction and allowed me to have the same set of key chords, everywhere.
 
-Also, it's worth mentioning that [I use a keyboard powered by QMK software](https://configure.ergodox-ez.com/planck-ez/layouts/5BRQB/Ny4rd/0), and have set my `cmd` key to be a [One Shot Modifier](https://docs.qmk.fm/#/feature_advanced_keycodes?id=one-shot-keys). This makes the chords feel a bit more like Spacemacs, where chords like `SPC w -` are three individual key presses. In this keymap and with a OSM `cmd` key set up, you can think of that same chord as being `cmd w -` (three individual key presses).
+It's worth mentioning that [I use a keyboard powered by QMK software](https://configure.ergodox-ez.com/planck-ez/layouts/5BRQB/Ny4rd/0), and have set my `cmd` key to be a [One Shot Modifier](https://docs.qmk.fm/#/feature_advanced_keycodes?id=one-shot-keys). This makes the chords feel a bit more like Spacemacs, where chords like `SPC w -` are three individual key presses. In this keymap and with a OSM `cmd` key set up, you can think of that same chord as being `cmd w -` (three individual key presses), even though the keymap is actually specified as `cmd+w -`.
 
-Lastly, as I explored creating this keymap, I've come to the conclusion that VSCode generally doesn't really know what to do with chords and they seem to have been bolted on without much thought. As such, there are a number of improvements that can/should be added in the future that would make this keymap even more robust. See the [Issues to Vote For](#issues-to-vote-for) section for some issues to follow/vote for!
+Lastly, as I explored creating this keymap, I've come to the conclusion that VSCode generally doesn't really know what to do with chords. They seem to have been bolted on without much thought. As such, there are a number of improvements that can/should be added in the future that would make this keymap even more robust. See the [Issues to Vote For](#issues-to-vote-for) section for some issues to follow/vote for!
 
 ## Caveats
 
@@ -439,20 +465,25 @@ There are some caveats to keep in mind if you'd like to use this keymap, which w
 
 - **This keymap removes A LOT of default shortcuts.** If you're not comfortable with looking up the commands or using the command search, stay away from this keymap!
 - **There are some chords/shortcuts that are dependent on snippets or extensions that I have personally installed on my machine.** VSCode might complain about this, but you should be fine.
-- In VSCode, when you've defined a chord for a specific character, it "clobbers" shortcuts that are only one `modifier+key` combination. Thus, because `cmd+c r` is a chord, things like `cmd+c` in a text editor (copy) won't work (VSCode sits there waiting for a chord to be executed). Despite not needing it in order to get this keymap working, I _am_ a VSCodeVim user, so anything to do with text manipulation is handled by that extension anyway so that's generally not an issue for me. However, if you rely on those kinds of "common" shortcuts, keep in mind that they have changed (more often than not to `alt+key`; for the example above, `alt+c` is the shortcut for copying).
-- Right now this keymap only supports the Mac; sorry! I'll add more in the future if literally _anyone_ uses this.
+- In VSCode, when you've defined a chord for a specific character, it "clobbers" shortcuts that are only one `modifier+key` combination. Thus, because `cmd+c r` is a chord, things like `cmd+c` in a text editor (copy) won't work (VSCode sits there waiting for a chord to be executed). For most of the "common sense" shortcuts, I've tried to mitigate this by just making the user hit the shortcut twice; so now, "copy" is `cmd+c cmd+c` instead of just `cmd+c`. That's what made the most sense in my head, so that's what I went with! For all of these changes, please see the "[Clobbered Commands](#clobbered-commands)" section of the README.
+- Right now this keymap only _properly_ supports the Mac, and **Linux support is considered in "beta"**.
+- I use VSCodeVim and most of the time, if I don't use a native shortcut for something, it's because I just use Vim motions to get the job done. See the [VSCodeVim Keybindings](#vscodevim-keybindings) section below for what I use there!
 
 If the above caveats are "fine" for you, I really think that this keymap can work well. It doesn't cover 100% of the capabilities that Spacemacs can, but it gets a lot of the way there!
 
 ## VSCodeVim Keybindings
 
-As said previously, I use VSCodeVim, and for keybindings that made "more sense" to be set at that extension's level, I've set them there. Below are the keybindings that I have set up so that they function the way I "expect" with this keymap (these are meant to go in your `settings.json` file):
+For keybindings that made "more sense" to be set at that extension's level, I've set them there. Below are the keybindings that I have set up so that they function the way I "expect" with this keymap (these are meant to go in your `settings.json` file):
 
 ```
 "vim.insertModeKeyBindings": [
 	{
-		"before": ["cmd+a"],
-		"after": ["cmd+z"]
+		"after": [
+			"cmd+z"
+		],
+		"before": [
+			"cmd+a"
+		]
 	},
 	{
 		"after": [
@@ -493,8 +524,27 @@ As said previously, I use VSCodeVim, and for keybindings that made "more sense" 
 ],
 "vim.normalModeKeyBindingsNonRecursive": [
 	{
-		"before": ["g", "H"],
+		"before": [
+			"L"
+		],
+		"after": [
+			"$"
+		]
+	},
+	{
+		"before": [
+			"H"
+		],
+		"after": [
+			"^"
+		]
+	},
+	{
 		"after": [],
+		"before": [
+			"g",
+			"H"
+		],
 		"commands": [
 			{
 				"command": "editor.action.triggerParameterHints"
@@ -502,18 +552,22 @@ As said previously, I use VSCodeVim, and for keybindings that made "more sense" 
 		]
 	},
 	{
-		"before": ["shift+tab"],
 		"after": [],
-		"commands":[
+		"before": [
+			"shift+tab"
+		],
+		"commands": [
 			{
 				"command": "workbench.action.focusPreviousGroup"
 			}
 		]
 	},
 	{
-		"before": ["tab"],
 		"after": [],
-		"commands":[
+		"before": [
+			"tab"
+		],
+		"commands": [
 			{
 				"command": "workbench.action.focusNextGroup"
 			}
@@ -580,6 +634,22 @@ As said previously, I use VSCodeVim, and for keybindings that made "more sense" 
 "vim.visualModeKeyBindingsNonRecursive": [
 	{
 		"before": [
+			"H"
+		],
+		"after": [
+			"^"
+		]
+	},
+	{
+		"before": [
+			"L"
+		],
+		"after": [
+			"$"
+		]
+	},
+	{
+		"before": [
 			">"
 		],
 		"commands": [
@@ -603,7 +673,7 @@ As said previously, I use VSCodeVim, and for keybindings that made "more sense" 
 			"v"
 		]
 	}
-]
+],
 ```
 
 ## Issues to Vote For
@@ -619,5 +689,14 @@ VSCode was developed with a completely different user-base in mind, but that doe
 
 ## Potential Future Improvements
 
-- Add support for Linux/Windows
-- Create shortcuts that are based on specific file types, so that there is a "major mode" of sorts for them. Can start with HTML and go through other languages as I see fit; use the [Spacemacs layer keybindings](https://www.spacemacs.org/layers/LAYERS.html) for inspiration. > NOTE: maybe the `ctrl` key can be first character for "major" mode? - [HTML](https://www.spacemacs.org/layers/+lang/html/README.html) - [javascript](https://www.spacemacs.org/layers/+lang/javascript/README.html) - [markdown](https://www.spacemacs.org/layers/+lang/markdown/README.html) - [python](https://www.spacemacs.org/layers/+lang/python/README.html) - [go](https://www.spacemacs.org/layers/+lang/go/README.html) - [rust](https://www.spacemacs.org/layers/+lang/rust/README.html) - [java](https://www.spacemacs.org/layers/+lang/java/README.html) - [typescript](https://www.spacemacs.org/layers/+lang/typescript/README.html) - [shell-scripts](https://www.spacemacs.org/layers/+lang/shell-scripts/README.html)
+- Add proper support for Linux/Windows (Linux support is beta!)
+- Create shortcuts that are based on specific file types, so that there is a "major mode" of sorts for them. Can start with HTML and go through other languages as I see fit; use the [Spacemacs layer keybindings](https://www.spacemacs.org/layers/LAYERS.html) for inspiration. Maybe the `ctrl` key can be first character for "major" mode? Inspiration:
+	- [HTML](https://www.spacemacs.org/layers/+lang/html/README.html)
+	- [javascript](https://www.spacemacs.org/layers/+lang/javascript/README.html)
+	- [markdown](https://www.spacemacs.org/layers/+lang/markdown/README.html)
+	- [python](https://www.spacemacs.org/layers/+lang/python/README.html)
+	- [go](https://www.spacemacs.org/layers/+lang/go/README.html)
+	- [rust](https://www.spacemacs.org/layers/+lang/rust/README.html)
+	- [java](https://www.spacemacs.org/layers/+lang/java/README.html)
+	- [typescript](https://www.spacemacs.org/layers/+lang/typescript/README.html)
+	- [shell-scripts](https://www.spacemacs.org/layers/+lang/shell-scripts/README.html)

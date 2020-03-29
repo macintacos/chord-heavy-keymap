@@ -2004,12 +2004,6 @@
         "when": "editorFocus"
       },
       {
-        "linux": "alt+c",
-        "key": "alt+c",
-        "command": "editor.action.clipboardCopyAction",
-        "when": "textInputFocus"
-      },
-      {
         "command": "editor.action.commentLine",
         "linux": "ctrl+; ;",
         "key": "cmd+; ;",
@@ -2166,12 +2160,6 @@
         "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
       },
       {
-        "linux": "alt+c",
-        "key": "alt+c",
-        "command": "editor.action.webvieweditor.copy",
-        "when": "!editorFocus && !inputFocus && activeEditor == 'WebviewEditor'"
-      },
-      {
         "command": "editor.action.webvieweditor.showFind",
         "linux": "ctrl+s f",
         "key": "cmd+s f",
@@ -2193,11 +2181,6 @@
         "key": "cmd+o v",
         "command": "excel.preview",
         "when": "editorLangId == 'excel'"
-      },
-      {
-        "linux": "alt+c",
-        "key": "alt+c",
-        "command": "execCopy"
       },
       {
         "command": "expand_region",
@@ -2236,12 +2219,6 @@
         "command": "extension.toggleTheme",
         "linux": "shift+alt+d",
         "key": "shift+alt+d"
-      },
-      {
-        "linux": "alt+c",
-        "key": "alt+c",
-        "command": "filesExplorer.copy",
-        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
       },
       {
         "command": "fileutils.copyFileName",
@@ -2301,36 +2278,6 @@
         "key": "cmd+g a"
       },
       {
-        "linux": "alt+c",
-        "key": "alt+c",
-        "command": "gitlens.views.compare.copy",
-        "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.compare/"
-      },
-      {
-        "linux": "alt+c",
-        "key": "alt+c",
-        "command": "gitlens.views.fileHistory.copy",
-        "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.fileHistory/"
-      },
-      {
-        "linux": "alt+c",
-        "key": "alt+c",
-        "command": "gitlens.views.lineHistory.copy",
-        "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.lineHistory/"
-      },
-      {
-        "linux": "alt+c",
-        "key": "alt+c",
-        "command": "gitlens.views.repositories.copy",
-        "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.repositories/"
-      },
-      {
-        "linux": "alt+c",
-        "key": "alt+c",
-        "command": "gitlens.views.search.copy",
-        "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.search/"
-      },
-      {
         "command": "go.godoctor.extract",
         "linux": "ctrl+r m",
         "key": "cmd+r m",
@@ -2341,12 +2288,6 @@
         "linux": "ctrl+r v",
         "key": "cmd+r v",
         "when": "editorLangId == go"
-      },
-      {
-        "linux": "alt+c",
-        "key": "alt+c",
-        "command": "keybindings.editor.copyKeybindingEntry",
-        "when": "inKeybindings && keybindingFocus"
       },
       {
         "command": "keybindings.editor.searchKeybindings",
@@ -2412,12 +2353,6 @@
         "key": "cmd+f o"
       },
       {
-        "linux": "alt+c",
-        "key": "alt+c",
-        "command": "problems.action.copy",
-        "when": "problemFocus"
-      },
-      {
         "command": "problems.action.focusFilter",
         "linux": "ctrl+s f",
         "key": "cmd+s f",
@@ -2459,12 +2394,6 @@
         "linux": "ctrl+r v",
         "key": "cmd+r v",
         "when": "editorLangId == python"
-      },
-      {
-        "linux": "alt+c",
-        "key": "alt+c",
-        "command": "remote.tunnel.copyAddressInline",
-        "when": "tunnelViewFocus && tunnelType == 'Detected' || tunnelViewFocus && tunnelType == 'Forwarded'"
       },
       {
         "command": "selectNextSuggestion",
@@ -3057,12 +2986,6 @@
         "key": "cmd+w s"
       },
       {
-        "linux": "alt+c",
-        "key": "alt+c",
-        "command": "workbench.action.terminal.copySelection",
-        "when": "terminalFocus && terminalTextSelected"
-      },
-      {
         "command": "workbench.action.terminal.focus",
         "linux": "ctrl+'",
         "key": "cmd+'"
@@ -3555,9 +3478,203 @@
         "when": "isDevelopment"
       },
       {
-        "linux": "ctrl+w shift+ctrl+r",
-        "key": "cmd+w shift+cmd+r",
+        "key": "ctrl+w shift+ctrl+r",
+        "mac": "cmd+w shift+cmd+r",
         "command": "workbench.action.reloadWindowWithExtensionsDisabled"
+      },
+      {
+        "key": "ctrl+c ctrl+c",
+        "mac": "cmd+c cmd+c",
+        "command": "editor.action.clipboardCopyAction",
+        "when": "textInputFocus"
+      },
+      {
+        "key": "ctrl+c ctrl+c",
+        "mac": "cmd+c cmd+c",
+        "command": "editor.action.webvieweditor.copy",
+        "when": "!editorFocus && !inputFocus && activeEditor == 'WebviewEditor'"
+      },
+      {
+        "key": "ctrl+c ctrl+c",
+        "mac": "cmd+c cmd+c",
+        "command": "execCopy"
+      },
+      {
+        "key": "ctrl+c ctrl+c",
+        "mac": "cmd+c cmd+c",
+        "command": "filesExplorer.copy",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+      },
+      {
+        "key": "ctrl+c ctrl+c",
+        "mac": "cmd+c cmd+c",
+        "command": "gitlens.views.compare.copy",
+        "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.compare/"
+      },
+      {
+        "key": "ctrl+c ctrl+c",
+        "mac": "cmd+c cmd+c",
+        "command": "gitlens.views.fileHistory.copy",
+        "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.fileHistory/"
+      },
+      {
+        "key": "ctrl+c ctrl+c",
+        "mac": "cmd+c cmd+c",
+        "command": "gitlens.views.lineHistory.copy",
+        "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.lineHistory/"
+      },
+      {
+        "key": "ctrl+c ctrl+c",
+        "mac": "cmd+c cmd+c",
+        "command": "gitlens.views.repositories.copy",
+        "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.repositories/"
+      },
+      {
+        "key": "ctrl+c ctrl+c",
+        "mac": "cmd+c cmd+c",
+        "command": "-gitlens.views.search.copy",
+        "when": "gitlens:enabled && focusedView =~ /^gitlens\\.views\\.search/"
+      },
+      {
+        "key": "ctrl+c ctrl+c",
+        "mac": "cmd+c cmd+c",
+        "command": "-keybindings.editor.copyKeybindingEntry",
+        "when": "inKeybindings && keybindingFocus"
+      },
+      {
+        "key": "ctrl+c ctrl+c",
+        "mac": "cmd+c cmd+c",
+        "command": "problems.action.copy",
+        "when": "problemFocus"
+      },
+      {
+        "key": "ctrl+c ctrl+c",
+        "mac": "cmd+c cmd+c",
+        "command": "remote.tunnel.copyAddressInline",
+        "when": "tunnelViewFocus && tunnelType == 'Detected' || tunnelViewFocus && tunnelType == 'Forwarded'"
+      },
+      {
+        "command": "search.action.copyMatch",
+        "key": "ctrl+c ctrl+c",
+        "mac": "cmd+c cmd+c",
+        "when": "fileMatchOrMatchFocus"
+      },
+      {
+        "key": "ctrl+c ctrl+c",
+        "mac": "cmd+c cmd+c",
+        "command": "workbench.action.terminal.copySelection",
+        "when": "terminalFocus && terminalTextSelected"
+      },
+      {
+        "key": "shift+cmd+l",
+        "command": "-selectAllSearchEditorMatches",
+        "when": "inSearchEditor"
+      },
+      {
+        "key": "shift+cmd+l",
+        "command": "-addCursorsAtSearchResults",
+        "when": "fileMatchOrMatchFocus && searchViewletVisible"
+      },
+      {
+        "command": "actions.find",
+        "key": "ctrl+f ctrl+f",
+        "mac": "cmd+f cmd+f"
+      },
+      {
+        "command": "editor.action.extensioneditor.showfind",
+        "key": "ctrl+f ctrl+f",
+        "mac": "cmd+f cmd+f",
+        "when": "!editorFocus && activeEditor == 'workbench.editor.extension'"
+      },
+      {
+        "command": "editor.action.webvieweditor.showFind",
+        "key": "ctrl+f ctrl+f",
+        "mac": "cmd+f cmd+f",
+        "when": "!editorFocus && activeEditor == 'WebviewEditor'"
+      },
+      {
+        "command": "keybindings.editor.searchKeybindings",
+        "key": "ctrl+f ctrl+f",
+        "mac": "cmd+f cmd+f",
+        "when": "inKeybindings"
+      },
+      {
+        "command": "problems.action.focusFilter",
+        "key": "ctrl+f ctrl+f",
+        "mac": "cmd+f cmd+f",
+        "when": "problemsViewFocus"
+      },
+      {
+        "command": "settings.action.search",
+        "key": "ctrl+f ctrl+f",
+        "mac": "cmd+f cmd+f",
+        "when": "inSettingsEditor"
+      },
+      {
+        "command": "workbench.action.terminal.focusFindWidget",
+        "key": "ctrl+f ctrl+f",
+        "mac": "cmd+f cmd+f",
+        "when": "terminalFocus"
+      },
+      {
+        "command": "workbench.action.terminal.focusFindWidget",
+        "key": "ctrl+f ctrl+f",
+        "mac": "cmd+f cmd+f",
+        "when": "terminalFindWidgetFocused"
+      },
+      {
+        "command": "workbench.action.toggleSidebarVisibility",
+        "key": "ctrl+b ctrl+b",
+        "mac": "cmd+b cmd+b"
+      },
+      {
+        "command": "editor.action.copyLinesDownAction",
+        "mac": "cmd+d cmd+d",
+        "key": "ctrl+d ctrl+d",
+        "when": "editorTextFocus && !editorHasSelection && !editorReadonly"
+      },
+      {
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "mac": "cmd+d cmd+d",
+        "key": "ctrl+d ctrl+d",
+        "when": "editorFocus"
+      },
+      {
+        "command": "workbench.action.openRecent",
+        "key": "ctrl+e ctrl+e",
+        "mac": "cmd+e cmd+e"
+      },
+      {
+        "command": "workbench.action.togglePanel",
+        "key": "ctrl+j ctrl+j",
+        "mac": "cmd+j cmd+j"
+      },
+      {
+        "command": "workbench.action.gotoLine",
+        "key": "ctrl+l ctrl+l",
+        "mac": "cmd+l cmd+l"
+      },
+      {
+        "command": "expandLineSelection",
+        "key": "ctrl+l ctrl+l",
+        "mac": "cmd+l cmd+l",
+        "when": "textInputFocus"
+      },
+      {
+        "mac": "cmd+r cmd+r",
+        "key": "ctrl+r ctrl+r",
+        "command": "workbench.action.reloadWindow",
+        "when": "isDevelopment"
+      },
+      {
+        "command": "editor.action.startFindReplaceAction",
+        "key": "ctrl+r ctrl+r",
+        "mac": "cmd+r cmd+r"
+      },
+      {
+        "command": "workbench.action.files.save",
+        "key": "ctrl+s ctrl+s",
+        "mac": "cmd+s cmd+s"
       }
     ]
   }
