@@ -359,6 +359,8 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 
 These are commands that have been "clobbered" and are thus needed to be remapped. Anything that would be a "normal" mapping before (`cmd+c` for "copy", for example) need to be changed in order for them to work the way that you expect. Trust me, this makes more sense when you actually start using chords in VSCode.
 
+**NOTE:** These aren't meant to be mnemonic or follow any Spacemacs idioms; it's meant to just provide "default" functionality that one would come to expect on their respective OS.
+
 | Action                                      | Keybinding/Chord |
 | ------------------------------------------- | ---------------- |
 | `workbench.action.toggleSidebarVisibility`  | `cmd+b cmd+b`    |
