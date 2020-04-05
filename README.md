@@ -163,21 +163,21 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 
 ### Help (prefix: `h`)
 
-| Action                                       | Keybinding/Chord     |
-| -------------------------------------------- | -------------------- |
-| `workbench.action.openDocumentationUrl`      | `cmd+h d`/`ctrl+h d` |
-| `workbench.action.showInteractivePlayground` | `cmd+h p`/`ctrl+h p` |
-| `workbench.action.openRequestFeatureUrl`     | `cmd+h s`/`ctrl+h s` |
+| Action                                       | Keybinding/Chord (Mac/Other) |
+| -------------------------------------------- | ---------------------------- |
+| `workbench.action.openDocumentationUrl`      | `cmd+h d`/`ctrl+h d`         |
+| `workbench.action.showInteractivePlayground` | `cmd+h p`/`ctrl+h p`         |
+| `workbench.action.openRequestFeatureUrl`     | `cmd+h s`/`ctrl+h s`         |
 
 ### Jump (prefix: `j`)
 
-| Action                            | Keybinding/Chord     |
-| --------------------------------- | -------------------- |
-| `editor.action.formatSelection`   | `cmd+j =`/`ctrl+j =` |
-| `workbench.action.gotoSymbol`     | `cmd+j e`/`ctrl+j e` |
-| `extension.aceJump`               | `cmd+j j`/`ctrl+j j` |
-| `workbench.action.gotoMethod`     | `cmd+j m`/`ctrl+j m` |
-| `workbench.action.showAllSymbols` | `cmd+j s`/`ctrl+j s` |
+| Action                            | Keybinding/Chord (Mac/Other) |
+| --------------------------------- | ---------------------------- |
+| `editor.action.formatSelection`   | `cmd+j =`/`ctrl+j =`         |
+| `workbench.action.gotoSymbol`     | `cmd+j e`/`ctrl+j e`         |
+| `extension.aceJump`               | `cmd+j j`/`ctrl+j j`         |
+| `workbench.action.gotoMethod`     | `cmd+j m`/`ctrl+j m`         |
+| `workbench.action.showAllSymbols` | `cmd+j s`/`ctrl+j s`         |
 
 ### [Markdown All-in-One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) (prefix: `m`)
 
@@ -188,8 +188,8 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `markdown.extension.editing.toggleBold`          | `cmd+m b`/`ctrl+m b`                |
 | `markdown.extension.editing.toggleItalic`        | `cmd+m i`/`ctrl+m i`                |
 | `markdown.extension.editing.toggleStrikethrough` | `cmd+m s`/`ctrl+m s`                |
-| `markdown.extension.editing.toggleCodeSpan`      | ` cmd+m \``/ `ctrl+m \``            |
-| `markdown.extension.editing.toggleCodeBlock`     | ` cmd+m shift+\``/ `cmd+m shift+\`` |
+| `markdown.extension.editing.toggleCodeSpan`      | ``cmd+m ` ``/``ctrl+m ` ``      |
+| `markdown.extension.editing.toggleCodeBlock`     | ``cmd+m shift+` ``/``cmd+m shift+` `` |
 | `markdown.extension.editing.toggleList`          | `cmd+m l`/`cmd+m l`                 |
 
 ### Panel (prefix: `l`)
