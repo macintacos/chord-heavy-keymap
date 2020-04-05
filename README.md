@@ -29,6 +29,7 @@
 	- [Inspiration](#inspiration)
 	- [Caveats](#caveats)
 	- [VSCodeVim Keybindings](#vscodevim-keybindings)
+	- [Multi-Command Actions](#multi-command-actions)
 	- [Issues to Vote For](#issues-to-vote-for)
 	- [Potential Future Improvements](#potential-future-improvements)
 
@@ -50,39 +51,39 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 
 ### Preferences/Settings (prefix: `,`)
 
-| Action                                                        | Keybinding/Chord |
-| ------------------------------------------------------------- | ---------------- |
-| `workbench.action.openGlobalSettings`                         | `cmd+, ,`        |
-| `workbench.action.selectIconTheme`                            | `cmd+, i`        |
-| `workbench.action.openGlobalKeybindings`                      | `cmd+, k`        |
-| `workbench.action.configureLanguageBasedSettings`             | `cmd+, l`        |
-| `workbench.extensions.action.showRecommendedKeymapExtensions` | `cmd+, m`        |
-| `workbench.action.openSnippets`                               | `cmd+, n`        |
-| `workbench.action.openSettingsJson`                           | `cmd+, s`        |
-| `workbench.action.openGlobalKeybindingsFile`                  | `cmd+, shift+k`  |
-| `workbench.action.selectTheme`                                | `cmd+, t`        |
-| `extension.updateSettings`																		| `cmd+, u`        |
-| `workbench.action.openWorkspaceSettings`                      | `cmd+, w`        |
+| Action                                                        | Keybinding/Chord (Mac/Linux)     |
+| ------------------------------------------------------------- | -------------------------------- |
+| `workbench.action.openGlobalSettings`                         | `cmd+, ,`/`ctrl+, ,`             |
+| `workbench.action.selectIconTheme`                            | `cmd+, i`/`ctrl+, i`             |
+| `workbench.action.openGlobalKeybindings`                      | `cmd+, k`/`ctrl+, k`             |
+| `workbench.action.configureLanguageBasedSettings`             | `cmd+, l`/`ctrl+, l`             |
+| `workbench.extensions.action.showRecommendedKeymapExtensions` | `cmd+, m`/`ctrl+, m`             |
+| `workbench.action.openSnippets`                               | `cmd+, n`/`ctrl+, n`             |
+| `workbench.action.openSettingsJson`                           | `cmd+, s`/`ctrl+, s`             |
+| `workbench.action.openGlobalKeybindingsFile`                  | `cmd+, shift+k`/`ctrl+, shift+k` |
+| `workbench.action.selectTheme`                                | `cmd+, t`/`ctrl+, t`             |
+| `extension.updateSettings`                                    | `cmd+, u`/`ctrl+, u`             |
+| `workbench.action.openWorkspaceSettings`                      | `cmd+, w`/`ctrl+, w`             |
 
 ### Buffers (prefix: `b`)
 
-| Action                                    | Keybinding/Chord |
-| ----------------------------------------- | ---------------- |
-| `workbench.action.quickOpen`              | `cmd+b b`        |
-| `workbench.action.closeActiveEditor`      | `cmd+b d`        |
-| `workbench.action.closeWindow`            | `cmd+b d`        |
-| `workbench.action.nextEditor`             | `cmd+b n`        |
-| `workbench.action.previousEditor`         | `cmd+b p`        |
-| `workbench.action.files.newUntitledFile`  | `cmd+b s`        |
-| `workbench.action.closeUnmodifiedEditors` | `cmd+b shift+d`  |
-| `workbench.action.reopenClosedEditor`     | `cmd+b u`        |
+| Action                                    | Keybinding/Chord (Mac/Linux) |
+| ----------------------------------------- | ---------------------------- |
+| `workbench.action.quickOpen`              | `cmd+b b`                    |
+| `workbench.action.closeActiveEditor`      | `cmd+b d`                    |
+| `workbench.action.closeWindow`            | `cmd+b d`                    |
+| `workbench.action.nextEditor`             | `cmd+b n`                    |
+| `workbench.action.previousEditor`         | `cmd+b p`                    |
+| `workbench.action.files.newUntitledFile`  | `cmd+b s`                    |
+| `workbench.action.closeUnmodifiedEditors` | `cmd+b shift+d`              |
+| `workbench.action.reopenClosedEditor`     | `cmd+b u`                    |
 
 ### Code (prefix: `c`)
 
-| Action                      | Keybinding/Chord |
-| --------------------------- | ---------------- |
-| `editor.action.commentLine` | `cmd+c l`        |
-| `code-runner.run`           | `cmd+c r`        |
+| Action                      | Keybinding/Chord (Mac/Linux) |
+| --------------------------- | ---------------------------- |
+| `editor.action.commentLine` | `cmd+c l`                    |
+| `code-runner.run`           | `cmd+c r`                    |
 
 ### Debug (prefix: `d`)
 
@@ -391,7 +392,7 @@ These are commands that have been "clobbered" and are thus needed to be remapped
 | `workbench.action.togglePanel`              | `cmd+j cmd+j`    |
 | `workbench.action.gotoLine`                 | `cmd+l cmd+l`    |
 | `expandLineSelection`                       | `cmd+l cmd+l`    |
-| `workbench.action.quit` 										| `cmd+q cmd+q`    |
+| `workbench.action.quit`                     | `cmd+q cmd+q`    |
 | `workbench.action.reloadWindow`             | `cmd+r cmd+r`    |
 | `editor.action.startFindReplaceAction`      | `cmd+r cmd+r`    |
 | `workbench.action.files.save`               | `cmd+s cmd+s`    |
@@ -678,6 +679,27 @@ For keybindings that made "more sense" to be set at that extension's level, I've
 	}
 ],
 ```
+
+## Multi-Command Actions
+
+I use a tool called [`multi-command`](https://github.com/ryuta46/vscode-multi-command) for some actions that are defined in this keymap. Here's the definition that I have (I'll be sure to keep this updated):
+
+```json
+"multiCommand.commands": [
+	{
+		"command": "multiCommand.closePanelAndSidebarAndOtherEditors",
+		"sequence": [
+			"workbench.action.closePanel",
+			"workbench.action.closeSidebar",
+			"workbench.action.closeEditorsInOtherGroups"
+		]
+	},
+]
+```
+
+This is for the following chords:
+
+- `multiCommand.closePanelAndSidebarAndOtherEditors` -> `cmd+w m`
 
 ## Issues to Vote For
 
