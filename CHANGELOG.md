@@ -2,6 +2,10 @@
 
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
+## [1.4.2] - April 5, 2020
+
+- Updated the README; this doesn't have any user-facing additions.
+
 ## [1.4.1] - March 28, 2020
 
 - Changed:
