@@ -151,6 +151,7 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | ----------------------------- | -------------------------------- |
 | `git.stageAllTracked`         | `cmd+g a`/`ctrl+g a`             |
 | `git.checkout`                | `cmd+g b`/`ctrl+g b`             |
+| `gitlens.toggleFileBlame`     | `cmd+g cmd+b`/`ctrl+g ctrl+b`    |
 | `git-graph.view`              | `cmd+g g`/`ctrl+g g`             |
 | `git.init`                    | `cmd+g i`/`ctrl+g i`             |
 | `git.pull`                    | `cmd+g l`/`ctrl+g l`             |
@@ -159,7 +160,7 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.view.scm`          | `cmd+g s`/`ctrl+g s`             |
 | `git.stageAll`                | `cmd+g shift+a`/`ctrl+g shift+a` |
 | `git.branch`                  | `cmd+g shift+b`/`ctrl+g shift+b` |
-| `extension.openPrGitPRovider` | `cmd+g shift+o`/`ctrl+g shift+o` |
+| `extension.openPrGitProvider` | `cmd+g shift+o`/`ctrl+g shift+o` |
 
 ### Help (prefix: `h`)
 
@@ -402,6 +403,10 @@ These are commands that have been "clobbered" and are thus needed to be remapped
 
 | Action                                                        | Keybinding/Chord (Mac/Other)                 |
 | ------------------------------------------------------------- | -------------------------------------------- |
+| `explorer.newFile` 																						| `a` 																				 |
+| `fileutils.removeFile` 																				| `d` 																				 |
+| `fileutils.copyFileName`																		  | `y n` 																			 |
+| `fileutils.copyFilePath`																		  | `y p` 																			 |
 | `editor.action.selectAll`                                     | `alt+a`                                      |
 | `editor.action.webvieweditor.selectAll`                       | `alt+a`                                      |
 | `list.selectAll`                                              | `alt+a`                                      |

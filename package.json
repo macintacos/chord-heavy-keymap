@@ -22,6 +22,11 @@
         "when": "sideBarFocus && activeViewlet == 'workbench.view.explorer'"
       },
       {
+        "key": "shift+tab",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.explorer'"
+      },
+      {
         "command": "--editor.action.rename",
         "key": "f2",
         "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
@@ -2712,6 +2717,26 @@
       },
       {
         "command": "workbench.action.focusNextGroup",
+        "key": "tab",
+        "when": "editorFocus && vim.mode == 'Normal' && !activeEditorGroupLast"
+      },
+      {
+        "command": "workbench.action.focusSideBar",
+        "key": "tab",
+        "when": "editorFocus && vim.mode == 'Normal' && activeEditorGroupLast"
+      },
+      {
+        "command": "workbench.action.focusPreviousGroup",
+        "key": "shift+tab",
+        "when": "editorFocus && vim.mode == 'Normal' && activeEditorGroupIndex != 1"
+      },
+      {
+        "command": "workbench.action.focusSideBar",
+        "key": "shift+tab",
+        "when": "editorFocus && vim.mode == 'Normal' && activeEditorGroupIndex == 1"
+      },
+      {
+        "command": "workbench.action.focusNextGroup",
         "key": "ctrl+w l",
         "mac": "cmd+w l",
         "when": "editorFocus"
@@ -3277,6 +3302,21 @@
         "command": "extension.switchNight"
       },
       {
+        "key": "shift+tab",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+      },
+      {
+        "key": "shift+tab",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.debug'"
+      },
+      {
+        "key": "shift+tab",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extensions'"
+      },
+      {
         "key": "tab",
         "mac": "tab",
         "command": "workbench.action.focusFirstEditorGroup",
@@ -3680,6 +3720,55 @@
         "mac": "cmd+, u",
         "key": "ctrl+, u",
         "command": "extension.updateSettings"
+      },
+      {
+        "key": "alt+b",
+        "command": "-extension.setBrowserScope"
+      },
+      {
+        "key": "alt+b",
+        "command": "-gitlens.toggleFileBlame",
+        "when": "editorTextFocus && config.gitlens.keymap == 'alternate' && gitlens:activeFileStatus =~ /blameable/"
+      },
+      {
+        "mac": "alt+cmd+g b",
+        "key": "alt+ctrl+g b",
+        "command": "-gitlens.toggleFileBlame",
+        "when": "editorTextFocus && config.gitlens.keymap == 'chorded' && gitlens:activeFileStatus =~ /blameable/"
+      },
+      {
+        "mac": "cmd+g cmd+b",
+        "key": "ctrl+g ctrl+b",
+        "command": "gitlens.toggleFileBlame"
+      },
+      {
+        "mac": "cmd+o k",
+        "key": "ctrl+o k",
+        "command": "workbench.view.extension.kubernetesView"
+      },
+      {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "filesExplorerFocus"
+      },
+      {
+        "key": "d",
+        "command": "fileutils.removeFile",
+        "when": "filesExplorerFocus"
+      },
+      {
+        "key": "cmd+0",
+        "command": "-workbench.action.focusSideBar"
+      },
+      {
+        "key": "y n",
+        "command": "fileutils.copyFileName",
+        "when": "filesExplorerFocus"
+      },
+      {
+        "key": "y p",
+        "command": "copyFilePath",
+        "when": "filesExplorerFocus"
       }
     ]
   }

@@ -2,6 +2,16 @@
 
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
+## [1.4.4] - April 5, 2020
+
+- Improved `tab` when in `normal` mode in VSCodeVim such that it now properly lets you cycle through the sidebar and all of the editors as you would expect. My ultimate goal is for the sidebar to "feel" like it's just another buffer, and accepts all the same commands that you'd expect. To that end...
+- The following is now possible in the Files explorer view:
+  - `a` now prompts you to create a file in the current "node" you're on.
+  - `d` not attempts to delete the file you're currently on.
+  - `y n` copies the file name you're currently on.
+  - `y p` copies the file path of the file you're currently on.
+  - (I'll add more to this, but I'm modeling the shortcuts off of NERDTree for now)
+
 ## [1.4.3] - April 5, 2020
 
 - Minor oopsies in the README, again.
