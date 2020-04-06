@@ -2,6 +2,10 @@
 
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
+## [1.4.5] - April 5, 2020
+
+- Hotfix; had to add `ctrl` to all of the keybindings that were used in the file explorer because I couldn't get it to interpret those characters correctly when I was typing out a file name. I hope to revisit this in the future, since adding the `ctrl` is a bit inelegant.
+
 ## [1.4.4] - April 5, 2020
 
 - Improved `tab` when in `normal` mode in VSCodeVim such that it now properly lets you cycle through the sidebar and all of the editors as you would expect. I haven't added the ability to cycle through the panel yet, but I'm not sure I want to. My ultimate goal is for the sidebar to "feel" like it's just another buffer, and accepts all the same commands that you'd expect. To that end...

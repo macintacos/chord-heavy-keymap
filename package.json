@@ -3747,28 +3747,28 @@
         "command": "workbench.view.extension.kubernetesView"
       },
       {
-        "key": "a",
+        "key": "ctrl+a",
         "command": "explorer.newFile",
-        "when": "filesExplorerFocus"
+        "when": "filesExplorerFocus && !editorTextFocus"
       },
       {
-        "key": "d",
+        "key": "ctrl+d",
         "command": "fileutils.removeFile",
-        "when": "filesExplorerFocus"
+        "when": "filesExplorerFocus && !editorTextFocus"
       },
       {
         "key": "cmd+0",
-        "command": "-workbench.action.focusSideBar"
+        "when": "filesExplorerFocus && !editorTextFocus"
       },
       {
-        "key": "y n",
+        "key": "ctrl+y n",
         "command": "fileutils.copyFileName",
-        "when": "filesExplorerFocus"
+        "when": "filesExplorerFocus && !editorTextFocus"
       },
       {
-        "key": "y p",
+        "key": "ctrl+y p",
         "command": "copyFilePath",
-        "when": "filesExplorerFocus"
+        "when": "filesExplorerFocus && !editorTextFocus"
       }
     ]
   }

@@ -403,10 +403,10 @@ These are commands that have been "clobbered" and are thus needed to be remapped
 
 | Action                                                        | Keybinding/Chord (Mac/Other)                 |
 | ------------------------------------------------------------- | -------------------------------------------- |
-| `explorer.newFile` 																						| `a` 																				 |
-| `fileutils.removeFile` 																				| `d` 																				 |
-| `fileutils.copyFileName`																		  | `y n` 																			 |
-| `fileutils.copyFilePath`																		  | `y p` 																			 |
+| `explorer.newFile` 																						| `ctrl+a` 						  											 |
+| `fileutils.removeFile` 																				| `ctrl+d` 						  											 |
+| `fileutils.copyFileName`																		  | `ctrl+y n` 				  												 |
+| `fileutils.copyFilePath`																		  | `ctrl+y p` 				  												 |
 | `editor.action.selectAll`                                     | `alt+a`                                      |
 | `editor.action.webvieweditor.selectAll`                       | `alt+a`                                      |
 | `list.selectAll`                                              | `alt+a`                                      |
