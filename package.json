@@ -2718,12 +2718,12 @@
       {
         "command": "workbench.action.focusNextGroup",
         "key": "tab",
-        "when": "editorFocus && vim.mode == 'Normal' && !activeEditorGroupLast"
+        "when": "editorFocus && vim.mode == 'Normal'"
       },
       {
         "command": "workbench.action.focusSideBar",
         "key": "tab",
-        "when": "editorFocus && vim.mode == 'Normal' && activeEditorGroupLast"
+        "when": "editorFocus && vim.mode == 'Normal' && activeEditorGroupLast && sideBarVisible"
       },
       {
         "command": "workbench.action.focusPreviousGroup",

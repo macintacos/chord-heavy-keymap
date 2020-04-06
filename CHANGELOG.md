@@ -2,6 +2,10 @@
 
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
+## [1.4.6] - April 6, 2020
+
+- Improved the logic of `tab` when the sidebar isn't visible.
+
 ## [1.4.5] - April 5, 2020
 
 - Hotfix; had to add `ctrl` to all of the keybindings that were used in the file explorer because I couldn't get it to interpret those characters correctly when I was typing out a file name. I hope to revisit this in the future, since adding the `ctrl` is a bit inelegant.
