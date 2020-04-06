@@ -4,7 +4,7 @@ All notable changes to the "chord-heavy-keymap" extension will be documented in 
 
 ## [1.4.4] - April 5, 2020
 
-- Improved `tab` when in `normal` mode in VSCodeVim such that it now properly lets you cycle through the sidebar and all of the editors as you would expect. My ultimate goal is for the sidebar to "feel" like it's just another buffer, and accepts all the same commands that you'd expect. To that end...
+- Improved `tab` when in `normal` mode in VSCodeVim such that it now properly lets you cycle through the sidebar and all of the editors as you would expect. I haven't added the ability to cycle through the panel yet, but I'm not sure I want to. My ultimate goal is for the sidebar to "feel" like it's just another buffer, and accepts all the same commands that you'd expect. To that end...
 - The following is now possible in the Files explorer view:
   - `a` now prompts you to create a file in the current "node" you're on.
   - `d` not attempts to delete the file you're currently on.
