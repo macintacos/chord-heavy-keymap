@@ -215,8 +215,10 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.action.showAllEditorsByMostRecentlyUsed` | `cmd+o shift+e`/`ctrl+o shift+e` |
 | `workbench.action.files.openFileFolder`             | `cmd+o f`/`ctrl+o f`             |
 | `workbench.action.togglePanel`                      | `cmd+o l`/`ctrl+o l`             |
+| `workbench.view.extension.mongoDB`									| `cmd+o m`/`ctrl+o m`						 |
 | `workbench.view.extension.github-pull-requests`     | `cmd+o p`/`ctrl+o p`             |
 | `workbench.view.extension.project-manager`          | `cmd+o shift+p`/`ctrl+o shift+p` |
+| `workbench.action.toggleSidebarVisibility`					| `cmd+o s`/`ctrl+o s`						 |
 | `workbench.view.extension.todo-tree-container`      | `cmd+o t`/`ctrl+o t`             |
 | `confluence.showPreview`                            | `cmd+o v`/`ctrl+o v`             |
 | `confluence.showPreviewToSide`                      | `cmd+o v`/`ctrl+o v`             |
@@ -415,6 +417,7 @@ These are commands that have been "clobbered" and are thus needed to be remapped
 | `editor.action.peekDefinition`                                | `alt+enter`                                  |
 | `markdown-checkbox.markCheckbox`                              | `alt+enter`                                  |
 | `editor.action.addSelectionToNextFindMatch`                   | `alt+l`                                      |
+| `editor.action.openLink` 																			| `alt+shift+l`																 |
 | `editor.action.triggerSuggest`                                | `alt+space`                                  |
 | `toggleSuggestionDetails`                                     | `alt+space`                                  |
 | `expand_region`                                               | `alt+up`                                     |

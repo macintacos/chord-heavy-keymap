@@ -3769,6 +3769,125 @@
         "key": "ctrl+y p",
         "command": "copyFilePath",
         "when": "filesExplorerFocus && !editorTextFocus"
+      },
+      {
+        "mac": "cmd+o s",
+        "key": "ctrl+o s",
+        "command": "workbench.action.toggleSidebarVisibility"
+      },
+      {
+        "mac": "cmd+o m",
+        "key": "ctrl+o m",
+        "command": "workbench.view.extension.mongoDB"
+      },
+      {
+        "key": "tab",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.github-pull-requests'"
+      },
+      {
+        "key": "shift+tab",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.github-pull-requests'"
+      },
+      {
+        "key": "tab",
+        "command": "workbench.action.focusNextGroup",
+        "when": "inKeybindings"
+      },
+      {
+        "key": "shift+tab",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "inKeybindings"
+      },
+      {
+        "command": "workbench.action.focusSideBar",
+        "key": "tab",
+        "when": "inKeybindings && activeEditorGroupLast && sideBarVisible"
+      },
+      {
+        "command": "workbench.action.focusLastEditorGroup",
+        "key": "shift+tab",
+        "when": "inKeybindings && activeEditorGroupLast && !sideBarVisible"
+      },
+      {
+        "command": "workbench.action.focusSideBar",
+        "key": "shift+tab",
+        "when": "inKeybindings && activeEditorGroupIndex == 1 && sideBarVisible"
+      },
+      {
+        "key": "tab",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.bookmarks'"
+      },
+      {
+        "key": "shift+tab",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.bookmarks'"
+      },
+      {
+        "key": "tab",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.gistpad'"
+      },
+      {
+        "key": "shift+tab",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.gistpad'"
+      },
+      {
+        "key": "tab",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.todo-tree-container'"
+      },
+      {
+        "key": "shift+tab",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.todo-tree-container'"
+      },
+      {
+        "key": "tab",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.project-manager'"
+      },
+      {
+        "key": "shift+tab",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.project-manager'"
+      },
+      {
+        "key": "tab",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.dockerView'"
+      },
+      {
+        "key": "shift+tab",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.dockerView'"
+      },
+      {
+        "key": "tab",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.kubernetesView'"
+      },
+      {
+        "key": "shift+tab",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.kubernetesView'"
+      },
+      {
+        "key": "tab",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.mongoDB'"
+      },
+      {
+        "key": "shift+tab",
+        "command": "workbench.action.focusLastEditorGroup",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.mongoDB'"
+      },
+      {
+        "key": "ctrl+shift+l",
+        "command": "editor.action.openLink"
       }
     ]
   }

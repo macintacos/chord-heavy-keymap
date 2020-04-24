@@ -2,6 +2,13 @@
 
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
+## [1.4.7] - April 23, 2020
+
+- Added `ctrl+shift-l` as a shortcut for `editor.action.openLink`.
+- Added `cmd+o s` as a chord for opening the sidebar.
+- Added `cmd+o m` as a chord for opening the MongoDB view. (going to wait for its official release before I go adding other chords for that extension)
+- Added more logic to `tab`/`shift+tab` so that it responds correctly when in more types of views (like the shortcuts editor, some sidebar views, etc.).
+
 ## [1.4.6] - April 6, 2020
 
 - Improved the logic of `tab` when the sidebar isn't visible.
