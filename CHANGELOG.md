@@ -2,7 +2,7 @@
 
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
-## [1.5] - June 14, 2020
+## [1.5.0] - June 14, 2020
 
 - Normalized the codebase and did some scripting in the backend to make sure that it'd be easier to iterate over time. This mostly resulted in redundant keybindings being added, for for the package.json to be a bit more neat (all the keys are in the same order, which helps with my sanity).
 - Added some additional keybindings (in no particular order; if you're on Linux/Windows, map "cmd" to "ctrl" in your brain):
