@@ -3460,7 +3460,7 @@
         "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
       },
       {
-        "ket": "ctrl+b",
+        "key": "ctrl+b",
         "mac": "cmd+b",
         "command": "-markdown.extension.editing.toggleBold",
         "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
@@ -3758,7 +3758,7 @@
       },
       {
         "key": "cmd+0",
-        "when": "filesExplorerFocus && !editorTextFocus"
+        "command": "-workbench.action.focusSideBar"
       },
       {
         "key": "ctrl+y n",
