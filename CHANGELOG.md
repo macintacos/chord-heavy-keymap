@@ -2,6 +2,19 @@
 
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
+## [1.5] - June 14, 2020
+
+- Normalized the codebase and did some scripting in the backend to make sure that it'd be easier to iterate over time. This mostly resulted in redundant keybindings being added, for for the package.json to be a bit more neat (all the keys are in the same order, which helps with my sanity).
+- Added some additional keybindings (in no particular order; if you're on Linux/Windows, map "cmd" to "ctrl" in your brain):
+  - `ctrl+w s` -> `wiki.searchWiki`
+  - `cmd+g f` -> `git.fetch'
+  - `cmd+g shift+f` -> `git.fetchAll'
+  - `cmd+o s` -> `workbench.action.toggleSidebarVisibility`
+  - `cmd+f =` -> `editor.action.formatDocument.none`
+  - `cmd+f =` -> `editor.action.formatDocument`
+  - `cmd+w u` -> `workbench.action.reopenClosedEditor`
+- `cmd+b b` no longer invoked `quickOpen` but rather invokes `workbench.action.showAllEditorsByMostRecentlyUsed`, to more align with expectations of "listing currently open buffers" which is what `SPC b b` does in Spacemacs
+
 ## [1.4.7] - April 23, 2020
 
 - Added `ctrl+shift-l` as a shortcut for `editor.action.openLink`.

@@ -5,7 +5,7 @@
 - [Chord Heavy - A keymap inspired by Spacemacs](#chord-heavy---a-keymap-inspired-by-spacemacs)
 	- [Keymap](#keymap)
 		- [Important Single-chords](#important-single-chords)
-		- [Preferences/Settings (prefix: `,`)](#preferencessettings-prefix)
+		- [Preferences/Settings (prefix: `,`)](#preferencessettings-prefix-)
 		- [Buffers (prefix: `b`)](#buffers-prefix-b)
 		- [Code (prefix: `c`)](#code-prefix-c)
 		- [Debug (prefix: `d`)](#debug-prefix-d)
@@ -67,16 +67,16 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 
 ### Buffers (prefix: `b`)
 
-| Action                                    | Keybinding/Chord (Mac/Other)     |
-| ----------------------------------------- | -------------------------------- |
-| `workbench.action.quickOpen`              | `cmd+b b`/`ctrl+b b`             |
-| `workbench.action.closeActiveEditor`      | `cmd+b d`/`ctrl+b d`             |
-| `workbench.action.closeWindow`            | `cmd+b d`/`ctrl+b d`             |
-| `workbench.action.nextEditor`             | `cmd+b n`/`ctrl+b n`             |
-| `workbench.action.previousEditor`         | `cmd+b p`/`ctrl+b p`             |
-| `workbench.action.files.newUntitledFile`  | `cmd+b s`/`ctrl+b s`             |
-| `workbench.action.closeUnmodifiedEditors` | `cmd+b shift+d`/`ctrl+b shift+d` |
-| `workbench.action.reopenClosedEditor`     | `cmd+b u`/`ctrl+b u`             |
+| Action                                              | Keybinding/Chord (Mac/Other)     |
+| --------------------------------------------------- | -------------------------------- |
+| `workbench.action.showAllEditorsByMostRecentlyUsed` | `cmd+b b`/`ctrl+b b`             |
+| `workbench.action.closeActiveEditor`                | `cmd+b d`/`ctrl+b d`             |
+| `workbench.action.closeWindow`                      | `cmd+b d`/`ctrl+b d`             |
+| `workbench.action.nextEditor`                       | `cmd+b n`/`ctrl+b n`             |
+| `workbench.action.previousEditor`                   | `cmd+b p`/`ctrl+b p`             |
+| `workbench.action.files.newUntitledFile`            | `cmd+b s`/`ctrl+b s`             |
+| `workbench.action.closeUnmodifiedEditors`           | `cmd+b shift+d`/`ctrl+b shift+d` |
+| `workbench.action.reopenClosedEditor`               | `cmd+b u`/`ctrl+b u`             |
 
 ### Code (prefix: `c`)
 
@@ -135,7 +135,7 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `extension.advancedNewFile`                       | `cmd+f n`/`ctrl+f n`             |
 | `outline.focus`                                   | `cmd+f o`/`ctrl+f o`             |
 | `fileutils.renameFile`                            | `cmd+f cmd+r`/`ctrl+f ctrl+r`    |
-| `editor.action.startFindReplaceAction`            | `cmd+f r`/`ctrl+f r`             | when: `editorTextFocus` |
+| `editor.action.startFindReplaceAction`            | `cmd+f r`/`ctrl+f r`             |
 | `workbench.action.files.saveWithoutFormatting`    | `cmd+f s`/`ctrl+f s`             |
 | `fileutils.newFolderAtRoot`                       | `cmd+f shift+n`/`ctrl+f shift+n` |
 | `workbench.files.action.showActiveFileInExplorer` | `cmd+f shift+s`/`ctrl+f shift+s` |
@@ -144,6 +144,8 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.view.explorer`                         | `cmd+f t`/`ctrl+f t`             |
 | `workbench.action.files.newUntitledFile`          | `cmd+f u`/`ctrl+f u`             |
 | `copyFilePath`                                    | `cmd+f y`/`ctrl+f y`             |
+| `editor.action.formatDocument` 					| `cmd+f =`/`ctrl+f =` 			   |
+| `editor.action.formatDocument` 					| `cmd+f =`/`ctrl+f =` 			   |
 
 ### Git (prefix: `g`)
 
@@ -152,6 +154,8 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `git.stageAllTracked`         | `cmd+g a`/`ctrl+g a`             |
 | `git.checkout`                | `cmd+g b`/`ctrl+g b`             |
 | `gitlens.toggleFileBlame`     | `cmd+g cmd+b`/`ctrl+g ctrl+b`    |
+|`git.fetch`    			    |`cmd+g f`/`ctrl+g f`              |
+|`git.fetchAll`				    |`cmd+g shift+f`/`ctrl+g shift+f`  |
 | `git-graph.view`              | `cmd+g g`/`ctrl+g g`             |
 | `git.init`                    | `cmd+g i`/`ctrl+g i`             |
 | `git.pull`                    | `cmd+g l`/`ctrl+g l`             |
@@ -215,10 +219,10 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.action.showAllEditorsByMostRecentlyUsed` | `cmd+o shift+e`/`ctrl+o shift+e` |
 | `workbench.action.files.openFileFolder`             | `cmd+o f`/`ctrl+o f`             |
 | `workbench.action.togglePanel`                      | `cmd+o l`/`ctrl+o l`             |
-| `workbench.view.extension.mongoDB`									| `cmd+o m`/`ctrl+o m`						 |
+| `workbench.view.extension.mongoDB`				  | `cmd+o m`/`ctrl+o m`		     |
 | `workbench.view.extension.github-pull-requests`     | `cmd+o p`/`ctrl+o p`             |
 | `workbench.view.extension.project-manager`          | `cmd+o shift+p`/`ctrl+o shift+p` |
-| `workbench.action.toggleSidebarVisibility`					| `cmd+o s`/`ctrl+o s`						 |
+| `workbench.action.toggleSidebarVisibility`		  | `cmd+o s`/`ctrl+o s`	         |
 | `workbench.view.extension.todo-tree-container`      | `cmd+o t`/`ctrl+o t`             |
 | `confluence.showPreview`                            | `cmd+o v`/`ctrl+o v`             |
 | `confluence.showPreviewToSide`                      | `cmd+o v`/`ctrl+o v`             |
@@ -341,6 +345,7 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.action.files.newUntitledFile`              | `cmd+w t`/`ctrl+w t`                              |
 | `workbench.action.focusNextGroup`                     | `cmd+w tab`/`ctrl+w tab`                          |
 | `workbench.action.focusPreviousGroup`                 | `cmd+w tab`/`ctrl+w tab`                          |
+| `workbench.action.reopenClosedEditor`                 | `cmd+w u`/`ctrl+w u`                              |
 | `workbench.action.focusAboveGroup`                    | `cmd+w up`/`ctrl+w up`                            |
 | `workbench.action.splitEditor`                        | `cmd+w v`/`ctrl+w v`                              |
 | `workbench.action.terminal.split`                     | `cmd+w v`/`ctrl+w v`                              |
@@ -361,9 +366,11 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 
 ### Clobbered Commands
 
-These are commands that have been "clobbered" and are thus needed to be remapped. Anything that would be a "normal" mapping before (`cmd+c` for "copy", for example) need to be changed in order for them to work the way that you expect. Trust me, this makes more sense when you actually start using chords in VSCode.
+These are commands that have been "clobbered" and are thus needed to be remapped. Anything that would be a "normal" mapping before (`cmd+c` for "copy", for example) needed to be changed in order for them to work the way that you expect. Trust me, this makes more sense when you actually start using chords in VSCode.
 
 **NOTE:** These aren't meant to be mnemonic or follow any Spacemacs idioms; it's meant to just provide "default" functionality that one would come to expect on their respective OS.
+
+If you notice anything that's missing that you'd like to have added back, please feel free to open an issue and I'll get it added.
 
 | Action                                      | Keybinding/Chord (Mac/Other)  |
 | ------------------------------------------- | ----------------------------- |
@@ -405,10 +412,10 @@ These are commands that have been "clobbered" and are thus needed to be remapped
 
 | Action                                                        | Keybinding/Chord (Mac/Other)                 |
 | ------------------------------------------------------------- | -------------------------------------------- |
-| `explorer.newFile` 																						| `ctrl+a` 						  											 |
-| `fileutils.removeFile` 																				| `ctrl+d` 						  											 |
-| `fileutils.copyFileName`																		  | `ctrl+y n` 				  												 |
-| `fileutils.copyFilePath`																		  | `ctrl+y p` 				  												 |
+| `explorer.newFile` 											| `ctrl+a` 						  			   |
+| `fileutils.removeFile` 										| `ctrl+d` 						  			   |
+| `fileutils.copyFileName`										| `ctrl+y n` 				  				   |
+| `fileutils.copyFilePath`										| `ctrl+y p` 				  				   |
 | `editor.action.selectAll`                                     | `alt+a`                                      |
 | `editor.action.webvieweditor.selectAll`                       | `alt+a`                                      |
 | `list.selectAll`                                              | `alt+a`                                      |
@@ -417,7 +424,7 @@ These are commands that have been "clobbered" and are thus needed to be remapped
 | `editor.action.peekDefinition`                                | `alt+enter`                                  |
 | `markdown-checkbox.markCheckbox`                              | `alt+enter`                                  |
 | `editor.action.addSelectionToNextFindMatch`                   | `alt+l`                                      |
-| `editor.action.openLink` 																			| `alt+shift+l`																 |
+| `editor.action.openLink` 										| `alt+shift+l`								   |
 | `editor.action.triggerSuggest`                                | `alt+space`                                  |
 | `toggleSuggestionDetails`                                     | `alt+space`                                  |
 | `expand_region`                                               | `alt+up`                                     |
@@ -445,13 +452,14 @@ These are commands that have been "clobbered" and are thus needed to be remapped
 | `workbench.action.quickOpenSelectPrevious`                    | `ctrl+k`                                     |
 | `cursorRight`                                                 | `ctrl+l`                                     |
 | `workbench.action.files.save`                                 | `ctrl+s`                                     |
-| `search.action.focusNextSearchResult`                         | `ctrl+shift+j`                               | when: `hasSearchResult && searchViewletVisible` |
-| `search.action.focusPreviousSearchResult`                     | `ctrl+shift+k`                               | when: `hasSearchResult && searchViewletVisible` |
+| `search.action.focusNextSearchResult`                         | `ctrl+shift+j`                               |
+| `search.action.focusPreviousSearchResult`                     | `ctrl+shift+k`                               |
 | `deleteWordPartRight`                                         | `ctrl+shift+alt+backspace |`                 |
 | `cursorWordPartStartLeftSelect`                               | `ctrl+shift+alt+left`                        |
 | `cursorWordPartRightSelect`                                   | `ctrl+shift+alt+right`                       |
 | `workbench.action.terminal.runSelectedText`                   | `ctrl+shift+alt+t`                           |
 | `workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup` | `ctrl+tab`                                   |
+|`wiki.searchWiki`												| `ctrl+w s` 								   |
 | `extension.jumpy-exit`                                        | `Escape`                                     |
 | `vscode-neovim.compositeEscape1`                              | `j`                                          |
 | `extension.toggleTheme`                                       | `shift+alt+d`                                |
@@ -461,7 +469,7 @@ These are commands that have been "clobbered" and are thus needed to be remapped
 | `editor.action.deleteLines`                                   | `shift+cmd+backspace`/`shift+ctrl+backspace` |
 | `workbench.action.decreaseViewSize`                           | `shift+cmd+,`/`shift+ctrl+,`                 |
 | `workbench.action.increaseViewSize`                           | `shift+cmd+.`/`shift+ctrl+.`                 |
-| `workbench.action.focusFirstEditorGroup`                      | `tab`                                        | when: `sideBarFocus && activeViewlet == 'workbench.view.explorer'` |
+| `workbench.action.focusFirstEditorGroup`                      | `tab`                                        |
 | `cursorUp`                                                    | `up`                                         |
 
 ## Inspiration
