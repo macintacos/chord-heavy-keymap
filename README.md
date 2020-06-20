@@ -32,6 +32,7 @@
 	- [Multi-Command Actions](#multi-command-actions)
 	- [Issues to Vote For](#issues-to-vote-for)
 	- [Potential Future Improvements](#potential-future-improvements)
+	- [Compiling/Deploying:](#compilingdeploying)
 
 After trying and failing to get a [Spacemacs](https://www.spacemacs.org/) installation to function properly, I came back to VSCode since it was significantly less finicky to set up (don't @ me, Spacemacs diehards). However, the one thing that I _really_ liked about Spacemacs was the [mnemonic](https://develop.spacemacs.org/doc/DOCUMENTATION.html#mnemonic), chord-focused shortcuts to execute actions and navigate.
 
@@ -742,3 +743,7 @@ VSCode was developed with a completely different user-base in mind, but that doe
 	- [java](https://www.spacemacs.org/layers/+lang/java/README.html)
 	- [typescript](https://www.spacemacs.org/layers/+lang/typescript/README.html)
 	- [shell-scripts](https://www.spacemacs.org/layers/+lang/shell-scripts/README.html)
+
+## Compiling/Deploying:
+
+See: https://docs.google.com/spreadsheets/d/1eXYiV7pXs4lz9Dvs_8ktrqcOdBJQK7agaQ8QDqkIdZI/edit#gid=2041410408
