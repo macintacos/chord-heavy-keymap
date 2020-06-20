@@ -6,6 +6,7 @@ STAGE_TWO="$CURRENT_DIRECTORY"/stage_02.csv
 STAGE_THREE="$CURRENT_DIRECTORY"/stage_03.csv
 STAGE_FOUR="$CURRENT_DIRECTORY"/stage_04.json
 STAGE_FIVE="$CURRENT_DIRECTORY"/stage_05.json
+STAGE_SIX="$CURRENT_DIRECTORY"/stage_06.json
 
 jq --raw-output '.[] | [.command,.key,.mac,.when] | @csv' \
     "$HOME/Library/Application Support/Code/User/keybindings.json" >"$STAGE_ONE"
@@ -58,7 +59,9 @@ sed -E "s/\+comma/\+,/g" "$STAGE_FOUR" |
     sed -E 's/\\"//g' >"$STAGE_FIVE"
 
 echo "Formatting file we've created before doing anything else..." && prettier --write "$STAGE_FIVE"
-cat "$STAGE_FIVE"
+jq 'del(.[-1])' "$STAGE_FIVE" >"$STAGE_SIX"
+
+cat "$STAGE_SIX"
 
 # Clean up after yourself
-rm -f "$STAGE_ONE" "$STAGE_TWO" "$STAGE_THREE" "$STAGE_FOUR" "$STAGE_FIVE"
+rm -f "$STAGE_ONE" "$STAGE_TWO" "$STAGE_THREE" "$STAGE_FOUR" "$STAGE_FIVE" "$STAGE_SIX"
