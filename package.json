@@ -2457,11 +2457,6 @@
         "mac": "cmd+w m"
       },
       {
-        "command": "multiCommand.repeatLastCommand",
-        "key": "ctrl+alt+r",
-        "mac": "cmd+ctrl+r"
-      },
-      {
         "command": "outline.focus",
         "key": "ctrl+f o",
         "mac": "cmd+f o"
@@ -3135,12 +3130,6 @@
         "when": "terminalFindWidgetFocused"
       },
       {
-        "command": "workbench.action.terminal.resizePaneLeft",
-        "key": "ctrl+l left",
-        "mac": "cmd+l left",
-        "when": "terminalFocus"
-      },
-      {
         "command": "workbench.action.terminal.runSelectedText",
         "key": "ctrl+shift+alt+t",
         "mac": "ctrl+shift+alt+t"
@@ -3283,8 +3272,8 @@
       },
       {
         "command": "workbench.view.extension.todo-tree-container",
-        "key": "ctrl+o t",
-        "mac": "cmd+o t"
+        "key": "ctrl+o shift+t",
+        "mac": "cmd+o shift+t"
       },
       {
         "command": "workbench.view.extensions",
@@ -3443,6 +3432,12 @@
         "key": "tab",
         "mac": "tab",
         "when": "sideBarFocus && activeViewlet == 'workbench.view.extensions'"
+      },
+      {
+        "command": "workbench.action.focusFirstEditorGroup",
+        "key": "tab",
+        "mac": "tab",
+        "when": "sideBarFocus && activeViewlet == 'workbench.view.extension.test'"
       },
       {
         "command": "workbench.view.extension.dockerView",
@@ -4096,6 +4091,91 @@
         "command": "git.fetchAll",
         "key": "ctrl+g shift+f",
         "mac": "cmd+g shift+f"
+      },
+      {
+        "command": "workbench.action.togglePanel",
+        "key": "ctrl+l o",
+        "mac": "cmd+l o"
+      },
+      {
+        "command": "-workbench.action.terminal.resizePaneDown",
+        "key": "ctrl+ctrl+down",
+        "mac": "ctrl+cmd+down",
+        "when": "terminalFocus"
+      },
+      {
+        "command": "-workbench.action.terminal.resizePaneRight",
+        "key": "ctrl+ctrl+right",
+        "mac": "ctrl+cmd+right",
+        "when": "terminalFocus"
+      },
+      {
+        "command": "-workbench.action.terminal.resizePaneUp",
+        "key": "ctrl+ctrl+up",
+        "mac": "ctrl+cmd+up",
+        "when": "terminalFocus"
+      },
+      {
+        "command": "workbench.action.positionPanelRight",
+        "key": "ctrl+l right",
+        "mac": "cmd+l right"
+      },
+      {
+        "command": "workbench.action.positionPanelLeft",
+        "key": "ctrl+l left",
+        "mac": "cmd+l left"
+      },
+      {
+        "command": "workbench.action.positionPanelBottom",
+        "key": "ctrl+l down",
+        "mac": "cmd+l down"
+      },
+      {
+        "command": "workbench.action.nextPanelView",
+        "key": "ctrl+tab",
+        "mac": "ctrl+tab",
+        "when": "panelFocus"
+      },
+      {
+        "command": "workbench.action.previousPanelView",
+        "key": "shift+ctrl+tab",
+        "mac": "shift+ctrl+tab",
+        "when": "panelFocus"
+      },
+      {
+        "command": "workbench.view.extension.test",
+        "key": "ctrl+o t",
+        "mac": "cmd+o t"
+      },
+      {
+        "command": "workbench.action.pinEditor",
+        "key": "ctrl+w p",
+        "mac": "cmd+w p",
+        "when": "config.workbench.editor.showTabs && !editorSticky"
+      },
+      {
+        "command": "-workbench.action.pinEditor",
+        "key": "ctrl+k shift+enter",
+        "mac": "cmd+k shift+enter",
+        "when": "config.workbench.editor.showTabs && !editorSticky"
+      },
+      {
+        "command": "workbench.action.unpinEditor",
+        "key": "ctrl+w shift+p",
+        "mac": "cmd+w shift+p",
+        "when": "config.workbench.editor.showTabs && editorSticky"
+      },
+      {
+        "command": "-workbench.action.unpinEditor",
+        "key": "ctrl+k shift+enter",
+        "mac": "cmd+k shift+enter",
+        "when": "config.workbench.editor.showTabs && editorSticky"
+      },
+      {
+        "command": "-editor.action.marker.prevInFiles",
+        "key": "shift+f8",
+        "mac": "shift+f8",
+        "when": "editorFocus"
       }
     ]
   }

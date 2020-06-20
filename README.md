@@ -206,10 +206,14 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.action.focusPanel`              | `cmd+l f`/`ctrl+l f`                 |
 | `workbench.action.terminal.resizePaneLeft` | `cmd+l left`/`ctrl+l left`           |
 | `workbench.action.toggleMaximizedPanel`    | `cmd+l m`/`ctrl+l m`                 |
+| `workbench.action.togglePanel` 			 | `cmd+l o`/`ctrl+l o`   				|
 | `workbench.panel.markers.view.focus`       | `cmd+l p`/`ctrl+l p`                 |
 | `workbench.action.previousPanelView`       | `cmd+l shift+tab`/`ctrl+l shift+tab` |
 | `workbench.action.togglePanel`             | `cmd+l t`/`ctrl+l t`                 |
 | `workbench.action.nextPanelView`           | `cmd+l tab`/`ctrl+l tab`             |
+| `workbench.action.positionPanelRight` 	 | `cmd+l right`/`ctrl+l right`         |
+| `workbench.action.positionPanelLeft` 	     | `cmd+l left`/`ctrl+l left`           |
+| `workbench.action.positionPanelBottom` 	 | `cmd+l down`/`ctrl+l down`           |
 
 ### Open... (prefix: `o`)
 
@@ -326,6 +330,8 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `multiCommand.closePanelAndSidebarAndOtherEditors`    | `cmd+w m`/`ctrl+w m`                              |
 | `workbench.action.newWindow`                          | `cmd+w n`/`ctrl+w n`                              |
 | `workbench.action.quickSwitchWindow`                  | `cmd+w o`/`ctrl+w o`                              |
+| `workbench.action.pinEditor`                          | `cmd+w p`/`ctrl+w p`                              |
+| `workbench.action.unpinEditor`                        | `cmd+w shift+p`/`ctrl+w shift+p` 					|
 | `workbench.action.focusNextGroup`                     | `cmd+w right`/`ctrl+w right`                      |
 | `workbench.action.reloadWindow`                       | `cmd+w cmd+r`/`ctrl+w ctrl+r`                     |
 | `workbench.action.reloadWindowWithExtensionsDisabled` | `cmd+w shift+cmd+r`/`ctrl+w shift+ctrl+r`         |

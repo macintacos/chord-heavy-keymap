@@ -2,6 +2,25 @@
 
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
+## [1.5.1] - June 20, 2020
+
+- New chords:
+  - `cmd+l o` is now `workbench.action.togglePanel`
+  - `cmd+l right` is now `workbench.action.positionPanelRight`
+  - `cmd+l left` is now `workbench.action.positionPanelLeft`
+  - `cmd+l down` is now `workbench.action.positionPanelBottom`
+  - `ctrl+tab` is now `workbench.action.nextPanelView` (when panel is focused)
+  - `shift+ctrl+tab` is now `workbench.action.previousPanelView` (when panel is focused)
+  - `cmd+w p` is now `workbench.action.pinEditor`
+  - `cmd+w shift+p` is now `workbench.action.unpinEditor`
+- Removed command that don't mean anything anymore (`multiCommand.repearLastCommand`)
+- Removed the shortcut to resize the terminal pane, replaced with various shortcuts to resize the pane itself instead.
+- `cmd+o t` now opens Test Explorer, if you have it installed.
+  - This means that opening the TODO Tree view is now `cmd+o shift+t`
+- Made sure that `tab` made more sense in new views (like the Test Explorer) and brought you to the first editor group, if there is one.
+- (Backend stuff) Updated the build script so that it's like 10x easier to deploy; been wanting to do this for a long time.
+  - Really doesn't matter for anyone else, but I really want to automate the compilation of the README tables as well... another time.
+
 ## [1.5.0] - June 14, 2020
 
 - Normalized the codebase and did some scripting in the backend to make sure that it'd be easier to iterate over time. This mostly resulted in redundant keybindings being added, for for the package.json to be a bit more neat (all the keys are in the same order, which helps with my sanity).
