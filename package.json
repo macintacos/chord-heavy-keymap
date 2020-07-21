@@ -2,7 +2,7 @@
   "name": "chord-heavy-keymap",
   "displayName": "Chord Heavy",
   "description": "A keymap inspired by Spacemacs",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "publisher": "vscode-macintacos",
   "repository": {
     "type": "git",
