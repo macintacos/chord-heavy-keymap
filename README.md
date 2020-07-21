@@ -3,36 +3,36 @@
 **Linux/Windows support is only available in BETA right now.** If you run into any odd keybindings with Linux/Windows, please create an issue! I don't have either OS to test with (and I'm low-key lazy to thoroughly vet these on those OS's myself).
 
 - [Chord Heavy - A keymap inspired by Spacemacs](#chord-heavy---a-keymap-inspired-by-spacemacs)
-    - [Keymap](#keymap)
-        - [Important Single-chords](#important-single-chords)
-        - [Preferences/Settings (prefix: `,`)](#preferencessettings-prefix-)
-        - [Buffers (prefix: `b`)](#buffers-prefix-b)
-        - [Code (prefix: `c`)](#code-prefix-c)
-        - [Debug (prefix: `d`)](#debug-prefix-d)
-        - [Errors (prefix: `e`)](#errors-prefix-e)
-        - [Files (prefix: `f`)](#files-prefix-f)
-        - [Git (prefix: `g`)](#git-prefix-g)
-        - [Help (prefix: `h`)](#help-prefix-h)
-        - [Jump (prefix: `j`)](#jump-prefix-j)
-        - [Markdown All-in-One (prefix: `m`)](#markdown-all-in-one-prefix-m)
-        - [Panel (prefix: `l`)](#panel-prefix-l)
-        - [Open... (prefix: `o`)](#open-prefix-o)
-        - [Project (prefix: `p`)](#project-prefix-p)
-        - [Quit/Close (prefix: `q`)](#quitclose-prefix-q)
-        - [Refactor (prefix: `r`)](#refactor-prefix-r)
-        - [Search (prefix: `s`)](#search-prefix-s)
-        - [Toggle (prefix: `t`)](#toggle-prefix-t)
-        - [Window (prefix: `w`)](#window-prefix-w)
-        - [Yank/Copy (prefix: `y`)](#yankcopy-prefix-y)
-        - [Clobbered Commands](#clobbered-commands)
-        - [Misc. (one-off shortcuts, most not `chords)`](#misc-one-off-shortcuts-most-not-chords)
-    - [Inspiration](#inspiration)
-    - [Caveats](#caveats)
-    - [VSCodeVim Keybindings](#vscodevim-keybindings)
-    - [Multi-Command Actions](#multi-command-actions)
-    - [Issues to Vote For](#issues-to-vote-for)
-    - [Potential Future Improvements](#potential-future-improvements)
-    - [Compiling/Deploying](#compilingdeploying)
+  - [Keymap](#keymap)
+    - [Important Single-chords](#important-single-chords)
+    - [Preferences/Settings (prefix: `,`)](#preferencessettings-prefix-)
+    - [Buffers (prefix: `b`)](#buffers-prefix-b)
+    - [Code (prefix: `c`)](#code-prefix-c)
+    - [Debug (prefix: `d`)](#debug-prefix-d)
+    - [Errors (prefix: `e`)](#errors-prefix-e)
+    - [Files (prefix: `f`)](#files-prefix-f)
+    - [Git (prefix: `g`)](#git-prefix-g)
+    - [Help (prefix: `h`)](#help-prefix-h)
+    - [Jump (prefix: `j`)](#jump-prefix-j)
+    - [Markdown All-in-One (prefix: `m`)](#markdown-all-in-one-prefix-m)
+    - [Panel (prefix: `l`)](#panel-prefix-l)
+    - [Open... (prefix: `o`)](#open-prefix-o)
+    - [Project (prefix: `p`)](#project-prefix-p)
+    - [Quit/Close (prefix: `q`)](#quitclose-prefix-q)
+    - [Refactor (prefix: `r`)](#refactor-prefix-r)
+    - [Search (prefix: `s`)](#search-prefix-s)
+    - [Toggle (prefix: `t`)](#toggle-prefix-t)
+    - [Window (prefix: `w`)](#window-prefix-w)
+    - [Yank/Copy (prefix: `y`)](#yankcopy-prefix-y)
+    - [Clobbered Commands](#clobbered-commands)
+    - [Misc. (one-off shortcuts, most not `chords)`](#misc-one-off-shortcuts-most-not-chords)
+  - [Inspiration](#inspiration)
+  - [Caveats](#caveats)
+  - [VSCodeVim Keybindings](#vscodevim-keybindings)
+  - [Multi-Command Actions](#multi-command-actions)
+  - [Issues to Vote For](#issues-to-vote-for)
+  - [Potential Future Improvements](#potential-future-improvements)
+  - [Compiling/Deploying](#compilingdeploying)
 
 After trying and failing to get a [Spacemacs](https://www.spacemacs.org/) installation to function properly, I came back to VSCode since it was significantly less finicky to set up (don't @ me, Spacemacs diehards). However, the one thing that I _really_ liked about Spacemacs was the [mnemonic](https://develop.spacemacs.org/doc/DOCUMENTATION.html#mnemonic), chord-focused shortcuts to execute actions and navigate.
 
@@ -145,8 +145,8 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.view.explorer`                         | `cmd+f t`/`ctrl+f t`             |
 | `workbench.action.files.newUntitledFile`          | `cmd+f u`/`ctrl+f u`             |
 | `copyFilePath`                                    | `cmd+f y`/`ctrl+f y`             |
-| `editor.action.formatDocument` 					| `cmd+f =`/`ctrl+f =` 			   |
-| `editor.action.formatDocument` 					| `cmd+f =`/`ctrl+f =` 			   |
+| `editor.action.formatDocument`                    | `cmd+f =`/`ctrl+f =`             |
+| `editor.action.formatDocument`                    | `cmd+f =`/`ctrl+f =`             |
 
 ### Git (prefix: `g`)
 
@@ -155,9 +155,10 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `git.stageAllTracked`         | `cmd+g a`/`ctrl+g a`             |
 | `git.checkout`                | `cmd+g b`/`ctrl+g b`             |
 | `gitlens.toggleFileBlame`     | `cmd+g cmd+b`/`ctrl+g ctrl+b`    |
-|`git.fetch`    			    |`cmd+g f`/`ctrl+g f`              |
-|`git.fetchAll`				    |`cmd+g shift+f`/`ctrl+g shift+f`  |
-| `git-graph.view`              | `cmd+g g`/`ctrl+g g`             |
+| `git.fetch`                   | `cmd+g f`/`ctrl+g f`             |
+| `git.fetchAll`                | `cmd+g shift+f`/`ctrl+g shift+f` |
+| `git.viewHistory`             | `cmd+g g`/`ctrl+g g`             |
+| `git.viewFileHistory`         | `cmd+g shift+g`/`ctrl+g shift+g` |
 | `git.init`                    | `cmd+g i`/`ctrl+g i`             |
 | `git.pull`                    | `cmd+g l`/`ctrl+g l`             |
 | `extension.openInGitHub`      | `cmd+g o`/`ctrl+g o`             |
@@ -187,16 +188,16 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 
 ### [Markdown All-in-One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) (prefix: `m`)
 
-| Action                                           | Keybinding/Chord (Mac/Other)        |
-| ------------------------------------------------ | ----------------------------------- |
-| `markdown.extension.editing.toggleMath`          | `cmd+m m`/`ctrl+m m`                |
-| `markdown.extension.checkTaskList`               | `cmd+m c`/`ctrl+m c`                |
-| `markdown.extension.editing.toggleBold`          | `cmd+m b`/`ctrl+m b`                |
-| `markdown.extension.editing.toggleItalic`        | `cmd+m i`/`ctrl+m i`                |
-| `markdown.extension.editing.toggleStrikethrough` | `cmd+m s`/`ctrl+m s`                |
-| `markdown.extension.editing.toggleCodeSpan`      | ``cmd+m ` ``/``ctrl+m ` ``      |
+| Action                                           | Keybinding/Chord (Mac/Other)          |
+| ------------------------------------------------ | ------------------------------------- |
+| `markdown.extension.editing.toggleMath`          | `cmd+m m`/`ctrl+m m`                  |
+| `markdown.extension.checkTaskList`               | `cmd+m c`/`ctrl+m c`                  |
+| `markdown.extension.editing.toggleBold`          | `cmd+m b`/`ctrl+m b`                  |
+| `markdown.extension.editing.toggleItalic`        | `cmd+m i`/`ctrl+m i`                  |
+| `markdown.extension.editing.toggleStrikethrough` | `cmd+m s`/`ctrl+m s`                  |
+| `markdown.extension.editing.toggleCodeSpan`      | ``cmd+m ` ``/``ctrl+m ` ``            |
 | `markdown.extension.editing.toggleCodeBlock`     | ``cmd+m shift+` ``/``cmd+m shift+` `` |
-| `markdown.extension.editing.toggleList`          | `cmd+m l`/`cmd+m l`                 |
+| `markdown.extension.editing.toggleList`          | `cmd+m l`/`cmd+m l`                   |
 
 ### Panel (prefix: `l`)
 
@@ -206,14 +207,14 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.action.focusPanel`              | `cmd+l f`/`ctrl+l f`                 |
 | `workbench.action.terminal.resizePaneLeft` | `cmd+l left`/`ctrl+l left`           |
 | `workbench.action.toggleMaximizedPanel`    | `cmd+l m`/`ctrl+l m`                 |
-| `workbench.action.togglePanel` 			 | `cmd+l o`/`ctrl+l o`   				|
+| `workbench.action.togglePanel`             | `cmd+l o`/`ctrl+l o`                 |
 | `workbench.panel.markers.view.focus`       | `cmd+l p`/`ctrl+l p`                 |
 | `workbench.action.previousPanelView`       | `cmd+l shift+tab`/`ctrl+l shift+tab` |
 | `workbench.action.togglePanel`             | `cmd+l t`/`ctrl+l t`                 |
 | `workbench.action.nextPanelView`           | `cmd+l tab`/`ctrl+l tab`             |
-| `workbench.action.positionPanelRight` 	 | `cmd+l right`/`ctrl+l right`         |
-| `workbench.action.positionPanelLeft` 	     | `cmd+l left`/`ctrl+l left`           |
-| `workbench.action.positionPanelBottom` 	 | `cmd+l down`/`ctrl+l down`           |
+| `workbench.action.positionPanelRight`      | `cmd+l right`/`ctrl+l right`         |
+| `workbench.action.positionPanelLeft`       | `cmd+l left`/`ctrl+l left`           |
+| `workbench.action.positionPanelBottom`     | `cmd+l down`/`ctrl+l down`           |
 
 ### Open... (prefix: `o`)
 
@@ -224,10 +225,10 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.action.showAllEditorsByMostRecentlyUsed` | `cmd+o shift+e`/`ctrl+o shift+e` |
 | `workbench.action.files.openFileFolder`             | `cmd+o f`/`ctrl+o f`             |
 | `workbench.action.togglePanel`                      | `cmd+o l`/`ctrl+o l`             |
-| `workbench.view.extension.mongoDB`				  | `cmd+o m`/`ctrl+o m`		     |
+| `workbench.view.extension.mongoDB`                  | `cmd+o m`/`ctrl+o m`             |
 | `workbench.view.extension.github-pull-requests`     | `cmd+o p`/`ctrl+o p`             |
 | `workbench.view.extension.project-manager`          | `cmd+o shift+p`/`ctrl+o shift+p` |
-| `workbench.action.toggleSidebarVisibility`		  | `cmd+o s`/`ctrl+o s`	         |
+| `workbench.action.toggleSidebarVisibility`          | `cmd+o s`/`ctrl+o s`             |
 | `workbench.view.extension.todo-tree-container`      | `cmd+o t`/`ctrl+o t`             |
 | `confluence.showPreview`                            | `cmd+o v`/`ctrl+o v`             |
 | `confluence.showPreviewToSide`                      | `cmd+o v`/`ctrl+o v`             |
@@ -328,10 +329,11 @@ Also, before you get mad at me, I really encourage you to read the [Caveats](#ca
 | `workbench.action.focusNextGroup`                     | `cmd+w l`/`ctrl+w l`                              |
 | `workbench.action.focusPreviousGroup`                 | `cmd+w left`/`ctrl+w left`                        |
 | `multiCommand.closePanelAndSidebarAndOtherEditors`    | `cmd+w m`/`ctrl+w m`                              |
+| `editor.action.toggleMinimap`                         | `cmd+w shift+m`/`ctrl+w shift+m`                  |
 | `workbench.action.newWindow`                          | `cmd+w n`/`ctrl+w n`                              |
 | `workbench.action.quickSwitchWindow`                  | `cmd+w o`/`ctrl+w o`                              |
 | `workbench.action.pinEditor`                          | `cmd+w p`/`ctrl+w p`                              |
-| `workbench.action.unpinEditor`                        | `cmd+w shift+p`/`ctrl+w shift+p` 					|
+| `workbench.action.unpinEditor`                        | `cmd+w shift+p`/`ctrl+w shift+p`                  |
 | `workbench.action.focusNextGroup`                     | `cmd+w right`/`ctrl+w right`                      |
 | `workbench.action.reloadWindow`                       | `cmd+w cmd+r`/`ctrl+w ctrl+r`                     |
 | `workbench.action.reloadWindowWithExtensionsDisabled` | `cmd+w shift+cmd+r`/`ctrl+w shift+ctrl+r`         |
@@ -419,10 +421,10 @@ If you notice anything that's missing that you'd like to have added back, please
 
 | Action                                                        | Keybinding/Chord (Mac/Other)                 |
 | ------------------------------------------------------------- | -------------------------------------------- |
-| `explorer.newFile` 											| `ctrl+a` 						  			   |
-| `fileutils.removeFile` 										| `ctrl+d` 						  			   |
-| `fileutils.copyFileName`										| `ctrl+y n` 				  				   |
-| `fileutils.copyFilePath`										| `ctrl+y p` 				  				   |
+| `explorer.newFile`                                            | `ctrl+a`                                     |
+| `fileutils.removeFile`                                        | `ctrl+d`                                     |
+| `fileutils.copyFileName`                                      | `ctrl+y n`                                   |
+| `fileutils.copyFilePath`                                      | `ctrl+y p`                                   |
 | `editor.action.selectAll`                                     | `alt+a`                                      |
 | `editor.action.webvieweditor.selectAll`                       | `alt+a`                                      |
 | `list.selectAll`                                              | `alt+a`                                      |
@@ -431,7 +433,7 @@ If you notice anything that's missing that you'd like to have added back, please
 | `editor.action.peekDefinition`                                | `alt+enter`                                  |
 | `markdown-checkbox.markCheckbox`                              | `alt+enter`                                  |
 | `editor.action.addSelectionToNextFindMatch`                   | `alt+l`                                      |
-| `editor.action.openLink` 										| `alt+shift+l`								   |
+| `editor.action.openLink`                                      | `alt+shift+l`                                |
 | `editor.action.triggerSuggest`                                | `alt+space`                                  |
 | `toggleSuggestionDetails`                                     | `alt+space`                                  |
 | `expand_region`                                               | `alt+up`                                     |
@@ -458,6 +460,8 @@ If you notice anything that's missing that you'd like to have added back, please
 | `selectPrevSuggestion`                                        | `ctrl+k`                                     |
 | `workbench.action.quickOpenSelectPrevious`                    | `ctrl+k`                                     |
 | `cursorRight`                                                 | `ctrl+l`                                     |
+| `multiCommand.moveToNextChangeAndShow`                        | `ctrl+n`                                     |
+| `multiCommand.moveToPrevChangeAndShow`                        | `ctrl+p`                                     |
 | `workbench.action.files.save`                                 | `ctrl+s`                                     |
 | `search.action.focusNextSearchResult`                         | `ctrl+shift+j`                               |
 | `search.action.focusPreviousSearchResult`                     | `ctrl+shift+k`                               |
@@ -466,7 +470,7 @@ If you notice anything that's missing that you'd like to have added back, please
 | `cursorWordPartRightSelect`                                   | `ctrl+shift+alt+right`                       |
 | `workbench.action.terminal.runSelectedText`                   | `ctrl+shift+alt+t`                           |
 | `workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup` | `ctrl+tab`                                   |
-|`wiki.searchWiki`												| `ctrl+w s` 								   |
+| `wiki.searchWiki`                                             | `ctrl+w s`                                   |
 | `extension.jumpy-exit`                                        | `Escape`                                     |
 | `vscode-neovim.compositeEscape1`                              | `j`                                          |
 | `extension.toggleTheme`                                       | `shift+alt+d`                                |

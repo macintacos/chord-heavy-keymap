@@ -1,6 +1,19 @@
 # Change Log
 
-All notable changes to the "chord-heavy-keymap" extension will be documented in this file. See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
+All notable changes to the "chord-heavy-keymap" extension will be documented in this file.
+See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
+
+## [1.5.2] - July 21, 2020
+
+- New chords:
+  - All bookmark-related functionality was added to VSCodeVim keybindings. [Refer to the
+    README for more information](README.md#vscodevim-keybindings).
+  - `cmd+w shift+m` is now `editor.action.toggleMinimap`
+  - `cmd+j o` is now `breadcrums.focusAndSelect`
+- Revised chords:
+  - `cmd+g g` is now `git.viewHistory` (you can switch it back to `git-graph.view`
+    manually if you prefer that extension).
+  - `alt+cmd+i alt+cmd+i` is now `workbench.action.toggleDevTools` (the old shortcut was removed)
 
 ## [1.5.1] - June 20, 2020
 
