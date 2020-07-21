@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# HOW TO USE:
+# Run it. It'll update package.json with any changes since you last ran it.
+# See "Compile/Deploy" section of README for more information.
+
 CURRENT_DIRECTORY="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 SPONGE_FILE="$CURRENT_DIRECTORY"/tmp.txt
 TEMP_FILE_FOR_BLOCK="$CURRENT_DIRECTORY"/tmp_1.txt

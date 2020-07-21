@@ -3,36 +3,36 @@
 **Linux/Windows support is only available in BETA right now.** If you run into any odd keybindings with Linux/Windows, please create an issue! I don't have either OS to test with (and I'm low-key lazy to thoroughly vet these on those OS's myself).
 
 - [Chord Heavy - A keymap inspired by Spacemacs](#chord-heavy---a-keymap-inspired-by-spacemacs)
-	- [Keymap](#keymap)
-		- [Important Single-chords](#important-single-chords)
-		- [Preferences/Settings (prefix: `,`)](#preferencessettings-prefix-)
-		- [Buffers (prefix: `b`)](#buffers-prefix-b)
-		- [Code (prefix: `c`)](#code-prefix-c)
-		- [Debug (prefix: `d`)](#debug-prefix-d)
-		- [Errors (prefix: `e`)](#errors-prefix-e)
-		- [Files (prefix: `f`)](#files-prefix-f)
-		- [Git (prefix: `g`)](#git-prefix-g)
-		- [Help (prefix: `h`)](#help-prefix-h)
-		- [Jump (prefix: `j`)](#jump-prefix-j)
-		- [Markdown All-in-One (prefix: `m`)](#markdown-all-in-one-prefix-m)
-		- [Panel (prefix: `l`)](#panel-prefix-l)
-		- [Open... (prefix: `o`)](#open-prefix-o)
-		- [Project (prefix: `p`)](#project-prefix-p)
-		- [Quit/Close (prefix: `q`)](#quitclose-prefix-q)
-		- [Refactor (prefix: `r`)](#refactor-prefix-r)
-		- [Search (prefix: `s`)](#search-prefix-s)
-		- [Toggle (prefix: `t`)](#toggle-prefix-t)
-		- [Window (prefix: `w`)](#window-prefix-w)
-		- [Yank/Copy (prefix: `y`)](#yankcopy-prefix-y)
-		- [Clobbered Commands](#clobbered-commands)
-		- [Misc. (one-off shortcuts, most not `chords)`](#misc-one-off-shortcuts-most-not-chords)
-	- [Inspiration](#inspiration)
-	- [Caveats](#caveats)
-	- [VSCodeVim Keybindings](#vscodevim-keybindings)
-	- [Multi-Command Actions](#multi-command-actions)
-	- [Issues to Vote For](#issues-to-vote-for)
-	- [Potential Future Improvements](#potential-future-improvements)
-	- [Compiling/Deploying:](#compilingdeploying)
+    - [Keymap](#keymap)
+        - [Important Single-chords](#important-single-chords)
+        - [Preferences/Settings (prefix: `,`)](#preferencessettings-prefix-)
+        - [Buffers (prefix: `b`)](#buffers-prefix-b)
+        - [Code (prefix: `c`)](#code-prefix-c)
+        - [Debug (prefix: `d`)](#debug-prefix-d)
+        - [Errors (prefix: `e`)](#errors-prefix-e)
+        - [Files (prefix: `f`)](#files-prefix-f)
+        - [Git (prefix: `g`)](#git-prefix-g)
+        - [Help (prefix: `h`)](#help-prefix-h)
+        - [Jump (prefix: `j`)](#jump-prefix-j)
+        - [Markdown All-in-One (prefix: `m`)](#markdown-all-in-one-prefix-m)
+        - [Panel (prefix: `l`)](#panel-prefix-l)
+        - [Open... (prefix: `o`)](#open-prefix-o)
+        - [Project (prefix: `p`)](#project-prefix-p)
+        - [Quit/Close (prefix: `q`)](#quitclose-prefix-q)
+        - [Refactor (prefix: `r`)](#refactor-prefix-r)
+        - [Search (prefix: `s`)](#search-prefix-s)
+        - [Toggle (prefix: `t`)](#toggle-prefix-t)
+        - [Window (prefix: `w`)](#window-prefix-w)
+        - [Yank/Copy (prefix: `y`)](#yankcopy-prefix-y)
+        - [Clobbered Commands](#clobbered-commands)
+        - [Misc. (one-off shortcuts, most not `chords)`](#misc-one-off-shortcuts-most-not-chords)
+    - [Inspiration](#inspiration)
+    - [Caveats](#caveats)
+    - [VSCodeVim Keybindings](#vscodevim-keybindings)
+    - [Multi-Command Actions](#multi-command-actions)
+    - [Issues to Vote For](#issues-to-vote-for)
+    - [Potential Future Improvements](#potential-future-improvements)
+    - [Compiling/Deploying](#compilingdeploying)
 
 After trying and failing to get a [Spacemacs](https://www.spacemacs.org/) installation to function properly, I came back to VSCode since it was significantly less finicky to set up (don't @ me, Spacemacs diehards). However, the one thing that I _really_ liked about Spacemacs was the [mnemonic](https://develop.spacemacs.org/doc/DOCUMENTATION.html#mnemonic), chord-focused shortcuts to execute actions and navigate.
 
@@ -503,205 +503,151 @@ If the above caveats are "fine" for you, I really think that this keymap can wor
 
 For keybindings that made "more sense" to be set at that extension's level, I've set them there. Below are the keybindings that I have set up so that they function the way I "expect" with this keymap (these are meant to go in your `settings.json` file):
 
-```
-"vim.insertModeKeyBindings": [
-	{
-		"after": [
-			"cmd+z"
-		],
-		"before": [
-			"cmd+a"
-		]
-	},
-	{
-		"after": [
-			"<Esc>"
-		],
-		"before": [
-			"j",
-			"j"
-		]
-	},
-	{
-		"after": [
-			"<Esc>"
-		],
-		"before": [
-			"k",
-			"k"
-		]
-	},
-	{
-		"after": [
-			"<Esc>"
-		],
-		"before": [
-			"j",
-			"k"
-		]
-	},
-	{
-		"after": [
-			"<Esc>"
-		],
-		"before": [
-			"k",
-			"j"
-		]
-	}
-],
-"vim.normalModeKeyBindingsNonRecursive": [
-	{
-		"before": [
-			"L"
-		],
-		"after": [
-			"$"
-		]
-	},
-	{
-		"before": [
-			"H"
-		],
-		"after": [
-			"^"
-		]
-	},
-	{
-		"after": [],
-		"before": [
-			"g",
-			"H"
-		],
-		"commands": [
-			{
-				"command": "editor.action.triggerParameterHints"
-			}
-		]
-	},
-	{
-		"after": [],
-		"before": [
-			"shift+tab"
-		],
-		"commands": [
-			{
-				"command": "workbench.action.focusPreviousGroup"
-			}
-		]
-	},
-	{
-		"after": [],
-		"before": [
-			"tab"
-		],
-		"commands": [
-			{
-				"command": "workbench.action.focusNextGroup"
-			}
-		]
-	},
-	{
-		"after": [],
-		"before": [
-			"u"
-		],
-		"commands": [
-			{
-				"command": "undo"
-			}
-		]
-	},
-	{
-		"after": [],
-		"before": [
-			"<C-r>"
-		],
-		"commands": [
-			{
-				"command": "redo"
-			}
-		]
-	},
-	{
-		"after": [
-			"v"
-		],
-		"before": [
-			"v"
-		]
-	},
-	{
-		"after": [
-			"g",
-			"k"
-		],
-		"before": [
-			"<up>"
-		]
-	},
-	{
-		"after": [
-			"g",
-			"j"
-		],
-		"before": [
-			"<down>"
-		]
-	},
-	{
-		"after": [
-			"y",
-			"$"
-		],
-		"before": [
-			"Y"
-		]
-	}
-],
-"vim.visualModeKeyBindingsNonRecursive": [
-	{
-		"before": [
-			"H"
-		],
-		"after": [
-			"^"
-		]
-	},
-	{
-		"before": [
-			"L"
-		],
-		"after": [
-			"$"
-		]
-	},
-	{
-		"before": [
-			">"
-		],
-		"commands": [
-			"editor.action.indentLines"
-		]
-	},
-	{
-		"before": [
-			"<"
-		],
-		"commands": [
-			"editor.action.outdentLines"
-		]
-	},
-	{
-		"after": [
-			"a",
-			"f"
-		],
-		"before": [
-			"v"
-		]
-	}
-],
+```json
+{
+  "vim.insertModeKeyBindings": [
+    {
+      "after": ["cmd+z"],
+      "before": ["cmd+a"]
+    },
+    {
+      "after": ["<Esc>"],
+      "before": ["ctrl+d"]
+    },
+    {
+      "after": ["<Esc>"],
+      "before": ["j", "j"]
+    },
+    {
+      "after": ["<Esc>"],
+      "before": ["k", "k"]
+    },
+    {
+      "after": ["<Esc>"],
+      "before": ["j", "k"]
+    },
+    {
+      "after": ["<Esc>"],
+      "before": ["k", "j"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "after": ["$"],
+      "before": ["L"]
+    },
+    {
+      "after": ["^"],
+      "before": ["H"]
+    },
+    {
+      "after": [],
+      "before": ["g", "B"],
+      "commands": [
+        {
+          "command": "editor.action.selectHighlights"
+        }
+      ]
+    },
+    {
+      "after": [],
+      "before": ["g", "H"],
+      "commands": [
+        {
+          "command": "editor.action.triggerParameterHints"
+        }
+      ]
+    },
+    {
+      "after": [],
+      "before": ["u"],
+      "commands": [
+        {
+          "command": "undo"
+        }
+      ]
+    },
+    {
+      "after": [],
+      "before": ["<C-r>"],
+      "commands": [
+        {
+          "command": "redo"
+        }
+      ]
+    },
+    {
+      "after": ["v"],
+      "before": ["v"]
+    },
+    {
+      "after": ["g", "k"],
+      "before": ["<up>"]
+    },
+    {
+      "after": ["g", "j"],
+      "before": ["<down>"]
+    },
+    {
+      "after": ["y", "$"],
+      "before": ["Y"]
+    },
+    {
+      "before": ["<leader>", "m", "m"],
+      "commands": ["bookmarks.toggle"]
+    },
+    {
+      "before": ["<leader>", "m", "n"],
+      "commands": ["bookmarks.jumpToNext"]
+    },
+    {
+      "before": ["<leader>", "m", "p"],
+      "commands": ["bookmarks.jumpToPrevious"]
+    },
+    {
+      "before": ["<leader>", "m", "o"],
+      "commands": ["workbench.view.extension.bookmarks"]
+    },
+    {
+      "before": ["<leader>", "b", "b"],
+      "commands": ["bookmarks.list"]
+    },
+    {
+      "before": ["<leader>", "b", "B"],
+      "commands": ["bookmarks.listFromAllFiles"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["g", "B"],
+      "commands": [
+        {
+          "command": "editor.action.selectHighlights"
+        }
+      ]
+    },
+    {
+      "after": ["^"],
+      "before": ["H"]
+    },
+    {
+      "after": ["$"],
+      "before": ["L"]
+    },
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "after": ["a", "f"],
+      "before": ["v"]
+    }
+  ]
+}
 ```
 
 ## Multi-Command Actions
@@ -709,16 +655,32 @@ For keybindings that made "more sense" to be set at that extension's level, I've
 I use a tool called [`multi-command`](https://github.com/ryuta46/vscode-multi-command) for some actions that are defined in this keymap. Here's the definition that I have (I'll be sure to keep this updated):
 
 ```json
-"multiCommand.commands": [
-	{
-		"command": "multiCommand.closePanelAndSidebarAndOtherEditors",
-		"sequence": [
-			"workbench.action.closePanel",
-			"workbench.action.closeSidebar",
-			"workbench.action.closeEditorsInOtherGroups"
-		]
-	},
-]
+{
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.closePanelAndSidebarAndOtherEditors",
+            "sequence": [
+            "workbench.action.closePanel",
+            "workbench.action.closeSidebar",
+            "workbench.action.closeEditorsInOtherGroups"
+            ]
+        },
+        {
+            "command": "multiCommand.moveToNextChangeAndShow",
+            "sequence": [
+            "workbench.action.editor.nextChange",
+            "editor.action.dirtydiff.next"
+            ]
+        },
+        {
+            "command": "multiCommand.moveToPreviousChangeAndShow",
+            "sequence": [
+            "workbench.action.editor.previousChange",
+            "editor.action.dirtydiff.previous"
+            ]
+        }
+    ]
+}
 ```
 
 This is for the following chords:
@@ -740,16 +702,25 @@ VSCode was developed with a completely different user-base in mind, but that doe
 
 - Add proper support for Linux/Windows (Linux/Windows support is considered to be in beta, mostly because I don't have either OS so can't verify that they work properly! If there are problems, please open an issue!)
 - Create shortcuts that are based on specific file types, so that there is a "major mode" of sorts for them. Can start with HTML and go through other languages as I see fit; use the [Spacemacs layer keybindings](https://www.spacemacs.org/layers/LAYERS.html) for inspiration. Maybe the `ctrl` key can be first character for "major" mode? Inspiration:
-	- [HTML](https://www.spacemacs.org/layers/+lang/html/README.html)
-	- [javascript](https://www.spacemacs.org/layers/+lang/javascript/README.html)
-	- [markdown](https://www.spacemacs.org/layers/+lang/markdown/README.html)
-	- [python](https://www.spacemacs.org/layers/+lang/python/README.html)
-	- [go](https://www.spacemacs.org/layers/+lang/go/README.html)
-	- [rust](https://www.spacemacs.org/layers/+lang/rust/README.html)
-	- [java](https://www.spacemacs.org/layers/+lang/java/README.html)
-	- [typescript](https://www.spacemacs.org/layers/+lang/typescript/README.html)
-	- [shell-scripts](https://www.spacemacs.org/layers/+lang/shell-scripts/README.html)
+    - [HTML](https://www.spacemacs.org/layers/+lang/html/README.html)
+    - [javascript](https://www.spacemacs.org/layers/+lang/javascript/README.html)
+    - [markdown](https://www.spacemacs.org/layers/+lang/markdown/README.html)
+    - [python](https://www.spacemacs.org/layers/+lang/python/README.html)
+    - [go](https://www.spacemacs.org/layers/+lang/go/README.html)
+    - [rust](https://www.spacemacs.org/layers/+lang/rust/README.html)
+    - [java](https://www.spacemacs.org/layers/+lang/java/README.html)
+    - [typescript](https://www.spacemacs.org/layers/+lang/typescript/README.html)
+    - [shell-scripts](https://www.spacemacs.org/layers/+lang/shell-scripts/README.html)
 
-## Compiling/Deploying:
+## Compiling/Deploying
 
-See: https://docs.google.com/spreadsheets/d/1eXYiV7pXs4lz9Dvs_8ktrqcOdBJQK7agaQ8QDqkIdZI/edit#gid=2041410408
+Because I'm really just updating this configuration from my own personal keybindings, I
+created a script that will just take my existing configration and parse it into
+`package.json` correctly. Therefore, to compile and deploy, all I need to do is the
+following:
+
+- Run `build.sh` from the root of the project.
+- Inspect package.json to make sure nothing got incredibly messed up.
+- Updated README/CHANGELOG with new information.
+
+And that's it. Yay!
