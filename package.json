@@ -2324,12 +2324,6 @@
         "when": "editorTextFocus"
       },
       {
-        "command": "extension.openWithDefault",
-        "key": "ctrl+o b",
-        "mac": "cmd+o b",
-        "when": "editorTextFocus && editorLangId == 'html'"
-      },
-      {
         "command": "extension.toggleTheme",
         "key": "shift+alt+d",
         "mac": "shift+alt+d"
@@ -2349,11 +2343,6 @@
         "command": "fileutils.renameFile",
         "key": "ctrl+f ctrl+r",
         "mac": "cmd+f cmd+r"
-      },
-      {
-        "command": "git-graph.view",
-        "key": "ctrl+g g",
-        "mac": "cmd+g g"
       },
       {
         "command": "git.branch",
@@ -3502,18 +3491,6 @@
         "when": "hasSearchResult || inSearchEditor"
       },
       {
-        "command": "workbench.action.editor.nextChange",
-        "key": "ctrl+n",
-        "mac": "ctrl+n",
-        "when": "editorTextFocus"
-      },
-      {
-        "command": "workbench.action.editor.previousChange",
-        "key": "ctrl+p",
-        "mac": "ctrl+p",
-        "when": "editorTextFocus"
-      },
-      {
         "command": "workbench.action.compareEditor.nextChange",
         "key": "ctrl+n",
         "mac": "ctrl+n",
@@ -4176,6 +4153,96 @@
         "key": "shift+f8",
         "mac": "shift+f8",
         "when": "editorFocus"
+      },
+      {
+        "command": "multiCommand.moveToNextChangeAndShow",
+        "key": "ctrl+n",
+        "mac": "ctrl+n",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "multiCommand.moveToPreviousChangeAndShow",
+        "key": "ctrl+p",
+        "mac": "ctrl+p",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "git.viewHistory",
+        "key": "ctrl+g g",
+        "mac": "cmd+g g"
+      },
+      {
+        "command": "git.viewFileHistory",
+        "key": "ctrl+g shift+g",
+        "mac": "cmd+g shift+g"
+      },
+      {
+        "command": "editor.action.toggleMinimap",
+        "key": "ctrl+w shift+m",
+        "mac": "cmd+w shift+m"
+      },
+      {
+        "command": "-bookmarks.toggle",
+        "key": "alt+ctrl+k",
+        "mac": "alt+cmd+k",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "-bookmarks.jumpToNext",
+        "key": "alt+ctrl+l",
+        "mac": "alt+cmd+l",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "-bookmarks.jumpToPrevious",
+        "key": "alt+ctrl+j",
+        "mac": "alt+cmd+j",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "-issue.createIssueFromFile",
+        "key": "ctrl+s",
+        "mac": "ctrl+s",
+        "when": "resourceScheme == 'newIssue' && config.files.autoSave != 'off'"
+      },
+      {
+        "command": "-extension.copyGitHubLinkToClipboard",
+        "key": "ctrl+l c",
+        "mac": "ctrl+l c"
+      },
+      {
+        "command": "-cursorUndo",
+        "key": "ctrl+u",
+        "mac": "cmd+u",
+        "when": "textInputFocus"
+      },
+      {
+        "command": "-workbench.action.reloadWindow",
+        "key": "ctrl+r",
+        "mac": "cmd+r",
+        "when": "isDevelopment"
+      },
+      {
+        "command": "workbench.action.toggleDevTools",
+        "key": "alt+ctrl+i alt+ctrl+i",
+        "mac": "alt+cmd+i alt+cmd+i",
+        "when": "isDevelopment"
+      },
+      {
+        "command": "-workbench.action.toggleDevTools",
+        "key": "alt+ctrl+i",
+        "mac": "alt+cmd+i",
+        "when": "isDevelopment"
+      },
+      {
+        "command": "workbench.action.toggleDevTools",
+        "key": "alt+ctrl+i alt+ctrl+i",
+        "mac": "alt+cmd+i alt+cmd+i"
+      },
+      {
+        "command": "breadcrumbs.focusAndSelect",
+        "key": "ctrl+j o",
+        "mac": "cmd+j o"
       }
     ]
   }
