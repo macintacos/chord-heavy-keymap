@@ -3,6 +3,12 @@
 All notable changes to the "chord-heavy-keymap" extension will be documented in this file.
 See [keepachangelog.com](https://keepachangelog.com/en/1.0.0/) for how this is formatted.
 
+## [1.5.3] - August 21, 2020 - The Final Update
+
+**NOTE** - This extension is being "discontinued" and archived in favor of [VSpaceCode](https://github.com/VSpaceCode/VSpaceCode). Please download that extension instead; you'll get a very robust Spacemacs-esque configuration out of the box and be happier than using the compromise that is this keymap.
+
+The "old" README is available [here](./OLD_README.md) if you'd still like to refer to it. I'd still like to advocate for the [issues that I'd noted there as well](./OLD_README.md##issues-to-vote-for); please vote for them!
+
 ## [1.5.2] - July 21, 2020
 
 - New chords:
